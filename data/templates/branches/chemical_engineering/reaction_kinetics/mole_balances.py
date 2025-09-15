@@ -1,24 +1,7 @@
 import random
 import math
 from scipy.integrate import quad
-
-
-LIQUID_PHASE_REACTANTS = [
-    'Ethyl Acetate', 'Propylene Glycol', 'Benzene', 'Toluene', 'Acetone',
-    'Methanol', 'Ethanol', 'Isopropanol', 'Butanol', 'Methyl Ethyl Ketone (MEK)',
-    'Formaldehyde', 'Acetaldehyde', 'Acetic Acid', 'Phenol', 'Glycerol'
-]
-
-GAS_PHASE_REACTANTS = [
-    'Methane', 'Ethane', 'Propane', 'Ammonia', 'Ethylene',
-    'Sulfur Dioxide', 'Hydrogen Sulfide', 'Vinyl Chloride', 'Butadiene'
-]
-
-BIOCHEMICAL_SUBSTRATES = [
-    'Glucose', 'Sucrose', 'Lactose', 'Fructose', 'Pyruvate'
-]
-
-GENERAL_REACTANTS = LIQUID_PHASE_REACTANTS + GAS_PHASE_REACTANTS + BIOCHEMICAL_SUBSTRATES
+from constants import LIQUID_PHASE_REACTANTS, GENERAL_REACTANTS
 
 
 # Template 1 (Easy)
@@ -383,7 +366,7 @@ def template_pfr_volume_changing_rate():
 
 def main():
     """
-    Generate 10 instances of each reaction kinetics template with different random seeds
+    Generate numerous instances of each reaction kinetics template with different random seeds
     and write the results to a JSONL file.
     """
     import json
@@ -407,9 +390,9 @@ def main():
     # List to store all generated problems
     all_problems = []
 
-    # Generate 10 problems for each template
+    # Generate problems for each template
     for template_func, id_name, level in templates:
-        for _ in range(10):
+        for _ in range(50):
             # Generate a unique seed for each problem
             seed = random.randint(1_000_000_000, 4_000_000_000)
             random.seed(seed)
