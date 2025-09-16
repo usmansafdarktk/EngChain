@@ -479,3 +479,147 @@ COMBUSTION_REACTIONS = [
         "products": {"CO2(g)": 2, "H2O(g)": 3, "N2(g)": 11.28}
     }
 ]
+
+
+# Properties are given at 20°C (293.15 K) and standard pressure (101.325 kPa) unless otherwise noted.
+# Viscosity can vary between sources. Values chosen for typical textbook accuracy.
+# Format: { "Name": (Density [kg/m³], Dynamic Viscosity [Pa·s]) }
+COMMON_LIQUIDS = {
+    # Water and Common Solvents
+    "Water": (998.2, 1.002e-3),
+    "Seawater (3.5% salinity)": (1025, 1.07e-3), # Viscosity approx. 7% higher than pure water
+    "Ethanol": (789.4, 1.074e-3),
+    "Methanol": (791.3, 0.544e-3),
+    "Isopropyl Alcohol (IPA)": (781.8, 2.04e-3),
+    "Acetone": (784.5, 0.306e-3),
+    "Benzene": (876.5, 0.601e-3),
+    "Toluene": (866.9, 0.560e-3),
+    "Diethyl Ether": (713.4, 0.223e-3),
+    "n-Hexane": (654.8, 0.294e-3),
+    
+    # Oils and Hydrocarbons
+    "Engine Oil (SAE 10W)": (870, 0.065),
+    "Engine Oil (SAE 30)": (891.0, 0.290), 
+    "Engine Oil (SAE 50)": (902, 0.860),
+    "Gear Oil (SAE 90)": (915, 0.700),
+    "Crude Oil (light)": (850, 7.5e-3),
+    "Kerosene": (810, 1.6e-3),
+    "Diesel Fuel": (850, 3.5e-3),
+    "Gasoline": (745, 0.29e-3), # ~0.4-0.8 cP, often approximated to water's order of magnitude
+    
+    # Organic & Food Grade Liquids
+    "Glycerol (100%)": (1261.3, 1.490),
+    "Olive Oil": (910, 0.081),
+    "Corn Syrup": (1380, 5.0),     # Highly variable with concentration and temp
+    "Honey": (1420, 10.0),         # Highly variable with type and temp
+    "Milk (whole)": (1035, 2.0e-3),
+    "Blood Plasma (human)": (1025, 1.5e-3),
+    "Blood (whole, human)": (1060, 4.0e-3), # Shear-thinning, this is an approx. value
+    
+    # Cryogens & Liquefied Gases (at their boiling point @ 1 atm)
+    "Liquid Nitrogen (77 K)": (804, 0.158e-3),   # Note: Temperature is 77 K (-196°C)
+    "Liquid Oxygen (90 K)": (1141, 0.189e-3),    # Temperature is 90 K (-183°C)
+    
+    # Metals and Inorganics
+    "Mercury": (13593, 1.526e-3),  
+    "Sulfuric Acid (98%)": (1831, 25.4e-3),
+    "Ethylene Glycol": (1113.4, 16.1e-3), # Common antifreeze
+}
+
+
+# Properties are given at 20°C (293.15 K) and 1 atm (101.325 kPa) unless otherwise noted.
+# Format: { "Name": (Density [kg/m³], Dynamic Viscosity [Pa·s]) }
+COMMON_GASES = {
+    # Common Gases
+    "Air": (1.204, 1.81e-5),
+    "Nitrogen (N₂)": (1.165, 1.76e-5),
+    "Oxygen (O₂)": (1.331, 2.00e-5),
+    "Carbon Dioxide (CO₂)": (1.842, 1.47e-5), # Viscosity is temperature-dependent and increases for CO2
+    "Argon": (1.661, 2.23e-5),
+    "Helium": (0.166, 1.96e-5),
+    "Neon": (0.840, 3.18e-5),
+    "Krypton": (3.479, 2.55e-5),
+    "Xenon": (5.495, 2.28e-5), # Density high, but viscosity is similar to air
+    
+    # Hydrocarbons
+    "Methane (CH₄)": (0.668, 1.09e-5),
+    "Ethane (C₂H₆)": (1.264, 9.15e-6),
+    "Propane (C₃H₈)": (1.880, 8.00e-6), # Note: Viscosity decreases slightly with molecular weight in this series
+    "Butane (C₄H₁₀)": (2.489, 7.50e-6),
+    "Natural Gas (approx.)": (0.700, 1.10e-5), # Modeled after methane
+    "Acetylene (C₂H₂)": (1.092, 9.80e-6),
+    
+    # Other Common Gases
+    "Hydrogen (H₂)": (0.0838, 8.90e-6), # Lowest density, very low viscosity
+    "Steam (Water Vapor)": (0.747, 1.02e-5), # At 100°C (373 K), 1 atm
+    "Ammonia (NH₃)": (0.718, 1.01e-5),
+    "Chlorine (Cl₂)": (2.994, 1.33e-5),
+    "Sulfur Hexafluoride (SF₆)": (6.17, 1.59e-5), # High-density gas used in industry
+    
+    # Noble Gases
+    "Radon": (9.23, 2.30e-5), # Theoretical value at 20°C; highly radioactive
+}
+
+
+# Molecular parameters for the Chapman-Enskog equation (Kinetic Theory)
+# Sources: NIST, CRC Handbook, and standard chemical engineering texts.
+# Format: { "Name": (Molar Mass [g/mol], Sigma σ [Å], Epsilon ε / k [K]) }
+# Note: Epsilon ε / k (the Lennard-Jones energy parameter) is included for calculating the collision integral.
+GAS_MOLECULAR_PARAMS = {
+    "Air": (28.97, 3.62, 97.0),
+    "Nitrogen (N₂)": (28.01, 3.70, 95.05),
+    "Oxygen (O₂)": (32.00, 3.46, 106.7),
+    "Carbon Dioxide (CO₂)": (44.01, 3.94, 195.2),
+    "Argon": (39.95, 3.54, 93.3),
+    "Helium": (4.003, 2.55, 10.22),
+    "Neon": (20.18, 2.92, 32.8),
+    "Krypton": (83.80, 3.69, 178.9),
+    "Xenon": (131.29, 4.10, 231.0),
+    "Methane (CH₄)": (16.04, 3.78, 148.6),
+    "Ethane (C₂H₆)": (30.07, 4.42, 215.7),
+    "Propane (C₃H₈)": (44.10, 5.06, 237.1),
+    "Butane (C₄H₁₀)": (58.12, 5.47, 531.4), # n-butane
+    "Hydrogen (H₂)": (2.016, 2.93, 33.3),
+    "Ammonia (NH₃)": (17.03, 2.92, 558.3), # Polar molecule, value is an effective fit.
+    "Chlorine (Cl₂)": (70.90, 4.40, 316.0),
+    "Sulfur Hexafluoride (SF₆)": (146.06, 5.51, 222.1),
+}
+
+
+# Properties for non-Newtonian power-law fluids
+# Format: { "Name": (Consistency Index K [Pa·s^n], Power-Law Index n [dimensionless]) }
+POWER_LAW_FLUIDS = {
+    # Common Household & Food (Shear-Thinning)
+    "Ketchup": (32.5, 0.22),
+    "Applesauce": (15.0, 0.3),
+    "Mustard": (50.0, 0.28),
+    "Mayonnaise": (85.0, 0.6),
+    "Tomato Puree": (25.0, 0.5),
+    "Yogurt": (12.5, 0.6),
+    "Toothpaste": (120.0, 0.4),
+    "Shampoo": (25.0, 0.6),
+    "Hand Lotion": (80.0, 0.5),
+
+    # Paints & Inks (Shear-Thinning)
+    "Latex Paint": (45.0, 0.45),
+    "Printing Ink": (10.0, 0.7),
+
+    # Biological Fluids (Mostly Shear-Thinning)
+    "Blood (Plasma)": (0.012, 0.95), # Very low K, nearly Newtonian
+    "Mucus": (10.0, 0.5),
+
+    # Polymer Solutions & Melts (Shear-Thinning)
+    "0.5% Carboxymethylcellulose (CMC) in Water": (1.5, 0.6),
+    "1.5% Polyacrylamide in Water": (5.0, 0.3),
+    "Molten Polyethylene": (5000.0, 0.6), # K is very temperature-dependent
+
+    # Newtonian Baseline (n = 1)
+    "Water": (0.001, 1.0),           # K is the dynamic viscosity
+    "Glycerol": (1.0, 1.0),
+    "Air": (1.8e-5, 1.0),            # K is the dynamic viscosity
+
+    # Shear-Thickening (Dilatant)
+    "Corn Starch Suspension (40%)": (2.0, 1.9),
+    "Corn Starch Suspension (50%)": (10.0, 2.5), # Higher concentration -> stronger effect
+    "Silica Sand Suspension (60%)": (0.5, 1.6),
+}
