@@ -623,3 +623,7 @@ POWER_LAW_FLUIDS = {
     "Corn Starch Suspension (50%)": (10.0, 2.5), # Higher concentration -> stronger effect
     "Silica Sand Suspension (60%)": (0.5, 1.6),
 }
+
+
+# Standard gravitational acceleration in m/s²
+GRAVITATIONAL_ACCELERATION = 9.81
