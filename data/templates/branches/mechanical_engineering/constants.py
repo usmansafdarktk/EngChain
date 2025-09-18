@@ -33,3 +33,33 @@ MATERIAL_PROPERTIES = {
     'Glass (Borosilicate)': {'E_GPa': 70, 'E_ksi': 10150, 'nu': 0.20},
     'Ceramic (Alumina Al2O3)': {'E_GPa': 370, 'E_ksi': 53700, 'nu': 0.22},
 }
+
+
+# Typical Shear Modulus (G) Values for Engineering Materials (GPa)
+# Note: Values are representative and can vary with alloy composition and heat treatment.
+SHEAR_MODULUS_VALUES = {
+    # Metals (Common Alloys)
+    "Steel (A36)": 77.2,
+    "Stainless Steel (304)": 77.0,
+    "Aluminum 6061-T6": 26.0,
+    "Aluminum 2024-T4": 28.0,
+    "Brass (C36000)": 39.0,
+    "Copper (CDA 110)": 44.7,
+    "Bronze (Phosphor 510)": 41.4,
+    "Titanium Alloy (Ti-6Al-4V)": 41.4,
+    "Magnesium Alloy (AZ31B)": 16.5,
+    "Tungsten": 160.0,
+    "Molybdenum": 118.0,
+    "Lead": 5.9,
+    
+    # Other Materials
+    "Gray Cast Iron": 44.0, # Note: Anisotropic property, value is an approximation.
+    "Nylon 6/6": 1.1,      # Polymers have much lower moduli
+    "Polycarbonate": 0.9,
+    "Concrete": 22.0,      # Highly variable, this is a common estimate for calculation
+    "Glass": 26.2,
+    
+    # Composites (Highly variable based on fiber orientation and volume fraction)
+    # Value given is an approximate in-plane shear modulus.
+    "Carbon Fiber Epoxy (Unidirectional, in-plane)": 5.0,
+}

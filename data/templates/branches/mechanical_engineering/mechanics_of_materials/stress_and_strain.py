@@ -867,9 +867,9 @@ def main():
     templates = [
         (template_basic_stress_strain, "basic_stress_strain", "Easy"),
         (template_axial_deformation, "axial_deformation", "Easy"),
-        (template_multi_segment_rod, "multi_segment_rod_deformation", "Intermediate"),
-        (template_poissons_ratio, "poissons_ratio_lateral_strain", "Intermediate"),
-        (template_statically_indeterminate, "statically_indeterminate_axial_load", "Advanced"),
+        (template_multi_segment_rod, "multi_segment_rod", "Intermediate"),
+        (template_poissons_ratio, "poissons_ratio", "Intermediate"),
+        (template_statically_indeterminate, "statically_indeterminate", "Advanced"),
     ]
 
     # List to store all generated problems
