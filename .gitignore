@@ -1,2 +1,4 @@
+.env
 testset
 __pycache__/
+inference_results/
