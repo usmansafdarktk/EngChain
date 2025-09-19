@@ -789,6 +789,9 @@ def main():
             # Create a JSON entry
             problem_entry = {
                 "seed": seed,
+                "branch": "electrical_engineering",
+                "domain": "signals_and_systems",
+                "area": "discrete_time_signals",
                 "id": id_name,
                 "level": level,
                 "question": question,

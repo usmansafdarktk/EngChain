@@ -556,6 +556,9 @@ def main():
             # Create a JSON entry
             problem_entry = {
                 "seed": seed,
+                "branch": "mechanical_engineering",
+                "domain": "vibrations_and_acoustics",
+                "area": "harmonically_excited_vibrations",
                 "id": id_name,
                 "level": level,
                 "question": question,

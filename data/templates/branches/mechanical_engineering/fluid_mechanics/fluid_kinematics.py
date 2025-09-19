@@ -706,6 +706,9 @@ def main():
             # Create a JSON entry
             problem_entry = {
                 "seed": seed,
+                "branch": "mechanical_engineering",
+                "domain": "fluid_mechanics",
+                "area": "fluid_kinematics",
                 "id": id_name,
                 "level": level,
                 "question": question,

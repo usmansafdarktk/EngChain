@@ -260,7 +260,7 @@ def main():
     import os
 
     # Define the output path (Modify this path according to where you are running the code from)
-    output_file = "../../../../../testset/reaction_kinetics/conversion_and_reactor_sizing.jsonl"
+    output_file = "testset/chemical_engineering/reaction_kinetics/conversion_and_reactor_sizing.jsonl"
 
     # Create the directory if it doesn't exist
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
@@ -286,6 +286,9 @@ def main():
             # Create a dictionary entry for the problem
             problem_entry = {
                 "seed": seed,
+                "branch": "chemical_engineering",
+                "domain": "reaction_kinetics",
+                "area": "conversion_and_reactor_sizing",
                 "id": id_name,
                 "level": level,
                 "question": question,

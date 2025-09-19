@@ -641,7 +641,7 @@ def main():
     import os
 
     # Define the output path (Modify this path according to where you are running the code from)
-    output_file = "testset/thermodynamics/volumetric_properties_pure_fluids.jsonl"
+    output_file = "testset/chemical_engineering/thermodynamics/volumetric_properties_pure_fluids.jsonl"
 
     # Create the directory if it doesn't exist
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
@@ -673,6 +673,9 @@ def main():
             # Create a JSON entry
             problem_entry = {
                 "seed": seed,
+                "branch": "chemical_engineering",
+                "domain": "thermodynamics",
+                "area": "volumetric_properties_pure_fluids",
                 "id": id_name,
                 "level": level,
                 "question": question,

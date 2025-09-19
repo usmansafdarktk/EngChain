@@ -283,7 +283,7 @@ def main():
     import os
 
     # Define the output path (Modify this path according to where you are running the code from)
-    output_file = "testset/transport_phenomena/shell_momentum_balances.jsonl"
+    output_file = "testset/chemical_engineering/transport_phenomena/shell_momentum_balances.jsonl"
 
     # Create the directory if it doesn't exist
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
@@ -311,6 +311,9 @@ def main():
             # Create a JSON entry
             problem_entry = {
                 "seed": seed,
+                "branch": "chemical_engineering",
+                "domain": "transport_phenomena",
+                "area": "shell_momentum_balances",
                 "id": id_name,
                 "level": level,
                 "question": question,

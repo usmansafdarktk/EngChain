@@ -140,6 +140,9 @@ def main():
             # Create a JSON entry
             problem_entry = {
                 "seed": seed,
+                "branch": "electrical_engineering",
+                "domain": "electromagnetics_and_waves",
+                "area": "magnetostatics",
                 "id": id_name,
                 "level": level,
                 "question": question,
