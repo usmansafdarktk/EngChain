@@ -5,3 +5,4 @@ bert_score
 google.generativeai
 dotenv
 huggingface_hub[hf_xet]
+seaborn

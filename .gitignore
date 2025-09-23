@@ -3,3 +3,4 @@ testset
 __pycache__/
 inference_results/
 evaluation_results/
+summary_results/
