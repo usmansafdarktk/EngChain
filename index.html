@@ -6,7 +6,7 @@
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EngChain: A Symbolic Benchmark for Verifiable Multi-Step Reasoning in Engineering</title>
+  <title>EngTrace: A Symbolic Benchmark for Verifiable Process Supervision of Engineering Reasoning</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -48,40 +48,48 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">EngChain: A Symbolic Benchmark for Verifiable Multi-Step Reasoning in Engineering</h1>
+          <h1 class="title is-1 publication-title">EngTrace: A Symbolic Benchmark for Verifiable Process Supervision of Engineering Reasoning</h1>
           <div class="is-size-5 publication-authors">
 
             <span class="author-block">
-              Ayesha Gull,
+              Ayesha Gull<sup>1</sup>,
             </span>
-            
+
             <span class="author-block">
               <a href="https://scholar.google.co.uk/citations?hl=en&user=7u7oFBAAAAAJ=en" target="_blank">Muhammad Usman Safder</a><sup>1</sup>,
             </span>
 
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=ic1jai8AAAAJ&hl=en" target="_blank">Rania Elbadry</a><sup>1</sup>,
+              Rania Hossam<sup>2</sup>,
             </span>
 
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=DfXsKZ4AAAAJ&hl=en" target="_blank">Preslav Nakov</a>,
+              Fan Zhang<sup>3</sup>,
             </span>
 
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=W9mk-R4AAAAJ&hl=en" target="_blank">Zhuohan Xie</a>,
+              Veselin Stoyanov<sup>2</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=DfXsKZ4AAAAJ&hl=en" target="_blank">Preslav Nakov</a><sup>2</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=W9mk-R4AAAAJ&hl=en" target="_blank">Zhuohan Xie</a><sup>2</sup>
             </span>
 
           </div>
 
-          <!-- <div class="is-size-6 publication-authors">
-            <span class="author-block"><sup>1</sup></span>
-            <span class="author-block"><sup>2</sup></span>
-            <span class="author-block"><sup>3</sup>MBZUAI</span>
-          </div> -->
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>Namal University &nbsp;&nbsp;</span>
+            <span class="author-block"><sup>2</sup>MBZUAI &nbsp;&nbsp;</span>
+            <span class="author-block"><sup>3</sup>The University of Tokyo</span>
+          </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -104,7 +112,7 @@
                   </span>
                   <span>App</span>
                   </a>
-              </span>
+              </span> -->
               <!-- <span class="link-block">
                 <a href="leaderboard.html" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -129,7 +137,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            While current benchmarks assess language understanding, factual recall, mathematics or code generation, none capture the integrative reasoning central to engineering where scientific principles, quantitative modeling and practical constraints must converge. To address this gap, we introduce EngChain, a benchmark for verifiable multi-step engineering problem-solving. EngChain contains 90 problems spanning three engineering branches, organized into 9 domains and 20 distinct areas. Problems are generated from symbolic templates with a high degree of randomization to ensure diversity and eliminate the risk of contamination. The benchmark moves beyond final answer accuracy with a two-stage evaluation: it first quantitatively verifies the numerical and semantic validity of each reasoning step and then introduces LLM-as-Judge, an automated system to qualitatively categorize any identified reasoning errors.
+            Large Language Models are increasingly entering specialized, safety-critical engineering workflows governed by strict quantitative standards and immutable physical laws, making rigorous evaluation of their reasoning capabilities imperative. Existing benchmarks fail to capture the physically grounded reasoning central to engineering, where scientific principles, quantitative modeling, and practical constraints must converge. To enable verifiable process supervision in engineering, we introduce <strong>EngTrace</strong>, a symbolic benchmark built on <strong>90 parameterized templates</strong> generating <strong>1,350 unique, contamination-resistant</strong> problem instances, spanning <strong>three major engineering branches, nine core domains, and 20 distinct areas</strong>. Moving beyond outcome matching, we introduce a verifiable two-stage evaluation framework that validates intermediate reasoning traces alongside final answers through automated procedural checks and a heterogeneous AI Tribunal. Our evaluation of <strong>27 leading LLMs</strong> reveals a distinct trade-off between numeric precision and trace fidelity, identifying a <em>complexity cliff</em> where abstract mathematical pre-training fails to translate into the integrative reasoning required for advanced engineering tasks.
           </p>
         </div>
       </div>
@@ -141,12 +149,12 @@
   <div class="container is-max-desktop">
     <br>
     <div class="hero-body">
-      <img src="./static/images/engchain-taxonomy.png" 
-          alt="EngChain's Taxonomy of 9 domains and 90 problem types."
-          style="width: 70%; height: auto; display: block; margin: 0 auto;" />
+      <img src="./static/images/engchain-taxonomy.png"
+          alt="EngTrace's Taxonomy spanning 9 domains and 3 engineering branches."
+          style="width: 95%; height: auto; display: block; margin: 0 auto;" />
       <br>
       <h2 class="subtitle has-text-centered">
-        EngChain's comprehensive taxonomy covers 90 distinct problem types across 9 domains and 3 engineering branches.
+        EngTrace's hierarchical taxonomy spans 9 core domains across 3 engineering branches, covering 20 distinct areas.
       </h2>
     </div>
 </section>
@@ -162,10 +170,10 @@
                   <div class="column">
                       <div class="content has-text-justified">
                           <p>
-                              The benchmark is built upon a comprehensive taxonomy of <strong>90 distinct problem templates</strong> across <strong>9 core engineering domains</strong> and 3 engineering branches. This structure is designed to systematically evaluate reasoning by scaling difficulty across three axes: Conceptual Complexity, Mathematical Sophistication, and Procedural Depth. Problems are generated from symbolic templates with domain-aware parameterization to ensure physical realism (e.g., using real material properties for "6061-T6 Aluminum"). The benchmark features a <strong>Two-Stage Verifiable Evaluation</strong> that moves beyond final-answer accuracy to check the numerical and semantic validity of each reasoning step.
+                              EngTrace is built upon <strong>90 parameterized symbolic templates</strong> across <strong>9 core engineering domains</strong> and 3 branches, generating <strong>1,350 unique test cases</strong>. Difficulty is calibrated along three axes: Conceptual Complexity, Mathematical Sophistication, and Procedural Depth. Domain-aware parameterization ensures physical realism, while symbolic generation makes problems resistant to data contamination.
                           </p>
                           <p>
-                              To ensure correctness, every template underwent an <strong>AI-Assisted Quality Assurance (QA)</strong> workflow. This process employed an LLM as a 'Peer Reviewer' to evaluate each template's code and example outputs against a multi-axis rubric for physical plausibility and mathematical correctness. Any template failing to meet a high automated threshold (a score < 4/5) was automatically flagged for human review by the authors, who possess domain expertise. This efficient <strong>AI-first, human-in-the-loop</strong> process proved highly effective, with only 5.55% (5 out of 90) of templates requiring manual inspection and correction.
+                              Every template was validated through a two-stage quality assurance process. An <strong>AI Tribunal</strong> of three frontier models (GPT-5, Claude Opus 4.5, Gemini 3) first screened each template against a strict multi-axis rubric using median score, majority-vote, and disagreement thresholds. Templates passing this stage then underwent <strong>double-blind expert certification</strong>, establishing EngTrace as a high-fidelity gold-standard benchmark.
                           </p>
                       </div>
                   </div>
@@ -174,7 +182,7 @@
                           alt="Example of an ENGCHAIN symbolic template for a CSTR Volume Calculation." 
                           style="max-width: 350px; width: 100%;">
                       <p class="is-size-7" style="margin-top: 8px;">
-                        <i>Figure 2: EngChain example template (CSTR Volume Calculation).</i>
+                        <i>Figure 2: EngTrace example template (CSTR Volume Calculation).</i>
                       </p>
                   </div>
               </div>
@@ -192,10 +200,10 @@
                 <h2 class="title is-3 has-text-centered">A Two-Stage Verifiable Evaluation Framework</h2>
                 <div class="content has-text-justified">
                     <p>
-                        To assess the entire reasoning process, we move beyond final-answer accuracy and propose a multi-faceted framework. The first stage is a quantitative verification that computes a <strong>Step F1-Score</strong> for procedural correctness. This process compares each predicted reasoning step against every ground-truth step. A step is only considered a "match" if it simultaneously satisfies two criteria: high <strong>semantic similarity</strong> (measured via a Cross-Encoder model) and <strong>numerical correctness</strong> (within a 2% relative error tolerance for intermediate values). This dual-criteria check ensures that a step with a plausible explanation but a flawed calculation is correctly identified as an error.
+                        We move beyond final-answer accuracy with a <strong>tiered verification protocol</strong>. Tier 1 performs automated symbolic verification: a reasoning step is valid only if it satisfies both <strong>numerical correctness</strong> (≤2% relative error) and <strong>semantic similarity</strong> (Cross-Encoder threshold ≥0.7). If ≥80% of steps pass Tier 1 and the final answer is correct, the chain is accepted immediately.
                     </p>
                     <p>
-                        This quantitative score, however, only identifies that a reasoning chain is flawed, not why. To diagnose failures, we introduce a second, qualitative stage: an automated error analysis system called <strong>LLM-AS-JUDGE</strong>. When a step is flagged as a mismatch, this system uses an expert-persona LLM to classify the failure into categories like <strong>Conceptual Error</strong>, <strong>Calculation Error</strong>, or <strong>Input Error</strong>. Critically, this analysis revealed that the vast majority (73.94%) of steps flagged as errors by the rigid F1-score were actually <strong>Alternative Correct</strong> solutions — valid reasoning paths that simply differed from the single ground-truth. This finding demonstrates that our two-stage evaluation is essential for fairly assessing model capabilities and avoiding penalizing valid, creative problem-solving.
+                        Chains falling below this threshold are escalated to <strong>Tier 2</strong>, where the same heterogeneous AI Tribunal assesses whether discrepancies represent valid alternative derivations, calculation errors, or conceptual errors. This yields a <strong>Recovered Reasoning F1</strong> score (F1<sub>rec</sub>), computed via Hungarian optimal step-alignment, that fairly credits alternative valid solution paths without penalizing sound but non-canonical reasoning.
                     </p>
                 </div>
             </div>
@@ -212,7 +220,7 @@
             <div class="column is-four-fifths">
                 <div class="content has-text-justified">
                     <p>
-                        Our primary finding from evaluating 11 frontier models is a <strong>stark and universal divergence</strong> between final-answer accuracy and the correctness of the reasoning process. While top models like <strong>GPT-4.1 Mini</strong> and <strong>GPT-5 Mini</strong> achieve a modest Final Answer Accuracy of ~63.1%, their procedural reasoning is critically low. The best-performing model in reasoning, <strong>Gemini 2.5 Flash</strong>, only achieved a <strong>Step F1-Score of 19.32%</strong>. This confirms a widespread "right for the wrong reasons" phenomenon, where models excel at generating fluent, semantically appropriate text (averaging ~0.87 BERTScore) that effectively masks the flawed underlying logic.
+                        Across <strong>27 LLMs</strong> spanning frontier, open-weights, and math-enhanced categories, frontier models lead overall: <strong>Gemini 3.1 Pro</strong> tops Final Answer Accuracy (65.41%) while <strong>DeepSeek R1</strong> leads Reasoning F1 (44.41%). Open-weights models lag substantially on both metrics despite competitive semantic scores. Math-enhanced 7B models underperform general-purpose counterparts of equivalent size, confirming that abstract mathematical pre-training does not transfer to physically constrained engineering reasoning.
                     </p>
                 </div>
             </div>
@@ -220,47 +228,74 @@
 
         <h3 class="title is-4 has-text-centered">Overall Model Performance</h3>
         <div class="has-text-centered" style="margin-bottom: 2rem;">
-            <img src="./static/images/engchain-results-table.png" 
-                 alt="Table showing zero-shot performance of 11 frontier models on the ENGCHAIN benchmark." 
+            <img src="./static/images/engchain-results-table.png"
+                 alt="Table showing zero-shot performance of 27 models on the EngTrace benchmark."
                  style="width: 80%; height: auto; border: 1px solid #dbdbdb;">
             <p class="is-size-7" style="margin-top: 8px;">
-              <i>Table 1: Overall Performance of Frontier Models on the ENGCHAIN benchmark (N=1350).</i>
+              <i>Table 1: Overall Performance of 27 Models on the EngTrace benchmark (N=1350).</i>
             </p>
         </div>
 
         <div class="columns is-vcentered" style="margin-top: 3rem;">
             <div class="column has-text-centered">
                 <h4 class="title is-5">Branch-Level Performance</h4>
-                <img src="./static/images/engchain-branch-performance.png" 
-                     alt="Bar chart showing model reasoning performance across Chemical, Electrical, and Mechanical Engineering." 
+                <img src="./static/images/engchain-branch-performance.png"
+                     alt="Bar chart showing model performance across Chemical, Electrical, and Mechanical Engineering."
                      style="max-width: 90%;">
                 <p class="is-size-7" style="margin-top: 8px;">
-                  <i>Figure 3: Branch-Level Performance. Chemical Engineering is consistently the most challenging domain.</i>
+                  <i>Figure 3: Chemical Engineering is hardest; Mechanical the most accessible — consistent across all model families.</i>
                 </p>
             </div>
 
             <div class="column has-text-centered">
                 <h4 class="title is-5">Domain-Level Performance</h4>
-                <img src="./static/images/engchain-domain-performance.png" 
-                    alt="Radar plot showing 'spiky' performance across 9 engineering domains." 
+                <img src="./static/images/engchain-domain-performance.png"
+                    alt="Radar plot showing spiky performance across 9 engineering domains."
                     style="max-width: 100%;">
                 <p class="is-size-7" style="margin-top: 8px;">
-                  <i>Figure 4: The 'spiky' profile shows specialized, not generalized, reasoning.</i>
+                  <i>Figure 4: The spiky profile reveals specialization rather than generalized engineering reasoning.</i>
                 </p>
             </div>
         </div>
 
-
         <div class="columns is-vcentered" style="margin-top: 3rem;">
             <div class="column has-text-centered">
                 <h4 class="title is-5">Performance Across Difficulty Levels</h4>
-                <img src="./static/images/engchain-difficulty-performance.png" 
-                     alt="Line chart showing model reasoning performance across Easy, Intermediate, and Advanced difficulty levels."
+                <img src="./static/images/engchain-difficulty-performance.png"
+                     alt="Bar chart showing model performance across Easy, Intermediate, and Advanced difficulty levels."
                      style="max-width: 60%;">
                 <p class="is-size-7" style="margin-top: 8px;">
-                  <i>Figure 5: Difficulty-Level Performance. Procedural reasoning remains critically low across all complexity levels.</i>
+                  <i>Figure 5: The "complexity cliff" — open-weights models collapse at Advanced tasks while frontier models remain stable.</i>
                 </p>
             </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3 has-text-centered">Error Analysis</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Beyond the automated evaluation, human domain experts applied a finer <strong>six-category error taxonomy</strong> to 2,200 annotated failure traces, stratified by difficulty tier, to diagnose root causes independently of the automated pipeline (inter-annotator agreement: Fleiss' κ = 0.524, Gwet's AC1 = 0.682).
+                    </p>
+                    <p>
+                        <strong>Gemini 3.1 Pro</strong> (FAC leader) fails overwhelmingly on arithmetic (79.5% Calculation Errors), consistently identifying the correct governing equation — suggesting arithmetic execution, not physical reasoning, is the primary frontier bottleneck. <strong>DeepSeek R1</strong> (F1 leader) shows a more distributed profile: Setup/Assumption errors rise to 21.5% (nearly double Gemini's rate), explaining the FAC-vs-F1 tension — step-level reasoning is sound but systematic problem-framing errors propagate to wrong final answers. <strong>Llama 3.1 70B</strong> tells a different story: Formula/Principle errors surge from 14.5% at Easy to 49.0% at Advanced, a 41.8 pp conceptual cliff, revealing genuine breakdown in domain knowledge rather than deteriorating arithmetic.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="has-text-centered" style="margin-top: 1.5rem;">
+            <img src="./static/images/error_distribution_main.png"
+                 alt="Error category distributions for Gemini 3.1 Pro, DeepSeek R1, and Llama 3.1 70B."
+                 style="width: 55%; height: auto;">
+            <p class="is-size-7" style="margin-top: 8px;">
+              <i>Figure 6: Error distributions for three representative models across the six-category taxonomy.</i>
+            </p>
         </div>
     </div>
 </section>
