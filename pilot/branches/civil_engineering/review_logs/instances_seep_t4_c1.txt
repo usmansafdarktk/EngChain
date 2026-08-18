@@ -1,0 +1,114 @@
+===== SEED 101 =====
+--- QUESTION ---
+A constant-head permeability test is run on a specimen of coarse sand. The cylindrical specimen has a diameter of 7.9 cm and a length of 11.9 cm, and the head difference across the specimen is held constant at 60 cm. Over a period of 230 seconds, 4613.9 cm^3 of water is collected at the outlet. Determine the coefficient of permeability of the sand in cm/s.
+--- GOLD SOLUTION ---
+**Given:**
+Specimen diameter (D): 7.9 cm
+Specimen length (L): 11.9 cm
+Constant head difference (h): 60 cm
+Collection time (t): 230 s
+Collected volume (V): 4613.9 cm^3
+
+**Step 1:** Compute the specimen cross-sectional area.
+A = pi * D^2 / 4 = pi * (7.9)^2 / 4 = 49.02 cm^2
+
+**Step 2:** Apply Darcy's law for the constant-head test.
+For steady flow, V = k * i * A * t with i = h / L, which gives
+k = V * L / (A * h * t)
+
+**Step 3:** Substitute and evaluate.
+k = (4613.9 * 11.9) / (49.02 * 60 * 230) = 8.116e-02 cm/s
+
+**Answer:** The coefficient of permeability is 8.116e-02 cm/s
+
+===== SEED 102 =====
+--- QUESTION ---
+A constant-head permeability test is run on a specimen of coarse sand. The cylindrical specimen has a diameter of 5.7 cm and a length of 16.2 cm, and the head difference across the specimen is held constant at 35 cm. Over a period of 230 seconds, 886.0 cm^3 of water is collected at the outlet. Determine the coefficient of permeability of the sand in cm/s.
+--- GOLD SOLUTION ---
+**Given:**
+Specimen diameter (D): 5.7 cm
+Specimen length (L): 16.2 cm
+Constant head difference (h): 35 cm
+Collection time (t): 230 s
+Collected volume (V): 886.0 cm^3
+
+**Step 1:** Compute the specimen cross-sectional area.
+A = pi * D^2 / 4 = pi * (5.7)^2 / 4 = 25.52 cm^2
+
+**Step 2:** Apply Darcy's law for the constant-head test.
+For steady flow, V = k * i * A * t with i = h / L, which gives
+k = V * L / (A * h * t)
+
+**Step 3:** Substitute and evaluate.
+k = (886.0 * 16.2) / (25.52 * 35 * 230) = 6.987e-02 cm/s
+
+**Answer:** The coefficient of permeability is 6.987e-02 cm/s
+
+===== SEED 103 =====
+--- QUESTION ---
+A constant-head permeability test is run on a specimen of coarse sand. The cylindrical specimen has a diameter of 9.9 cm and a length of 14.6 cm, and the head difference across the specimen is held constant at 53 cm. Over a period of 280 seconds, 4015.8 cm^3 of water is collected at the outlet. Determine the coefficient of permeability of the sand in cm/s.
+--- GOLD SOLUTION ---
+**Given:**
+Specimen diameter (D): 9.9 cm
+Specimen length (L): 14.6 cm
+Constant head difference (h): 53 cm
+Collection time (t): 280 s
+Collected volume (V): 4015.8 cm^3
+
+**Step 1:** Compute the specimen cross-sectional area.
+A = pi * D^2 / 4 = pi * (9.9)^2 / 4 = 76.98 cm^2
+
+**Step 2:** Apply Darcy's law for the constant-head test.
+For steady flow, V = k * i * A * t with i = h / L, which gives
+k = V * L / (A * h * t)
+
+**Step 3:** Substitute and evaluate.
+k = (4015.8 * 14.6) / (76.98 * 53 * 280) = 5.132e-02 cm/s
+
+**Answer:** The coefficient of permeability is 5.132e-02 cm/s
+
+===== SEED 104 =====
+--- QUESTION ---
+A constant-head permeability test is run on a specimen of coarse sand. The cylindrical specimen has a diameter of 9.8 cm and a length of 18.7 cm, and the head difference across the specimen is held constant at 53 cm. Over a period of 300 seconds, 2106.1 cm^3 of water is collected at the outlet. Determine the coefficient of permeability of the sand in cm/s.
+--- GOLD SOLUTION ---
+**Given:**
+Specimen diameter (D): 9.8 cm
+Specimen length (L): 18.7 cm
+Constant head difference (h): 53 cm
+Collection time (t): 300 s
+Collected volume (V): 2106.1 cm^3
+
+**Step 1:** Compute the specimen cross-sectional area.
+A = pi * D^2 / 4 = pi * (9.8)^2 / 4 = 75.43 cm^2
+
+**Step 2:** Apply Darcy's law for the constant-head test.
+For steady flow, V = k * i * A * t with i = h / L, which gives
+k = V * L / (A * h * t)
+
+**Step 3:** Substitute and evaluate.
+k = (2106.1 * 18.7) / (75.43 * 53 * 300) = 3.284e-02 cm/s
+
+**Answer:** The coefficient of permeability is 3.284e-02 cm/s
+
+===== SEED 105 =====
+--- QUESTION ---
+A constant-head permeability test is run on a specimen of coarse sand. The cylindrical specimen has a diameter of 9.4 cm and a length of 13.5 cm, and the head difference across the specimen is held constant at 55 cm. Over a period of 90 seconds, 2203.9 cm^3 of water is collected at the outlet. Determine the coefficient of permeability of the sand in cm/s.
+--- GOLD SOLUTION ---
+**Given:**
+Specimen diameter (D): 9.4 cm
+Specimen length (L): 13.5 cm
+Constant head difference (h): 55 cm
+Collection time (t): 90 s
+Collected volume (V): 2203.9 cm^3
+
+**Step 1:** Compute the specimen cross-sectional area.
+A = pi * D^2 / 4 = pi * (9.4)^2 / 4 = 69.40 cm^2
+
+**Step 2:** Apply Darcy's law for the constant-head test.
+For steady flow, V = k * i * A * t with i = h / L, which gives
+k = V * L / (A * h * t)
+
+**Step 3:** Substitute and evaluate.
+k = (2203.9 * 13.5) / (69.40 * 55 * 90) = 8.661e-02 cm/s
+
+**Answer:** The coefficient of permeability is 8.661e-02 cm/s

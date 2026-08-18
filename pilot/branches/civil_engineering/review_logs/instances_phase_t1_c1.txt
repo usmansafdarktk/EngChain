@@ -1,0 +1,119 @@
+===== SEED 101 =====
+--- QUESTION ---
+A moist sample of inorganic clay taken from a borrow area has a total (moist) unit weight of 17.19 kN/m^3 and a moisture content of 19.8%. The specific gravity of the soil solids is 2.78. Taking the unit weight of water as 9.81 kN/m^3, determine the degree of saturation of the sample in percent.
+--- GOLD SOLUTION ---
+**Given:**
+Moist unit weight (gamma): 17.19 kN/m^3
+Moisture content (w): 19.8% = 0.198
+Specific gravity of solids (Gs): 2.78
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Compute the dry unit weight.
+The dry unit weight removes the weight of water from the total:
+gamma_d = gamma / (1 + w) = 17.19 / (1 + 0.198) = 14.35 kN/m^3
+
+**Step 2:** Compute the void ratio.
+From gamma_d = Gs * gamma_w / (1 + e), solving for e:
+e = (Gs * gamma_w / gamma_d) - 1 = (2.78 * 9.81 / 14.35) - 1 = 0.901
+
+**Step 3:** Compute the degree of saturation.
+Using the relation S * e = w * Gs:
+S = w * Gs / e = (0.198 * 2.78) / 0.901 = 0.611 = 61.1%
+
+**Answer:** The degree of saturation is 61.1 %
+
+===== SEED 102 =====
+--- QUESTION ---
+A moist sample of sand taken from a borrow area has a total (moist) unit weight of 18.37 kN/m^3 and a moisture content of 14.7%. The specific gravity of the soil solids is 2.66. Taking the unit weight of water as 9.81 kN/m^3, determine the degree of saturation of the sample in percent.
+--- GOLD SOLUTION ---
+**Given:**
+Moist unit weight (gamma): 18.37 kN/m^3
+Moisture content (w): 14.7% = 0.147
+Specific gravity of solids (Gs): 2.66
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Compute the dry unit weight.
+The dry unit weight removes the weight of water from the total:
+gamma_d = gamma / (1 + w) = 18.37 / (1 + 0.147) = 16.02 kN/m^3
+
+**Step 2:** Compute the void ratio.
+From gamma_d = Gs * gamma_w / (1 + e), solving for e:
+e = (Gs * gamma_w / gamma_d) - 1 = (2.66 * 9.81 / 16.02) - 1 = 0.629
+
+**Step 3:** Compute the degree of saturation.
+Using the relation S * e = w * Gs:
+S = w * Gs / e = (0.147 * 2.66) / 0.629 = 0.621 = 62.1%
+
+**Answer:** The degree of saturation is 62.1 %
+
+===== SEED 103 =====
+--- QUESTION ---
+A moist sample of inorganic clay taken from a borrow area has a total (moist) unit weight of 18.16 kN/m^3 and a moisture content of 21.9%. The specific gravity of the soil solids is 2.75. Taking the unit weight of water as 9.81 kN/m^3, determine the degree of saturation of the sample in percent.
+--- GOLD SOLUTION ---
+**Given:**
+Moist unit weight (gamma): 18.16 kN/m^3
+Moisture content (w): 21.9% = 0.219
+Specific gravity of solids (Gs): 2.75
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Compute the dry unit weight.
+The dry unit weight removes the weight of water from the total:
+gamma_d = gamma / (1 + w) = 18.16 / (1 + 0.219) = 14.90 kN/m^3
+
+**Step 2:** Compute the void ratio.
+From gamma_d = Gs * gamma_w / (1 + e), solving for e:
+e = (Gs * gamma_w / gamma_d) - 1 = (2.75 * 9.81 / 14.90) - 1 = 0.811
+
+**Step 3:** Compute the degree of saturation.
+Using the relation S * e = w * Gs:
+S = w * Gs / e = (0.219 * 2.75) / 0.811 = 0.743 = 74.3%
+
+**Answer:** The degree of saturation is 74.3 %
+
+===== SEED 104 =====
+--- QUESTION ---
+A moist sample of sand taken from a borrow area has a total (moist) unit weight of 16.17 kN/m^3 and a moisture content of 12.4%. The specific gravity of the soil solids is 2.67. Taking the unit weight of water as 9.81 kN/m^3, determine the degree of saturation of the sample in percent.
+--- GOLD SOLUTION ---
+**Given:**
+Moist unit weight (gamma): 16.17 kN/m^3
+Moisture content (w): 12.4% = 0.124
+Specific gravity of solids (Gs): 2.67
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Compute the dry unit weight.
+The dry unit weight removes the weight of water from the total:
+gamma_d = gamma / (1 + w) = 16.17 / (1 + 0.124) = 14.39 kN/m^3
+
+**Step 2:** Compute the void ratio.
+From gamma_d = Gs * gamma_w / (1 + e), solving for e:
+e = (Gs * gamma_w / gamma_d) - 1 = (2.67 * 9.81 / 14.39) - 1 = 0.821
+
+**Step 3:** Compute the degree of saturation.
+Using the relation S * e = w * Gs:
+S = w * Gs / e = (0.124 * 2.67) / 0.821 = 0.403 = 40.3%
+
+**Answer:** The degree of saturation is 40.3 %
+
+===== SEED 105 =====
+--- QUESTION ---
+A moist sample of inorganic clay taken from a borrow area has a total (moist) unit weight of 18.48 kN/m^3 and a moisture content of 27.6%. The specific gravity of the soil solids is 2.73. Taking the unit weight of water as 9.81 kN/m^3, determine the degree of saturation of the sample in percent.
+--- GOLD SOLUTION ---
+**Given:**
+Moist unit weight (gamma): 18.48 kN/m^3
+Moisture content (w): 27.6% = 0.276
+Specific gravity of solids (Gs): 2.73
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Compute the dry unit weight.
+The dry unit weight removes the weight of water from the total:
+gamma_d = gamma / (1 + w) = 18.48 / (1 + 0.276) = 14.48 kN/m^3
+
+**Step 2:** Compute the void ratio.
+From gamma_d = Gs * gamma_w / (1 + e), solving for e:
+e = (Gs * gamma_w / gamma_d) - 1 = (2.73 * 9.81 / 14.48) - 1 = 0.849
+
+**Step 3:** Compute the degree of saturation.
+Using the relation S * e = w * Gs:
+S = w * Gs / e = (0.276 * 2.73) / 0.849 = 0.887 = 88.7%
+
+**Answer:** The degree of saturation is 88.7 %

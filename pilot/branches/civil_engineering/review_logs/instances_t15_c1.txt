@@ -1,0 +1,114 @@
+===== SEED 101 =====
+--- QUESTION ---
+A simply supported beam AB (pin at A, roller at B) has a span of L = 12.6 m. A two-axle vehicle crosses the beam: the front axle carries 64 kN and the rear axle carries 128 kN, with a fixed axle spacing of s = 3.9 m. Both axles remain on the span. Using the influence line for the vertical reaction at A, determine the maximum value of that reaction in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 12.6 m
+Axle loads: front 64 kN, rear 128 kN; spacing s = 3.9 m
+
+**Step 1:** Construct the influence line for the reaction at A.
+For a unit load at distance x from A, R_A = (L - x)/L: the ordinate is 1 at A (x = 0) and decreases linearly to 0 at B (x = L).
+
+**Step 2:** Position the axles for the maximum effect.
+Since the ordinates decrease away from A, the heavier axle (the rear axle, 128 kN) is placed directly over A, and the lighter axle (64 kN) then sits at x = s = 3.9 m.
+
+**Step 3:** Read the influence-line ordinates under each axle.
+Under the heavy axle: y = 1.0000 (at A)
+Under the light axle: y = (L - s)/L = (12.6 - 3.9) / 12.6 = 0.6905
+
+**Step 4:** Sum load times ordinate.
+R_A,max = 128 * 1.0000 + 64 * 0.6905 = 172.19 kN
+
+**Answer:** The maximum reaction at A is 172.19 kN
+
+===== SEED 102 =====
+--- QUESTION ---
+A simply supported beam AB (pin at A, roller at B) has a span of L = 9.2 m. A two-axle vehicle crosses the beam: the front axle carries 118 kN and the rear axle carries 85 kN, with a fixed axle spacing of s = 2.2 m. Both axles remain on the span. Using the influence line for the vertical reaction at A, determine the maximum value of that reaction in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 9.2 m
+Axle loads: front 118 kN, rear 85 kN; spacing s = 2.2 m
+
+**Step 1:** Construct the influence line for the reaction at A.
+For a unit load at distance x from A, R_A = (L - x)/L: the ordinate is 1 at A (x = 0) and decreases linearly to 0 at B (x = L).
+
+**Step 2:** Position the axles for the maximum effect.
+Since the ordinates decrease away from A, the heavier axle (the front axle, 118 kN) is placed directly over A, and the lighter axle (85 kN) then sits at x = s = 2.2 m.
+
+**Step 3:** Read the influence-line ordinates under each axle.
+Under the heavy axle: y = 1.0000 (at A)
+Under the light axle: y = (L - s)/L = (9.2 - 2.2) / 9.2 = 0.7609
+
+**Step 4:** Sum load times ordinate.
+R_A,max = 118 * 1.0000 + 85 * 0.7609 = 182.68 kN
+
+**Answer:** The maximum reaction at A is 182.68 kN
+
+===== SEED 103 =====
+--- QUESTION ---
+A simply supported beam AB (pin at A, roller at B) has a span of L = 15.8 m. A two-axle vehicle crosses the beam: the front axle carries 98 kN and the rear axle carries 151 kN, with a fixed axle spacing of s = 3.7 m. Both axles remain on the span. Using the influence line for the vertical reaction at A, determine the maximum value of that reaction in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 15.8 m
+Axle loads: front 98 kN, rear 151 kN; spacing s = 3.7 m
+
+**Step 1:** Construct the influence line for the reaction at A.
+For a unit load at distance x from A, R_A = (L - x)/L: the ordinate is 1 at A (x = 0) and decreases linearly to 0 at B (x = L).
+
+**Step 2:** Position the axles for the maximum effect.
+Since the ordinates decrease away from A, the heavier axle (the rear axle, 151 kN) is placed directly over A, and the lighter axle (98 kN) then sits at x = s = 3.7 m.
+
+**Step 3:** Read the influence-line ordinates under each axle.
+Under the heavy axle: y = 1.0000 (at A)
+Under the light axle: y = (L - s)/L = (15.8 - 3.7) / 15.8 = 0.7658
+
+**Step 4:** Sum load times ordinate.
+R_A,max = 151 * 1.0000 + 98 * 0.7658 = 226.05 kN
+
+**Answer:** The maximum reaction at A is 226.05 kN
+
+===== SEED 104 =====
+--- QUESTION ---
+A simply supported beam AB (pin at A, roller at B) has a span of L = 15.7 m. A two-axle vehicle crosses the beam: the front axle carries 151 kN and the rear axle carries 65 kN, with a fixed axle spacing of s = 3.8 m. Both axles remain on the span. Using the influence line for the vertical reaction at A, determine the maximum value of that reaction in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 15.7 m
+Axle loads: front 151 kN, rear 65 kN; spacing s = 3.8 m
+
+**Step 1:** Construct the influence line for the reaction at A.
+For a unit load at distance x from A, R_A = (L - x)/L: the ordinate is 1 at A (x = 0) and decreases linearly to 0 at B (x = L).
+
+**Step 2:** Position the axles for the maximum effect.
+Since the ordinates decrease away from A, the heavier axle (the front axle, 151 kN) is placed directly over A, and the lighter axle (65 kN) then sits at x = s = 3.8 m.
+
+**Step 3:** Read the influence-line ordinates under each axle.
+Under the heavy axle: y = 1.0000 (at A)
+Under the light axle: y = (L - s)/L = (15.7 - 3.8) / 15.7 = 0.7580
+
+**Step 4:** Sum load times ordinate.
+R_A,max = 151 * 1.0000 + 65 * 0.7580 = 200.27 kN
+
+**Answer:** The maximum reaction at A is 200.27 kN
+
+===== SEED 105 =====
+--- QUESTION ---
+A simply supported beam AB (pin at A, roller at B) has a span of L = 15.0 m. A two-axle vehicle crosses the beam: the front axle carries 84 kN and the rear axle carries 133 kN, with a fixed axle spacing of s = 4.0 m. Both axles remain on the span. Using the influence line for the vertical reaction at A, determine the maximum value of that reaction in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 15.0 m
+Axle loads: front 84 kN, rear 133 kN; spacing s = 4.0 m
+
+**Step 1:** Construct the influence line for the reaction at A.
+For a unit load at distance x from A, R_A = (L - x)/L: the ordinate is 1 at A (x = 0) and decreases linearly to 0 at B (x = L).
+
+**Step 2:** Position the axles for the maximum effect.
+Since the ordinates decrease away from A, the heavier axle (the rear axle, 133 kN) is placed directly over A, and the lighter axle (84 kN) then sits at x = s = 4.0 m.
+
+**Step 3:** Read the influence-line ordinates under each axle.
+Under the heavy axle: y = 1.0000 (at A)
+Under the light axle: y = (L - s)/L = (15.0 - 4.0) / 15.0 = 0.7333
+
+**Step 4:** Sum load times ordinate.
+R_A,max = 133 * 1.0000 + 84 * 0.7333 = 194.60 kN
+
+**Answer:** The maximum reaction at A is 194.60 kN

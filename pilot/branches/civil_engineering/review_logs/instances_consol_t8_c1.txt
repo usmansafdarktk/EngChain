@@ -1,0 +1,109 @@
+===== SEED 101 =====
+--- QUESTION ---
+A 4.3 m thick saturated clay layer is bounded by sand layers above and below the clay (double drainage). The layer will consolidate under a wide surcharge, and its coefficient of consolidation is 7.5 m^2/yr. Determine the time required, in years, for the layer to reach an average degree of consolidation of 90%.
+--- GOLD SOLUTION ---
+**Given:**
+Clay layer thickness (Hc): 4.3 m
+Drainage condition: double drainage
+Coefficient of consolidation (cv): 7.5 m^2/yr
+Target average degree of consolidation (U): 90%
+
+**Step 1:** Determine the drainage path.
+With permeable sand above and below, the clay drains from both faces, so the maximum drainage path is half the layer thickness:
+H_dr = Hc / 2 = 4.3 / 2 = 2.15 m
+
+**Step 2:** Compute the time factor for U = 90%.
+Since U > 60%, Tv = 1.781 - 0.933 * log10(100 - U) = 1.781 - 0.933 * log10(10) = 0.8480
+
+**Step 3:** Solve the time-factor equation for the required time.
+t = Tv * H_dr^2 / cv = 0.8480 * (2.15)^2 / 7.5 = 0.52 years
+
+**Answer:** The required consolidation time is 0.52 years
+
+===== SEED 102 =====
+--- QUESTION ---
+A 2.6 m thick saturated clay layer is bounded by a sand layer above the clay and impervious rock below it (single drainage). The layer will consolidate under a wide surcharge, and its coefficient of consolidation is 4.9 m^2/yr. Determine the time required, in years, for the layer to reach an average degree of consolidation of 65%.
+--- GOLD SOLUTION ---
+**Given:**
+Clay layer thickness (Hc): 2.6 m
+Drainage condition: single drainage
+Coefficient of consolidation (cv): 4.9 m^2/yr
+Target average degree of consolidation (U): 65%
+
+**Step 1:** Determine the drainage path.
+With impervious rock below, the clay drains through its top face only, so the maximum drainage path is the full layer thickness:
+H_dr = Hc = 2.6 m, i.e. H_dr = 2.60 m
+
+**Step 2:** Compute the time factor for U = 65%.
+Since U > 60%, Tv = 1.781 - 0.933 * log10(100 - U) = 1.781 - 0.933 * log10(35) = 0.3404
+
+**Step 3:** Solve the time-factor equation for the required time.
+t = Tv * H_dr^2 / cv = 0.3404 * (2.60)^2 / 4.9 = 0.47 years
+
+**Answer:** The required consolidation time is 0.47 years
+
+===== SEED 103 =====
+--- QUESTION ---
+A 5.9 m thick saturated clay layer is bounded by a sand layer above the clay and impervious rock below it (single drainage). The layer will consolidate under a wide surcharge, and its coefficient of consolidation is 5.8 m^2/yr. Determine the time required, in years, for the layer to reach an average degree of consolidation of 65%.
+--- GOLD SOLUTION ---
+**Given:**
+Clay layer thickness (Hc): 5.9 m
+Drainage condition: single drainage
+Coefficient of consolidation (cv): 5.8 m^2/yr
+Target average degree of consolidation (U): 65%
+
+**Step 1:** Determine the drainage path.
+With impervious rock below, the clay drains through its top face only, so the maximum drainage path is the full layer thickness:
+H_dr = Hc = 5.9 m, i.e. H_dr = 5.90 m
+
+**Step 2:** Compute the time factor for U = 65%.
+Since U > 60%, Tv = 1.781 - 0.933 * log10(100 - U) = 1.781 - 0.933 * log10(35) = 0.3404
+
+**Step 3:** Solve the time-factor equation for the required time.
+t = Tv * H_dr^2 / cv = 0.3404 * (5.90)^2 / 5.8 = 2.04 years
+
+**Answer:** The required consolidation time is 2.04 years
+
+===== SEED 104 =====
+--- QUESTION ---
+A 5.8 m thick saturated clay layer is bounded by sand layers above and below the clay (double drainage). The layer will consolidate under a wide surcharge, and its coefficient of consolidation is 3.7 m^2/yr. Determine the time required, in years, for the layer to reach an average degree of consolidation of 65%.
+--- GOLD SOLUTION ---
+**Given:**
+Clay layer thickness (Hc): 5.8 m
+Drainage condition: double drainage
+Coefficient of consolidation (cv): 3.7 m^2/yr
+Target average degree of consolidation (U): 65%
+
+**Step 1:** Determine the drainage path.
+With permeable sand above and below, the clay drains from both faces, so the maximum drainage path is half the layer thickness:
+H_dr = Hc / 2 = 5.8 / 2 = 2.90 m
+
+**Step 2:** Compute the time factor for U = 65%.
+Since U > 60%, Tv = 1.781 - 0.933 * log10(100 - U) = 1.781 - 0.933 * log10(35) = 0.3404
+
+**Step 3:** Solve the time-factor equation for the required time.
+t = Tv * H_dr^2 / cv = 0.3404 * (2.90)^2 / 3.7 = 0.77 years
+
+**Answer:** The required consolidation time is 0.77 years
+
+===== SEED 105 =====
+--- QUESTION ---
+A 5.5 m thick saturated clay layer is bounded by a sand layer above the clay and impervious rock below it (single drainage). The layer will consolidate under a wide surcharge, and its coefficient of consolidation is 6.6 m^2/yr. Determine the time required, in years, for the layer to reach an average degree of consolidation of 90%.
+--- GOLD SOLUTION ---
+**Given:**
+Clay layer thickness (Hc): 5.5 m
+Drainage condition: single drainage
+Coefficient of consolidation (cv): 6.6 m^2/yr
+Target average degree of consolidation (U): 90%
+
+**Step 1:** Determine the drainage path.
+With impervious rock below, the clay drains through its top face only, so the maximum drainage path is the full layer thickness:
+H_dr = Hc = 5.5 m, i.e. H_dr = 5.50 m
+
+**Step 2:** Compute the time factor for U = 90%.
+Since U > 60%, Tv = 1.781 - 0.933 * log10(100 - U) = 1.781 - 0.933 * log10(10) = 0.8480
+
+**Step 3:** Solve the time-factor equation for the required time.
+t = Tv * H_dr^2 / cv = 0.8480 * (5.50)^2 / 6.6 = 3.89 years
+
+**Answer:** The required consolidation time is 3.89 years

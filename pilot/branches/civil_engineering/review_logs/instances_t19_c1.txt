@@ -1,0 +1,134 @@
+===== SEED 101 =====
+--- QUESTION ---
+A continuous beam ABC of constant EI rests on a pin support at A, a roller at B, and a roller at C. The two spans are equal: AB = BC = L = 4.7 m, so B is at the center. The beam carries a uniformly distributed load of 25 kN/m over both spans. Using the force method with the reaction at B as the redundant, determine the vertical reaction at support B in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Equal spans: L = 4.7 m (total length 2L = 9.4 m); constant EI
+Load: a uniformly distributed load of 25 kN/m over both spans
+
+**Step 1:** Establish the degree of indeterminacy and release the redundant.
+Three vertical reactions with two equilibrium equations (vertical force and moment) make the beam indeterminate to the first degree. Choose By as the redundant and remove support B; the released structure is a simply supported beam of span 2L.
+
+**Step 2:** Deflection of the released beam at B under the real load.
+The released structure is a simply supported beam of span 2L = 9.4 m under w = 25 kN/m; its midspan deflection is
+delta_B0 = 5*w*(2L)^4 / (384*EI) = 5 * 25 * (9.4)^4 / 384 / EI = 2541.5/EI  (downward)
+
+**Step 3:** Flexibility coefficient — deflection at B due to a unit upward load at B on the released beam.
+delta_BB = (2L)^3 / (48*EI) = (9.4)^3 / 48 / EI = 17.304/EI  (per kN)
+
+**Step 4:** Apply compatibility at B: the net deflection at the support must be zero.
+delta_B0 - By * delta_BB = 0
+By = delta_B0 / delta_BB = 2541.5 / 17.304 = 146.87 kN  (EI cancels)
+
+**Step 5:** Check equilibrium for the end reactions.
+Ay = Cy = (total load - By)/2 = (235.0 - 146.87) / 2 = 44.06 kN, both positive, confirming a consistent solution.
+
+**Answer:** The vertical reaction at support B is 146.87 kN
+
+===== SEED 102 =====
+--- QUESTION ---
+A continuous beam ABC of constant EI rests on a pin support at A, a roller at B, and a roller at C. The two spans are equal: AB = BC = L = 3.4 m, so B is at the center. The beam carries a concentrated load of 30 kN at the middle of each span. Using the force method with the reaction at B as the redundant, determine the vertical reaction at support B in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Equal spans: L = 3.4 m (total length 2L = 6.8 m); constant EI
+Load: a concentrated load of 30 kN at the middle of each span
+
+**Step 1:** Establish the degree of indeterminacy and release the redundant.
+Three vertical reactions with two equilibrium equations (vertical force and moment) make the beam indeterminate to the first degree. Choose By as the redundant and remove support B; the released structure is a simply supported beam of span 2L.
+
+**Step 2:** Deflection of the released beam at B under the real loads.
+The released structure is a simply supported beam of span 2L = 6.8 m carrying 30 kN at x = L/2 = 1.70 m and at x = 3L/2 = 5.10 m. Using the standard off-center-load formula delta_c = P*b*(3*(2L)^2 - 4*b^2)/(48*EI) with b = L/2 for each load and superposing the two equal contributions:
+delta_B0 = 2 * 30 * 1.70 * (3 * (6.8)^2 - 4 * (1.70)^2) / 48 / EI = 270.2/EI  (downward)
+
+**Step 3:** Flexibility coefficient — deflection at B due to a unit upward load at B on the released beam.
+delta_BB = (2L)^3 / (48*EI) = (6.8)^3 / 48 / EI = 6.551/EI  (per kN)
+
+**Step 4:** Apply compatibility at B: the net deflection at the support must be zero.
+delta_B0 - By * delta_BB = 0
+By = delta_B0 / delta_BB = 270.2 / 6.551 = 41.25 kN  (EI cancels)
+
+**Step 5:** Check equilibrium for the end reactions.
+Ay = Cy = (total load - By)/2 = (60.0 - 41.25) / 2 = 9.38 kN, both positive, confirming a consistent solution.
+
+**Answer:** The vertical reaction at support B is 41.25 kN
+
+===== SEED 103 =====
+--- QUESTION ---
+A continuous beam ABC of constant EI rests on a pin support at A, a roller at B, and a roller at C. The two spans are equal: AB = BC = L = 5.9 m, so B is at the center. The beam carries a concentrated load of 79 kN at the middle of each span. Using the force method with the reaction at B as the redundant, determine the vertical reaction at support B in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Equal spans: L = 5.9 m (total length 2L = 11.8 m); constant EI
+Load: a concentrated load of 79 kN at the middle of each span
+
+**Step 1:** Establish the degree of indeterminacy and release the redundant.
+Three vertical reactions with two equilibrium equations (vertical force and moment) make the beam indeterminate to the first degree. Choose By as the redundant and remove support B; the released structure is a simply supported beam of span 2L.
+
+**Step 2:** Deflection of the released beam at B under the real loads.
+The released structure is a simply supported beam of span 2L = 11.8 m carrying 79 kN at x = L/2 = 2.95 m and at x = 3L/2 = 8.85 m. Using the standard off-center-load formula delta_c = P*b*(3*(2L)^2 - 4*b^2)/(48*EI) with b = L/2 for each load and superposing the two equal contributions:
+delta_B0 = 2 * 79 * 2.95 * (3 * (11.8)^2 - 4 * (2.95)^2) / 48 / EI = 3718.2/EI  (downward)
+
+**Step 3:** Flexibility coefficient — deflection at B due to a unit upward load at B on the released beam.
+delta_BB = (2L)^3 / (48*EI) = (11.8)^3 / 48 / EI = 34.230/EI  (per kN)
+
+**Step 4:** Apply compatibility at B: the net deflection at the support must be zero.
+delta_B0 - By * delta_BB = 0
+By = delta_B0 / delta_BB = 3718.2 / 34.230 = 108.62 kN  (EI cancels)
+
+**Step 5:** Check equilibrium for the end reactions.
+Ay = Cy = (total load - By)/2 = (158.0 - 108.62) / 2 = 24.69 kN, both positive, confirming a consistent solution.
+
+**Answer:** The vertical reaction at support B is 108.62 kN
+
+===== SEED 104 =====
+--- QUESTION ---
+A continuous beam ABC of constant EI rests on a pin support at A, a roller at B, and a roller at C. The two spans are equal: AB = BC = L = 5.9 m, so B is at the center. The beam carries a uniformly distributed load of 15 kN/m over both spans. Using the force method with the reaction at B as the redundant, determine the vertical reaction at support B in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Equal spans: L = 5.9 m (total length 2L = 11.8 m); constant EI
+Load: a uniformly distributed load of 15 kN/m over both spans
+
+**Step 1:** Establish the degree of indeterminacy and release the redundant.
+Three vertical reactions with two equilibrium equations (vertical force and moment) make the beam indeterminate to the first degree. Choose By as the redundant and remove support B; the released structure is a simply supported beam of span 2L.
+
+**Step 2:** Deflection of the released beam at B under the real load.
+The released structure is a simply supported beam of span 2L = 11.8 m under w = 15 kN/m; its midspan deflection is
+delta_B0 = 5*w*(2L)^4 / (384*EI) = 5 * 15 * (11.8)^4 / 384 / EI = 3786.7/EI  (downward)
+
+**Step 3:** Flexibility coefficient — deflection at B due to a unit upward load at B on the released beam.
+delta_BB = (2L)^3 / (48*EI) = (11.8)^3 / 48 / EI = 34.230/EI  (per kN)
+
+**Step 4:** Apply compatibility at B: the net deflection at the support must be zero.
+delta_B0 - By * delta_BB = 0
+By = delta_B0 / delta_BB = 3786.7 / 34.230 = 110.63 kN  (EI cancels)
+
+**Step 5:** Check equilibrium for the end reactions.
+Ay = Cy = (total load - By)/2 = (177.0 - 110.63) / 2 = 33.19 kN, both positive, confirming a consistent solution.
+
+**Answer:** The vertical reaction at support B is 110.63 kN
+
+===== SEED 105 =====
+--- QUESTION ---
+A continuous beam ABC of constant EI rests on a pin support at A, a roller at B, and a roller at C. The two spans are equal: AB = BC = L = 5.6 m, so B is at the center. The beam carries a concentrated load of 57 kN at the middle of each span. Using the force method with the reaction at B as the redundant, determine the vertical reaction at support B in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Equal spans: L = 5.6 m (total length 2L = 11.2 m); constant EI
+Load: a concentrated load of 57 kN at the middle of each span
+
+**Step 1:** Establish the degree of indeterminacy and release the redundant.
+Three vertical reactions with two equilibrium equations (vertical force and moment) make the beam indeterminate to the first degree. Choose By as the redundant and remove support B; the released structure is a simply supported beam of span 2L.
+
+**Step 2:** Deflection of the released beam at B under the real loads.
+The released structure is a simply supported beam of span 2L = 11.2 m carrying 57 kN at x = L/2 = 2.80 m and at x = 3L/2 = 8.40 m. Using the standard off-center-load formula delta_c = P*b*(3*(2L)^2 - 4*b^2)/(48*EI) with b = L/2 for each load and superposing the two equal contributions:
+delta_B0 = 2 * 57 * 2.80 * (3 * (11.2)^2 - 4 * (2.80)^2) / 48 / EI = 2294.0/EI  (downward)
+
+**Step 3:** Flexibility coefficient — deflection at B due to a unit upward load at B on the released beam.
+delta_BB = (2L)^3 / (48*EI) = (11.2)^3 / 48 / EI = 29.269/EI  (per kN)
+
+**Step 4:** Apply compatibility at B: the net deflection at the support must be zero.
+delta_B0 - By * delta_BB = 0
+By = delta_B0 / delta_BB = 2294.0 / 29.269 = 78.38 kN  (EI cancels)
+
+**Step 5:** Check equilibrium for the end reactions.
+Ay = Cy = (total load - By)/2 = (114.0 - 78.38) / 2 = 17.81 kN, both positive, confirming a consistent solution.
+
+**Answer:** The vertical reaction at support B is 78.38 kN

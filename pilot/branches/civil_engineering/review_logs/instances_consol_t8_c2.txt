@@ -1,0 +1,154 @@
+===== SEED 101 =====
+--- QUESTION ---
+A 4.3 m thick saturated clay layer in the field is bounded by sand layers above and below the clay (double drainage). In the laboratory, a 25 mm thick specimen of the same clay, drained on both faces, reaches 50% average consolidation in 38 minutes. Using the time-factor relations Tv = (pi/4)(U/100)^2 for U <= 60% and Tv = 1.781 - 0.933*log10(100 - U) for U > 60%, determine the time in years required for the field layer to reach an average degree of consolidation of 90%. (Use 525,600 minutes per year.)
+--- GOLD SOLUTION ---
+**Given:**
+Field clay thickness (Hc): 4.3 m, double drainage
+Lab specimen: 25 mm thick, drained on both faces, t50 = 38 min
+Target field degree of consolidation (U): 90%
+
+**Step 1:** Determine the laboratory drainage path and its time factor.
+The doubly drained 25 mm specimen has H_dr,lab = 25 / 2 = 12.5 mm. At 50% consolidation (U <= 60%):
+T50 = (pi/4) * (0.50)^2 = 0.1963
+
+**Step 2:** Determine the field drainage path.
+With permeable sand above and below, the clay drains from both faces:
+H_dr,field = Hc / 2 = 4.3 / 2 = 2.15 m
+
+**Step 3:** Compute the field time factor for U = 90%.
+Since U > 60%, Tv = 1.781 - 0.933 * log10(100 - U) = 1.781 - 0.933 * log10(10) = 0.8480
+
+**Step 4:** Form the drainage-path ratio between field and lab.
+H_dr,field / H_dr,lab = 2.15 m / 12.5 mm = 2150 / 12.5 = 172.0
+
+**Step 5:** Apply similitude of the time factor (Tv = cv*t/H_dr^2, same cv in lab and field).
+t_field = t50 * (Tv / T50) * (H_dr,field / H_dr,lab)^2 = 38 * (0.8480 / 0.1963) * (172.0)^2 = 4856418 min
+
+**Step 6:** Convert to years.
+t_field = 4856418 / 525600 = 9.24 years
+
+**Answer:** The required field consolidation time is 9.24 years
+
+===== SEED 102 =====
+--- QUESTION ---
+A 2.6 m thick saturated clay layer in the field is bounded by a sand layer above the clay and impervious rock below it (single drainage). In the laboratory, a 25 mm thick specimen of the same clay, drained on both faces, reaches 50% average consolidation in 26 minutes. Using the time-factor relations Tv = (pi/4)(U/100)^2 for U <= 60% and Tv = 1.781 - 0.933*log10(100 - U) for U > 60%, determine the time in years required for the field layer to reach an average degree of consolidation of 50%. (Use 525,600 minutes per year.)
+--- GOLD SOLUTION ---
+**Given:**
+Field clay thickness (Hc): 2.6 m, single drainage
+Lab specimen: 25 mm thick, drained on both faces, t50 = 26 min
+Target field degree of consolidation (U): 50%
+
+**Step 1:** Determine the laboratory drainage path and its time factor.
+The doubly drained 25 mm specimen has H_dr,lab = 25 / 2 = 12.5 mm. At 50% consolidation (U <= 60%):
+T50 = (pi/4) * (0.50)^2 = 0.1963
+
+**Step 2:** Determine the field drainage path.
+With impervious rock below, the clay drains through its top face only:
+H_dr,field = Hc = 2.6 m, i.e. H_dr,field = 2.60 m
+
+**Step 3:** Compute the field time factor for U = 50%.
+Since U <= 60%, Tv = (pi/4) * (U/100)^2 = (pi/4) * (0.50)^2 = 0.1963
+
+**Step 4:** Form the drainage-path ratio between field and lab.
+H_dr,field / H_dr,lab = 2.60 m / 12.5 mm = 2600 / 12.5 = 208.0
+
+**Step 5:** Apply similitude of the time factor (Tv = cv*t/H_dr^2, same cv in lab and field).
+t_field = t50 * (Tv / T50) * (H_dr,field / H_dr,lab)^2 = 26 * (0.1963 / 0.1963) * (208.0)^2 = 1124864 min
+
+**Step 6:** Convert to years.
+t_field = 1124864 / 525600 = 2.14 years
+
+**Answer:** The required field consolidation time is 2.14 years
+
+===== SEED 103 =====
+--- QUESTION ---
+A 5.9 m thick saturated clay layer in the field is bounded by a sand layer above the clay and impervious rock below it (single drainage). In the laboratory, a 25 mm thick specimen of the same clay, drained on both faces, reaches 50% average consolidation in 30 minutes. Using the time-factor relations Tv = (pi/4)(U/100)^2 for U <= 60% and Tv = 1.781 - 0.933*log10(100 - U) for U > 60%, determine the time in years required for the field layer to reach an average degree of consolidation of 50%. (Use 525,600 minutes per year.)
+--- GOLD SOLUTION ---
+**Given:**
+Field clay thickness (Hc): 5.9 m, single drainage
+Lab specimen: 25 mm thick, drained on both faces, t50 = 30 min
+Target field degree of consolidation (U): 50%
+
+**Step 1:** Determine the laboratory drainage path and its time factor.
+The doubly drained 25 mm specimen has H_dr,lab = 25 / 2 = 12.5 mm. At 50% consolidation (U <= 60%):
+T50 = (pi/4) * (0.50)^2 = 0.1963
+
+**Step 2:** Determine the field drainage path.
+With impervious rock below, the clay drains through its top face only:
+H_dr,field = Hc = 5.9 m, i.e. H_dr,field = 5.90 m
+
+**Step 3:** Compute the field time factor for U = 50%.
+Since U <= 60%, Tv = (pi/4) * (U/100)^2 = (pi/4) * (0.50)^2 = 0.1963
+
+**Step 4:** Form the drainage-path ratio between field and lab.
+H_dr,field / H_dr,lab = 5.90 m / 12.5 mm = 5900 / 12.5 = 472.0
+
+**Step 5:** Apply similitude of the time factor (Tv = cv*t/H_dr^2, same cv in lab and field).
+t_field = t50 * (Tv / T50) * (H_dr,field / H_dr,lab)^2 = 30 * (0.1963 / 0.1963) * (472.0)^2 = 6683520 min
+
+**Step 6:** Convert to years.
+t_field = 6683520 / 525600 = 12.72 years
+
+**Answer:** The required field consolidation time is 12.72 years
+
+===== SEED 104 =====
+--- QUESTION ---
+A 5.8 m thick saturated clay layer in the field is bounded by sand layers above and below the clay (double drainage). In the laboratory, a 25 mm thick specimen of the same clay, drained on both faces, reaches 50% average consolidation in 21 minutes. Using the time-factor relations Tv = (pi/4)(U/100)^2 for U <= 60% and Tv = 1.781 - 0.933*log10(100 - U) for U > 60%, determine the time in years required for the field layer to reach an average degree of consolidation of 50%. (Use 525,600 minutes per year.)
+--- GOLD SOLUTION ---
+**Given:**
+Field clay thickness (Hc): 5.8 m, double drainage
+Lab specimen: 25 mm thick, drained on both faces, t50 = 21 min
+Target field degree of consolidation (U): 50%
+
+**Step 1:** Determine the laboratory drainage path and its time factor.
+The doubly drained 25 mm specimen has H_dr,lab = 25 / 2 = 12.5 mm. At 50% consolidation (U <= 60%):
+T50 = (pi/4) * (0.50)^2 = 0.1963
+
+**Step 2:** Determine the field drainage path.
+With permeable sand above and below, the clay drains from both faces:
+H_dr,field = Hc / 2 = 5.8 / 2 = 2.90 m
+
+**Step 3:** Compute the field time factor for U = 50%.
+Since U <= 60%, Tv = (pi/4) * (U/100)^2 = (pi/4) * (0.50)^2 = 0.1963
+
+**Step 4:** Form the drainage-path ratio between field and lab.
+H_dr,field / H_dr,lab = 2.90 m / 12.5 mm = 2900 / 12.5 = 232.0
+
+**Step 5:** Apply similitude of the time factor (Tv = cv*t/H_dr^2, same cv in lab and field).
+t_field = t50 * (Tv / T50) * (H_dr,field / H_dr,lab)^2 = 21 * (0.1963 / 0.1963) * (232.0)^2 = 1130304 min
+
+**Step 6:** Convert to years.
+t_field = 1130304 / 525600 = 2.15 years
+
+**Answer:** The required field consolidation time is 2.15 years
+
+===== SEED 105 =====
+--- QUESTION ---
+A 5.5 m thick saturated clay layer in the field is bounded by a sand layer above the clay and impervious rock below it (single drainage). In the laboratory, a 25 mm thick specimen of the same clay, drained on both faces, reaches 50% average consolidation in 12 minutes. Using the time-factor relations Tv = (pi/4)(U/100)^2 for U <= 60% and Tv = 1.781 - 0.933*log10(100 - U) for U > 60%, determine the time in years required for the field layer to reach an average degree of consolidation of 90%. (Use 525,600 minutes per year.)
+--- GOLD SOLUTION ---
+**Given:**
+Field clay thickness (Hc): 5.5 m, single drainage
+Lab specimen: 25 mm thick, drained on both faces, t50 = 12 min
+Target field degree of consolidation (U): 90%
+
+**Step 1:** Determine the laboratory drainage path and its time factor.
+The doubly drained 25 mm specimen has H_dr,lab = 25 / 2 = 12.5 mm. At 50% consolidation (U <= 60%):
+T50 = (pi/4) * (0.50)^2 = 0.1963
+
+**Step 2:** Determine the field drainage path.
+With impervious rock below, the clay drains through its top face only:
+H_dr,field = Hc = 5.5 m, i.e. H_dr,field = 5.50 m
+
+**Step 3:** Compute the field time factor for U = 90%.
+Since U > 60%, Tv = 1.781 - 0.933 * log10(100 - U) = 1.781 - 0.933 * log10(10) = 0.8480
+
+**Step 4:** Form the drainage-path ratio between field and lab.
+H_dr,field / H_dr,lab = 5.50 m / 12.5 mm = 5500 / 12.5 = 440.0
+
+**Step 5:** Apply similitude of the time factor (Tv = cv*t/H_dr^2, same cv in lab and field).
+t_field = t50 * (Tv / T50) * (H_dr,field / H_dr,lab)^2 = 12 * (0.8480 / 0.1963) * (440.0)^2 = 10036035 min
+
+**Step 6:** Convert to years.
+t_field = 10036035 / 525600 = 19.09 years
+
+**Answer:** The required field consolidation time is 19.09 years

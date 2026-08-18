@@ -1,0 +1,146 @@
+{
+  "file": "pilot\\templates\\branches\\civil_engineering\\water_resources\\hydrology.py",
+  "seeds": 300,
+  "results": [
+    {
+      "function": "template_linear_reservoir_routing_step",
+      "seeds_run": 300,
+      "passed": true,
+      "checks": {
+        "H1_execution": {
+          "passed": true,
+          "detail": []
+        },
+        "H2_determinism": {
+          "passed": true,
+          "detail": []
+        },
+        "H3_format": {
+          "passed": true,
+          "detail": []
+        },
+        "H4_parser_roundtrip": {
+          "passed": true,
+          "detail": []
+        },
+        "H5_numeric_hygiene": {
+          "passed": true,
+          "detail": []
+        },
+        "H6_diversity": {
+          "passed": true,
+          "detail": []
+        },
+        "H7_bounds": {
+          "passed": true,
+          "detail": []
+        }
+      }
+    },
+    {
+      "function": "template_rational_method_peak_flow",
+      "seeds_run": 296,
+      "passed": false,
+      "checks": {
+        "H1_execution": {
+          "passed": false,
+          "detail": [
+            "seed 26: bounds assertion fired: peak flow out of bounds: 0.08",
+            "seed 104: bounds assertion fired: peak flow out of bounds: 0.08",
+            "seed 137: bounds assertion fired: peak flow out of bounds: 0.08",
+            "seed 165: bounds assertion fired: peak flow out of bounds: 0.05"
+          ]
+        },
+        "H2_determinism": {
+          "passed": true,
+          "detail": []
+        },
+        "H3_format": {
+          "passed": false,
+          "detail": [
+            "seed 1: only 2 '**Step X:**' markers (< 3)",
+            "seed 2: only 2 '**Step X:**' markers (< 3)",
+            "seed 3: only 2 '**Step X:**' markers (< 3)",
+            "seed 7: only 2 '**Step X:**' markers (< 3)",
+            "seed 14: only 2 '**Step X:**' markers (< 3)",
+            "seed 15: only 2 '**Step X:**' markers (< 3)",
+            "seed 18: only 2 '**Step X:**' markers (< 3)",
+            "seed 19: only 2 '**Step X:**' markers (< 3)",
+            "seed 22: only 2 '**Step X:**' markers (< 3)",
+            "seed 23: only 2 '**Step X:**' markers (< 3)"
+          ]
+        },
+        "H4_parser_roundtrip": {
+          "passed": false,
+          "detail": [
+            "seed 1: parser extracted 2 steps (< 3)",
+            "seed 2: parser extracted 2 steps (< 3)",
+            "seed 3: parser extracted 2 steps (< 3)",
+            "seed 7: parser extracted 2 steps (< 3)",
+            "seed 14: parser extracted 2 steps (< 3)",
+            "seed 15: parser extracted 2 steps (< 3)",
+            "seed 18: parser extracted 2 steps (< 3)",
+            "seed 19: parser extracted 2 steps (< 3)",
+            "seed 22: parser extracted 2 steps (< 3)",
+            "seed 23: parser extracted 2 steps (< 3)"
+          ]
+        },
+        "H5_numeric_hygiene": {
+          "passed": true,
+          "detail": []
+        },
+        "H6_diversity": {
+          "passed": true,
+          "detail": []
+        },
+        "H7_bounds": {
+          "passed": true,
+          "detail": []
+        }
+      }
+    },
+    {
+      "function": "template_scs_curve_number_runoff",
+      "seeds_run": 294,
+      "passed": false,
+      "checks": {
+        "H1_execution": {
+          "passed": false,
+          "detail": [
+            "seed 55: bounds assertion fired: runoff depth out of bounds: 5.69",
+            "seed 178: bounds assertion fired: runoff depth out of bounds: 5.59",
+            "seed 180: bounds assertion fired: runoff depth out of bounds: 0.17",
+            "seed 210: bounds assertion fired: runoff depth out of bounds: 0.07",
+            "seed 294: bounds assertion fired: runoff depth out of bounds: 0.12",
+            "seed 296: bounds assertion fired: runoff depth out of bounds: 5.59"
+          ]
+        },
+        "H2_determinism": {
+          "passed": true,
+          "detail": []
+        },
+        "H3_format": {
+          "passed": true,
+          "detail": []
+        },
+        "H4_parser_roundtrip": {
+          "passed": true,
+          "detail": []
+        },
+        "H5_numeric_hygiene": {
+          "passed": true,
+          "detail": []
+        },
+        "H6_diversity": {
+          "passed": true,
+          "detail": []
+        },
+        "H7_bounds": {
+          "passed": true,
+          "detail": []
+        }
+      }
+    }
+  ],
+  "all_passed": false
+}

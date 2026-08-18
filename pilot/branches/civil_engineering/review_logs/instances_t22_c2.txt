@@ -1,0 +1,124 @@
+===== SEED 101 =====
+--- QUESTION ---
+A trapezoidal open channel has a bottom width of 4.5 m and side slopes of 2.5H:1V, with a vitrified clay lining (Manning's n = 0.015). It carries uniform flow at a depth of 2.1 m on a slope of S = 0.001. Using the velocity form of Manning's equation in SI units, determine the mean flow velocity in m/s.
+--- GOLD SOLUTION ---
+**Given:**
+Bottom width (b): 4.5 m; depth (y): 2.1 m; side slope z = 2.5
+Slope (S): 0.001; lining: vitrified clay, n = 0.015
+
+**Step 1:** Compute the flow area.
+A = (b + z*y) * y = (4.5 + 2.5 * 2.1) * 2.1 = 20.475 m^2
+
+**Step 2:** Compute the wetted perimeter and hydraulic radius.
+sqrt(1 + z^2) = sqrt(1 + 2.5^2) = 2.6926
+P = b + 2*y*sqrt(1 + z^2) = 4.5 + 2 * 2.1 * 2.6926 = 15.809 m
+R = A / P = 20.475 / 15.809 = 1.2951 m
+
+**Step 3:** Apply the velocity form of Manning's equation.
+R^(2/3) = (1.2951)^(2/3) = 1.1881; S^(1/2) = (0.001)^(1/2) = 0.03162
+V = (1/n) * R^(2/3) * S^(1/2) = (1/0.015) * 1.1881 * 0.03162 = 2.505 m/s
+
+**Step 4:** Check the corresponding discharge.
+Q = V * A = 2.505 * 20.475 = 51.29 m^3/s, a consistent uniform-flow rate for this channel.
+
+**Answer:** The mean flow velocity is 2.505 m/s
+
+===== SEED 102 =====
+--- QUESTION ---
+A trapezoidal open channel has a bottom width of 3.9 m and side slopes of 2.0H:1V, with a smooth concrete lining (Manning's n = 0.012). It carries uniform flow at a depth of 1.3 m on a slope of S = 0.0007. Using the velocity form of Manning's equation in SI units, determine the mean flow velocity in m/s.
+--- GOLD SOLUTION ---
+**Given:**
+Bottom width (b): 3.9 m; depth (y): 1.3 m; side slope z = 2.0
+Slope (S): 0.0007; lining: smooth concrete, n = 0.012
+
+**Step 1:** Compute the flow area.
+A = (b + z*y) * y = (3.9 + 2.0 * 1.3) * 1.3 = 8.450 m^2
+
+**Step 2:** Compute the wetted perimeter and hydraulic radius.
+sqrt(1 + z^2) = sqrt(1 + 2.0^2) = 2.2361
+P = b + 2*y*sqrt(1 + z^2) = 3.9 + 2 * 1.3 * 2.2361 = 9.714 m
+R = A / P = 8.450 / 9.714 = 0.8699 m
+
+**Step 3:** Apply the velocity form of Manning's equation.
+R^(2/3) = (0.8699)^(2/3) = 0.9113; S^(1/2) = (0.0007)^(1/2) = 0.02646
+V = (1/n) * R^(2/3) * S^(1/2) = (1/0.012) * 0.9113 * 0.02646 = 2.009 m/s
+
+**Step 4:** Check the corresponding discharge.
+Q = V * A = 2.009 * 8.450 = 16.98 m^3/s, a consistent uniform-flow rate for this channel.
+
+**Answer:** The mean flow velocity is 2.009 m/s
+
+===== SEED 103 =====
+--- QUESTION ---
+A trapezoidal open channel has a bottom width of 4.8 m and side slopes of 2.0H:1V, with a wood lining (Manning's n = 0.014). It carries uniform flow at a depth of 1.8 m on a slope of S = 0.0011. Using the velocity form of Manning's equation in SI units, determine the mean flow velocity in m/s.
+--- GOLD SOLUTION ---
+**Given:**
+Bottom width (b): 4.8 m; depth (y): 1.8 m; side slope z = 2.0
+Slope (S): 0.0011; lining: wood, n = 0.014
+
+**Step 1:** Compute the flow area.
+A = (b + z*y) * y = (4.8 + 2.0 * 1.8) * 1.8 = 15.120 m^2
+
+**Step 2:** Compute the wetted perimeter and hydraulic radius.
+sqrt(1 + z^2) = sqrt(1 + 2.0^2) = 2.2361
+P = b + 2*y*sqrt(1 + z^2) = 4.8 + 2 * 1.8 * 2.2361 = 12.850 m
+R = A / P = 15.120 / 12.850 = 1.1767 m
+
+**Step 3:** Apply the velocity form of Manning's equation.
+R^(2/3) = (1.1767)^(2/3) = 1.1146; S^(1/2) = (0.0011)^(1/2) = 0.03317
+V = (1/n) * R^(2/3) * S^(1/2) = (1/0.014) * 1.1146 * 0.03317 = 2.641 m/s
+
+**Step 4:** Check the corresponding discharge.
+Q = V * A = 2.641 * 15.120 = 39.93 m^3/s, a consistent uniform-flow rate for this channel.
+
+**Answer:** The mean flow velocity is 2.641 m/s
+
+===== SEED 104 =====
+--- QUESTION ---
+A trapezoidal open channel has a bottom width of 4.6 m and side slopes of 2.0H:1V, with a very smooth concrete lining (Manning's n = 0.011). It carries uniform flow at a depth of 1.8 m on a slope of S = 0.0006. Using the velocity form of Manning's equation in SI units, determine the mean flow velocity in m/s.
+--- GOLD SOLUTION ---
+**Given:**
+Bottom width (b): 4.6 m; depth (y): 1.8 m; side slope z = 2.0
+Slope (S): 0.0006; lining: very smooth concrete, n = 0.011
+
+**Step 1:** Compute the flow area.
+A = (b + z*y) * y = (4.6 + 2.0 * 1.8) * 1.8 = 14.760 m^2
+
+**Step 2:** Compute the wetted perimeter and hydraulic radius.
+sqrt(1 + z^2) = sqrt(1 + 2.0^2) = 2.2361
+P = b + 2*y*sqrt(1 + z^2) = 4.6 + 2 * 1.8 * 2.2361 = 12.650 m
+R = A / P = 14.760 / 12.650 = 1.1668 m
+
+**Step 3:** Apply the velocity form of Manning's equation.
+R^(2/3) = (1.1668)^(2/3) = 1.1083; S^(1/2) = (0.0006)^(1/2) = 0.02449
+V = (1/n) * R^(2/3) * S^(1/2) = (1/0.011) * 1.1083 * 0.02449 = 2.467 m/s
+
+**Step 4:** Check the corresponding discharge.
+Q = V * A = 2.467 * 14.760 = 36.41 m^3/s, a consistent uniform-flow rate for this channel.
+
+**Answer:** The mean flow velocity is 2.467 m/s
+
+===== SEED 105 =====
+--- QUESTION ---
+A trapezoidal open channel has a bottom width of 2.7 m and side slopes of 1.5H:1V, with a vitrified clay lining (Manning's n = 0.015). It carries uniform flow at a depth of 1.9 m on a slope of S = 0.0009. Using the velocity form of Manning's equation in SI units, determine the mean flow velocity in m/s.
+--- GOLD SOLUTION ---
+**Given:**
+Bottom width (b): 2.7 m; depth (y): 1.9 m; side slope z = 1.5
+Slope (S): 0.0009; lining: vitrified clay, n = 0.015
+
+**Step 1:** Compute the flow area.
+A = (b + z*y) * y = (2.7 + 1.5 * 1.9) * 1.9 = 10.545 m^2
+
+**Step 2:** Compute the wetted perimeter and hydraulic radius.
+sqrt(1 + z^2) = sqrt(1 + 1.5^2) = 1.8028
+P = b + 2*y*sqrt(1 + z^2) = 2.7 + 2 * 1.9 * 1.8028 = 9.551 m
+R = A / P = 10.545 / 9.551 = 1.1041 m
+
+**Step 3:** Apply the velocity form of Manning's equation.
+R^(2/3) = (1.1041)^(2/3) = 1.0682; S^(1/2) = (0.0009)^(1/2) = 0.03000
+V = (1/n) * R^(2/3) * S^(1/2) = (1/0.015) * 1.0682 * 0.03000 = 2.136 m/s
+
+**Step 4:** Check the corresponding discharge.
+Q = V * A = 2.136 * 10.545 = 22.52 m^3/s, a consistent uniform-flow rate for this channel.
+
+**Answer:** The mean flow velocity is 2.136 m/s

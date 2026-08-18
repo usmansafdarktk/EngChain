@@ -1,0 +1,124 @@
+===== SEED 101 =====
+--- QUESTION ---
+A detention basin behaves as a linear reservoir whose storage is proportional to its outflow, S = k*O with k = 5040 s. During a routing interval of dt = 1800 s, the inflow rises from I1 = 3.6 m^3/s to I2 = 18.1 m^3/s, and the outflow at the start of the interval is O1 = 2.1 m^3/s. Starting from the level-pool continuity equation (I1 + I2)/2 * dt - (O1 + O2)/2 * dt = S2 - S1, derive the working equation for the end-of-interval outflow and determine O2 in m^3/s.
+--- GOLD SOLUTION ---
+**Given:**
+Storage relation: S = k*O, k = 5040 s; dt = 1800 s
+Inflows: I1 = 3.6, I2 = 18.1 m^3/s; initial outflow O1 = 2.1 m^3/s
+
+**Step 1:** Write continuity over the interval and substitute the storage relation.
+(I1 + I2)/2 * dt - (O1 + O2)/2 * dt = S2 - S1 = k*(O2 - O1)
+
+**Step 2:** Collect the unknown O2 on one side.
+(I1 + I2)*dt/2 + O1*(k - dt/2) = O2*(k + dt/2)
+O2 = [ (I1 + I2)*dt/2 + O1*(k - dt/2) ] / (k + dt/2)
+
+**Step 3:** Evaluate the terms.
+(I1 + I2)*dt/2 = (3.6 + 18.1) * 900.0 = 19530.0 m^3
+O1*(k - dt/2) = 2.1 * (5040 - 900.0) = 8694.0 m^3
+k + dt/2 = 5040 + 900.0 = 5940.0 s
+
+**Step 4:** Compute the end-of-interval outflow.
+O2 = (19530.0 + 8694.0) / 5940.0 = 4.75 m^3/s
+
+**Answer:** The outflow at the end of the interval is 4.75 m^3/s
+
+===== SEED 102 =====
+--- QUESTION ---
+A detention basin behaves as a linear reservoir whose storage is proportional to its outflow, S = k*O with k = 4380 s. During a routing interval of dt = 900 s, the inflow rises from I1 = 6.9 m^3/s to I2 = 11.1 m^3/s, and the outflow at the start of the interval is O1 = 3.5 m^3/s. Starting from the level-pool continuity equation (I1 + I2)/2 * dt - (O1 + O2)/2 * dt = S2 - S1, derive the working equation for the end-of-interval outflow and determine O2 in m^3/s.
+--- GOLD SOLUTION ---
+**Given:**
+Storage relation: S = k*O, k = 4380 s; dt = 900 s
+Inflows: I1 = 6.9, I2 = 11.1 m^3/s; initial outflow O1 = 3.5 m^3/s
+
+**Step 1:** Write continuity over the interval and substitute the storage relation.
+(I1 + I2)/2 * dt - (O1 + O2)/2 * dt = S2 - S1 = k*(O2 - O1)
+
+**Step 2:** Collect the unknown O2 on one side.
+(I1 + I2)*dt/2 + O1*(k - dt/2) = O2*(k + dt/2)
+O2 = [ (I1 + I2)*dt/2 + O1*(k - dt/2) ] / (k + dt/2)
+
+**Step 3:** Evaluate the terms.
+(I1 + I2)*dt/2 = (6.9 + 11.1) * 450.0 = 8100.0 m^3
+O1*(k - dt/2) = 3.5 * (4380 - 450.0) = 13755.0 m^3
+k + dt/2 = 4380 + 450.0 = 4830.0 s
+
+**Step 4:** Compute the end-of-interval outflow.
+O2 = (8100.0 + 13755.0) / 4830.0 = 4.52 m^3/s
+
+**Answer:** The outflow at the end of the interval is 4.52 m^3/s
+
+===== SEED 103 =====
+--- QUESTION ---
+A detention basin behaves as a linear reservoir whose storage is proportional to its outflow, S = k*O with k = 3540 s. During a routing interval of dt = 1800 s, the inflow rises from I1 = 9.5 m^3/s to I2 = 20.6 m^3/s, and the outflow at the start of the interval is O1 = 5.2 m^3/s. Starting from the level-pool continuity equation (I1 + I2)/2 * dt - (O1 + O2)/2 * dt = S2 - S1, derive the working equation for the end-of-interval outflow and determine O2 in m^3/s.
+--- GOLD SOLUTION ---
+**Given:**
+Storage relation: S = k*O, k = 3540 s; dt = 1800 s
+Inflows: I1 = 9.5, I2 = 20.6 m^3/s; initial outflow O1 = 5.2 m^3/s
+
+**Step 1:** Write continuity over the interval and substitute the storage relation.
+(I1 + I2)/2 * dt - (O1 + O2)/2 * dt = S2 - S1 = k*(O2 - O1)
+
+**Step 2:** Collect the unknown O2 on one side.
+(I1 + I2)*dt/2 + O1*(k - dt/2) = O2*(k + dt/2)
+O2 = [ (I1 + I2)*dt/2 + O1*(k - dt/2) ] / (k + dt/2)
+
+**Step 3:** Evaluate the terms.
+(I1 + I2)*dt/2 = (9.5 + 20.6) * 900.0 = 27090.0 m^3
+O1*(k - dt/2) = 5.2 * (3540 - 900.0) = 13728.0 m^3
+k + dt/2 = 3540 + 900.0 = 4440.0 s
+
+**Step 4:** Compute the end-of-interval outflow.
+O2 = (27090.0 + 13728.0) / 4440.0 = 9.19 m^3/s
+
+**Answer:** The outflow at the end of the interval is 9.19 m^3/s
+
+===== SEED 104 =====
+--- QUESTION ---
+A detention basin behaves as a linear reservoir whose storage is proportional to its outflow, S = k*O with k = 5100 s. During a routing interval of dt = 900 s, the inflow rises from I1 = 3.6 m^3/s to I2 = 15.6 m^3/s, and the outflow at the start of the interval is O1 = 1.5 m^3/s. Starting from the level-pool continuity equation (I1 + I2)/2 * dt - (O1 + O2)/2 * dt = S2 - S1, derive the working equation for the end-of-interval outflow and determine O2 in m^3/s.
+--- GOLD SOLUTION ---
+**Given:**
+Storage relation: S = k*O, k = 5100 s; dt = 900 s
+Inflows: I1 = 3.6, I2 = 15.6 m^3/s; initial outflow O1 = 1.5 m^3/s
+
+**Step 1:** Write continuity over the interval and substitute the storage relation.
+(I1 + I2)/2 * dt - (O1 + O2)/2 * dt = S2 - S1 = k*(O2 - O1)
+
+**Step 2:** Collect the unknown O2 on one side.
+(I1 + I2)*dt/2 + O1*(k - dt/2) = O2*(k + dt/2)
+O2 = [ (I1 + I2)*dt/2 + O1*(k - dt/2) ] / (k + dt/2)
+
+**Step 3:** Evaluate the terms.
+(I1 + I2)*dt/2 = (3.6 + 15.6) * 450.0 = 8640.0 m^3
+O1*(k - dt/2) = 1.5 * (5100 - 450.0) = 6975.0 m^3
+k + dt/2 = 5100 + 450.0 = 5550.0 s
+
+**Step 4:** Compute the end-of-interval outflow.
+O2 = (8640.0 + 6975.0) / 5550.0 = 2.81 m^3/s
+
+**Answer:** The outflow at the end of the interval is 2.81 m^3/s
+
+===== SEED 105 =====
+--- QUESTION ---
+A detention basin behaves as a linear reservoir whose storage is proportional to its outflow, S = k*O with k = 3120 s. During a routing interval of dt = 1800 s, the inflow rises from I1 = 6.6 m^3/s to I2 = 10.0 m^3/s, and the outflow at the start of the interval is O1 = 2.0 m^3/s. Starting from the level-pool continuity equation (I1 + I2)/2 * dt - (O1 + O2)/2 * dt = S2 - S1, derive the working equation for the end-of-interval outflow and determine O2 in m^3/s.
+--- GOLD SOLUTION ---
+**Given:**
+Storage relation: S = k*O, k = 3120 s; dt = 1800 s
+Inflows: I1 = 6.6, I2 = 10.0 m^3/s; initial outflow O1 = 2.0 m^3/s
+
+**Step 1:** Write continuity over the interval and substitute the storage relation.
+(I1 + I2)/2 * dt - (O1 + O2)/2 * dt = S2 - S1 = k*(O2 - O1)
+
+**Step 2:** Collect the unknown O2 on one side.
+(I1 + I2)*dt/2 + O1*(k - dt/2) = O2*(k + dt/2)
+O2 = [ (I1 + I2)*dt/2 + O1*(k - dt/2) ] / (k + dt/2)
+
+**Step 3:** Evaluate the terms.
+(I1 + I2)*dt/2 = (6.6 + 10.0) * 900.0 = 14940.0 m^3
+O1*(k - dt/2) = 2.0 * (3120 - 900.0) = 4440.0 m^3
+k + dt/2 = 3120 + 900.0 = 4020.0 s
+
+**Step 4:** Compute the end-of-interval outflow.
+O2 = (14940.0 + 4440.0) / 4020.0 = 4.82 m^3/s
+
+**Answer:** The outflow at the end of the interval is 4.82 m^3/s

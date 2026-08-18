@@ -1,0 +1,114 @@
+===== SEED 101 =====
+--- QUESTION ---
+A rectangular channel lined with vitrified clay (Manning's n = 0.015) must carry a design discharge of 34.6 m^3/s on a slope of S = 0.0028. The channel is to be proportioned as the best hydraulic (most efficient) rectangular section, for which the width is twice the depth. Determine the required flow depth y in m.
+--- GOLD SOLUTION ---
+**Given:**
+Design discharge (Q): 34.6 m^3/s; slope (S): 0.0028; n = 0.015
+
+**Step 1:** State the best hydraulic rectangular section properties.
+For the most efficient rectangular section, b = 2y, so A = 2y^2, P = 4y, and R = A/P = y/2.
+
+**Step 2:** Substitute into Manning's equation and collect powers of y.
+Q = (1/n) * 2y^2 * (y/2)^(2/3) * S^(1/2) = 2^(1/3) * y^(8/3) * S^(1/2) / n, with 2^(1/3) = 1.2599 and S^(1/2) = 0.05292
+
+**Step 3:** Solve for the depth.
+y = [Q*n / (1.2599 * 0.05292)]^(3/8) = [34.6 * 0.015 / (1.2599 * 0.05292)]^(3/8) = 2.159 m
+(width b = 2y = 4.318 m)
+
+**Step 4:** Back-check with Manning's equation.
+A = 2y^2 = 9.323 m^2, R = y/2 = 1.0795 m
+Q = (1/0.015) * 9.323 * (1.0795)^(2/3) * 0.05292 = 34.61 m^3/s, matching the design discharge.
+
+**Answer:** The required flow depth is 2.159 m
+
+===== SEED 102 =====
+--- QUESTION ---
+A rectangular channel lined with smooth concrete (Manning's n = 0.012) must carry a design discharge of 28.7 m^3/s on a slope of S = 0.0014. The channel is to be proportioned as the best hydraulic (most efficient) rectangular section, for which the width is twice the depth. Determine the required flow depth y in m.
+--- GOLD SOLUTION ---
+**Given:**
+Design discharge (Q): 28.7 m^3/s; slope (S): 0.0014; n = 0.012
+
+**Step 1:** State the best hydraulic rectangular section properties.
+For the most efficient rectangular section, b = 2y, so A = 2y^2, P = 4y, and R = A/P = y/2.
+
+**Step 2:** Substitute into Manning's equation and collect powers of y.
+Q = (1/n) * 2y^2 * (y/2)^(2/3) * S^(1/2) = 2^(1/3) * y^(8/3) * S^(1/2) / n, with 2^(1/3) = 1.2599 and S^(1/2) = 0.03742
+
+**Step 3:** Solve for the depth.
+y = [Q*n / (1.2599 * 0.03742)]^(3/8) = [28.7 * 0.012 / (1.2599 * 0.03742)]^(3/8) = 2.108 m
+(width b = 2y = 4.216 m)
+
+**Step 4:** Back-check with Manning's equation.
+A = 2y^2 = 8.887 m^2, R = y/2 = 1.0540 m
+Q = (1/0.012) * 8.887 * (1.0540)^(2/3) * 0.03742 = 28.70 m^3/s, matching the design discharge.
+
+**Answer:** The required flow depth is 2.108 m
+
+===== SEED 103 =====
+--- QUESTION ---
+A rectangular channel lined with shot concrete / earth channel, best condition (Manning's n = 0.017) must carry a design discharge of 21.0 m^3/s on a slope of S = 0.0023. The channel is to be proportioned as the best hydraulic (most efficient) rectangular section, for which the width is twice the depth. Determine the required flow depth y in m.
+--- GOLD SOLUTION ---
+**Given:**
+Design discharge (Q): 21.0 m^3/s; slope (S): 0.0023; n = 0.017
+
+**Step 1:** State the best hydraulic rectangular section properties.
+For the most efficient rectangular section, b = 2y, so A = 2y^2, P = 4y, and R = A/P = y/2.
+
+**Step 2:** Substitute into Manning's equation and collect powers of y.
+Q = (1/n) * 2y^2 * (y/2)^(2/3) * S^(1/2) = 2^(1/3) * y^(8/3) * S^(1/2) / n, with 2^(1/3) = 1.2599 and S^(1/2) = 0.04796
+
+**Step 3:** Solve for the depth.
+y = [Q*n / (1.2599 * 0.04796)]^(3/8) = [21.0 * 0.017 / (1.2599 * 0.04796)]^(3/8) = 1.947 m
+(width b = 2y = 3.894 m)
+
+**Step 4:** Back-check with Manning's equation.
+A = 2y^2 = 7.582 m^2, R = y/2 = 0.9735 m
+Q = (1/0.017) * 7.582 * (0.9735)^(2/3) * 0.04796 = 21.01 m^3/s, matching the design discharge.
+
+**Answer:** The required flow depth is 1.947 m
+
+===== SEED 104 =====
+--- QUESTION ---
+A rectangular channel lined with very smooth concrete (Manning's n = 0.011) must carry a design discharge of 35.5 m^3/s on a slope of S = 0.0023. The channel is to be proportioned as the best hydraulic (most efficient) rectangular section, for which the width is twice the depth. Determine the required flow depth y in m.
+--- GOLD SOLUTION ---
+**Given:**
+Design discharge (Q): 35.5 m^3/s; slope (S): 0.0023; n = 0.011
+
+**Step 1:** State the best hydraulic rectangular section properties.
+For the most efficient rectangular section, b = 2y, so A = 2y^2, P = 4y, and R = A/P = y/2.
+
+**Step 2:** Substitute into Manning's equation and collect powers of y.
+Q = (1/n) * 2y^2 * (y/2)^(2/3) * S^(1/2) = 2^(1/3) * y^(8/3) * S^(1/2) / n, with 2^(1/3) = 1.2599 and S^(1/2) = 0.04796
+
+**Step 3:** Solve for the depth.
+y = [Q*n / (1.2599 * 0.04796)]^(3/8) = [35.5 * 0.011 / (1.2599 * 0.04796)]^(3/8) = 2.013 m
+(width b = 2y = 4.026 m)
+
+**Step 4:** Back-check with Manning's equation.
+A = 2y^2 = 8.104 m^2, R = y/2 = 1.0065 m
+Q = (1/0.011) * 8.104 * (1.0065)^(2/3) * 0.04796 = 35.49 m^3/s, matching the design discharge.
+
+**Answer:** The required flow depth is 2.013 m
+
+===== SEED 105 =====
+--- QUESTION ---
+A rectangular channel lined with vitrified clay (Manning's n = 0.015) must carry a design discharge of 17.2 m^3/s on a slope of S = 0.0025. The channel is to be proportioned as the best hydraulic (most efficient) rectangular section, for which the width is twice the depth. Determine the required flow depth y in m.
+--- GOLD SOLUTION ---
+**Given:**
+Design discharge (Q): 17.2 m^3/s; slope (S): 0.0025; n = 0.015
+
+**Step 1:** State the best hydraulic rectangular section properties.
+For the most efficient rectangular section, b = 2y, so A = 2y^2, P = 4y, and R = A/P = y/2.
+
+**Step 2:** Substitute into Manning's equation and collect powers of y.
+Q = (1/n) * 2y^2 * (y/2)^(2/3) * S^(1/2) = 2^(1/3) * y^(8/3) * S^(1/2) / n, with 2^(1/3) = 1.2599 and S^(1/2) = 0.05000
+
+**Step 3:** Solve for the depth.
+y = [Q*n / (1.2599 * 0.05000)]^(3/8) = [17.2 * 0.015 / (1.2599 * 0.05000)]^(3/8) = 1.697 m
+(width b = 2y = 3.394 m)
+
+**Step 4:** Back-check with Manning's equation.
+A = 2y^2 = 5.760 m^2, R = y/2 = 0.8485 m
+Q = (1/0.015) * 5.760 * (0.8485)^(2/3) * 0.05000 = 17.21 m^3/s, matching the design discharge.
+
+**Answer:** The required flow depth is 1.697 m

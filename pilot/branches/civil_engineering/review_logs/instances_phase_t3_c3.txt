@@ -1,0 +1,132 @@
+===== SEED 101 =====
+--- QUESTION ---
+A highway embankment requires 3170 m^3 of compacted fill with a target void ratio of 0.51. The fill will be constructed from a borrow area whose sand has a moist unit weight of 16.06 kN/m^3 and a moisture content of 8.5%. The specific gravity of the soil solids is 2.67 and the unit weight of water is 9.81 kN/m^3. Determine the volume of borrow soil, in cubic meters, that must be excavated to build the fill.
+--- GOLD SOLUTION ---
+**Given:**
+Required fill volume (V_fill): 3170 m^3
+Target fill void ratio (e_fill): 0.51
+Borrow moist unit weight (gamma_borrow): 16.06 kN/m^3
+Borrow moisture content (w): 8.5% = 0.085
+Specific gravity of solids (Gs): 2.67
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Compute the required dry unit weight of the compacted fill.
+gamma_d,fill = Gs * gamma_w / (1 + e_fill) = 2.67 * 9.81 / (1 + 0.51) = 17.35 kN/m^3
+
+**Step 2:** Compute the dry unit weight of the borrow soil from its moist state.
+gamma_d,borrow = gamma_borrow / (1 + w) = 16.06 / (1 + 0.085) = 14.80 kN/m^3
+
+**Step 3:** Compute the weight of solids required in the fill.
+The weight of soil solids is conserved from borrow pit to fill:
+W_s = gamma_d,fill * V_fill = 17.35 * 3170 = 54999.5 kN
+
+**Step 4:** Compute the required borrow volume.
+V_borrow = W_s / gamma_d,borrow = 54999.5 / 14.80 = 3716 m^3
+
+**Answer:** The required borrow volume is 3716 m^3
+
+===== SEED 102 =====
+--- QUESTION ---
+A highway embankment requires 1530 m^3 of compacted fill with a target void ratio of 0.47. The fill will be constructed from a borrow area whose sand has an in-situ void ratio of 0.79. The specific gravity of the soil solids is 2.66 and the unit weight of water is 9.81 kN/m^3. Determine the volume of borrow soil, in cubic meters, that must be excavated to build the fill.
+--- GOLD SOLUTION ---
+**Given:**
+Required fill volume (V_fill): 1530 m^3
+Target fill void ratio (e_fill): 0.47
+Borrow void ratio (e_borrow): 0.79
+Specific gravity of solids (Gs): 2.66
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Compute the required dry unit weight of the compacted fill.
+gamma_d,fill = Gs * gamma_w / (1 + e_fill) = 2.66 * 9.81 / (1 + 0.47) = 17.75 kN/m^3
+
+**Step 2:** Compute the dry unit weight of the borrow soil from its phase state.
+gamma_d,borrow = Gs * gamma_w / (1 + e_borrow) = 2.66 * 9.81 / (1 + 0.79) = 14.58 kN/m^3
+
+**Step 3:** Compute the weight of solids required in the fill.
+The weight of soil solids is conserved from borrow pit to fill:
+W_s = gamma_d,fill * V_fill = 17.75 * 1530 = 27157.5 kN
+
+**Step 4:** Compute the required borrow volume.
+V_borrow = W_s / gamma_d,borrow = 27157.5 / 14.58 = 1863 m^3
+
+**Answer:** The required borrow volume is 1863 m^3
+
+===== SEED 103 =====
+--- QUESTION ---
+A highway embankment requires 3680 m^3 of compacted fill with a target void ratio of 0.55. The fill will be constructed from a borrow area whose silt has a moist unit weight of 15.78 kN/m^3 and a moisture content of 14.9%. The specific gravity of the soil solids is 2.73 and the unit weight of water is 9.81 kN/m^3. Determine the volume of borrow soil, in cubic meters, that must be excavated to build the fill.
+--- GOLD SOLUTION ---
+**Given:**
+Required fill volume (V_fill): 3680 m^3
+Target fill void ratio (e_fill): 0.55
+Borrow moist unit weight (gamma_borrow): 15.78 kN/m^3
+Borrow moisture content (w): 14.9% = 0.149
+Specific gravity of solids (Gs): 2.73
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Compute the required dry unit weight of the compacted fill.
+gamma_d,fill = Gs * gamma_w / (1 + e_fill) = 2.73 * 9.81 / (1 + 0.55) = 17.28 kN/m^3
+
+**Step 2:** Compute the dry unit weight of the borrow soil from its moist state.
+gamma_d,borrow = gamma_borrow / (1 + w) = 15.78 / (1 + 0.149) = 13.73 kN/m^3
+
+**Step 3:** Compute the weight of solids required in the fill.
+The weight of soil solids is conserved from borrow pit to fill:
+W_s = gamma_d,fill * V_fill = 17.28 * 3680 = 63590.4 kN
+
+**Step 4:** Compute the required borrow volume.
+V_borrow = W_s / gamma_d,borrow = 63590.4 / 13.73 = 4631 m^3
+
+**Answer:** The required borrow volume is 4631 m^3
+
+===== SEED 104 =====
+--- QUESTION ---
+A highway embankment requires 1240 m^3 of compacted fill with a target void ratio of 0.55. The fill will be constructed from a borrow area whose sand has a moist unit weight of 16.47 kN/m^3 and a moisture content of 11.3%. The specific gravity of the soil solids is 2.67 and the unit weight of water is 9.81 kN/m^3. Determine the volume of borrow soil, in cubic meters, that must be excavated to build the fill.
+--- GOLD SOLUTION ---
+**Given:**
+Required fill volume (V_fill): 1240 m^3
+Target fill void ratio (e_fill): 0.55
+Borrow moist unit weight (gamma_borrow): 16.47 kN/m^3
+Borrow moisture content (w): 11.3% = 0.113
+Specific gravity of solids (Gs): 2.67
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Compute the required dry unit weight of the compacted fill.
+gamma_d,fill = Gs * gamma_w / (1 + e_fill) = 2.67 * 9.81 / (1 + 0.55) = 16.90 kN/m^3
+
+**Step 2:** Compute the dry unit weight of the borrow soil from its moist state.
+gamma_d,borrow = gamma_borrow / (1 + w) = 16.47 / (1 + 0.113) = 14.80 kN/m^3
+
+**Step 3:** Compute the weight of solids required in the fill.
+The weight of soil solids is conserved from borrow pit to fill:
+W_s = gamma_d,fill * V_fill = 16.90 * 1240 = 20956.0 kN
+
+**Step 4:** Compute the required borrow volume.
+V_borrow = W_s / gamma_d,borrow = 20956.0 / 14.80 = 1416 m^3
+
+**Answer:** The required borrow volume is 1416 m^3
+
+===== SEED 105 =====
+--- QUESTION ---
+A highway embankment requires 3520 m^3 of compacted fill with a target void ratio of 0.47. The fill will be constructed from a borrow area whose silt has an in-situ void ratio of 0.65. The specific gravity of the soil solids is 2.70 and the unit weight of water is 9.81 kN/m^3. Determine the volume of borrow soil, in cubic meters, that must be excavated to build the fill.
+--- GOLD SOLUTION ---
+**Given:**
+Required fill volume (V_fill): 3520 m^3
+Target fill void ratio (e_fill): 0.47
+Borrow void ratio (e_borrow): 0.65
+Specific gravity of solids (Gs): 2.70
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Compute the required dry unit weight of the compacted fill.
+gamma_d,fill = Gs * gamma_w / (1 + e_fill) = 2.70 * 9.81 / (1 + 0.47) = 18.02 kN/m^3
+
+**Step 2:** Compute the dry unit weight of the borrow soil from its phase state.
+gamma_d,borrow = Gs * gamma_w / (1 + e_borrow) = 2.70 * 9.81 / (1 + 0.65) = 16.05 kN/m^3
+
+**Step 3:** Compute the weight of solids required in the fill.
+The weight of soil solids is conserved from borrow pit to fill:
+W_s = gamma_d,fill * V_fill = 18.02 * 3520 = 63430.4 kN
+
+**Step 4:** Compute the required borrow volume.
+V_borrow = W_s / gamma_d,borrow = 63430.4 / 16.05 = 3952 m^3
+
+**Answer:** The required borrow volume is 3952 m^3

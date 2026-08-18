@@ -1,0 +1,209 @@
+===== SEED 101 =====
+--- QUESTION ---
+A soil profile consists of, from the ground surface down: 2.4 m of moist sand (unit weight 17.9 kN/m^3) above the water table; 2.6 m of saturated sand (saturated unit weight 19.7 kN/m^3); and a 4.9 m thick layer of normally consolidated clay (saturated unit weight 18.14 kN/m^3, initial void ratio 1.06, liquid limit 56%). The water table is at the bottom of the moist sand layer. A rectangular raft foundation, 11.5 m by 15.4 m in plan, applies a uniform net pressure of 267 kPa at the ground surface. Using the 2:1 stress distribution method for the stress increase at the middle of the clay layer, the Skempton correlation Cc = 0.009(LL - 10), and a unit weight of water of 9.81 kN/m^3, determine the primary consolidation settlement of the clay layer in millimeters.
+--- GOLD SOLUTION ---
+**Given:**
+Moist sand: z1 = 2.4 m, gamma = 17.9 kN/m^3
+Saturated sand: z2 = 2.6 m, gamma_sat = 19.7 kN/m^3
+Clay: Hc = 4.9 m, gamma_sat = 18.14 kN/m^3, e0 = 1.06, LL = 56%
+Raft: 11.5 m x 15.4 m, net pressure q0 = 267 kPa at the surface
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Estimate the compression index from the Skempton correlation.
+Cc = 0.009 * (LL - 10) = 0.009 * (56 - 10) = 0.414
+
+**Step 2:** Compute the submerged unit weights below the water table.
+Sand: gamma'_sand = 19.7 - 9.81 = 9.89 kN/m^3
+Clay: gamma'_clay = 18.14 - 9.81 = 8.33 kN/m^3
+
+**Step 3:** Compute the initial effective stress at the middle of the clay layer.
+sigma'0 = 17.9 * 2.4 + 9.89 * 2.6 + 8.33 * 2.45 = 89.1 kPa
+
+**Step 4:** Compute the depth from the raft to the middle of the clay layer.
+z = z1 + z2 + Hc/2 = 2.4 + 2.6 + 2.45 = 7.45 m
+
+**Step 5:** Compute the stress increase at that depth by the 2:1 method.
+The load spreads over an area (B + z) by (L + z):
+delta_sigma = q0 * B * L / ((B + z) * (L + z)) = 267 * 11.5 * 15.4 / ((11.5 + 7.45) * (15.4 + 7.45)) = 109.2 kPa
+
+**Step 6:** Compute the final effective stress at the clay mid-depth.
+sigma'f = sigma'0 + delta_sigma = 89.1 + 109.2 = 198.3 kPa
+
+**Step 7:** Compute the logarithmic stress-ratio term.
+log10(sigma'f / sigma'0) = log10(198.3 / 89.1) = 0.3474
+
+**Step 8:** Compute the primary consolidation settlement.
+Sc = Cc * Hc / (1 + e0) * log10(sigma'f/sigma'0) = 0.414 * 4.9 / (1 + 1.06) * 0.3474 = 0.3421 m
+
+**Step 9:** Convert to millimeters.
+Sc = 0.3421 * 1000 = 342 mm
+
+**Answer:** The primary consolidation settlement is 342 mm
+
+===== SEED 102 =====
+--- QUESTION ---
+A soil profile consists of, from the ground surface down: 1.7 m of moist sand (unit weight 17.6 kN/m^3) above the water table; 3.8 m of saturated sand (saturated unit weight 19.9 kN/m^3); and a 2.5 m thick layer of normally consolidated clay (saturated unit weight 18.42 kN/m^3, initial void ratio 0.97, liquid limit 47%). The water table is at the bottom of the moist sand layer. A rectangular raft foundation, 9.5 m by 14.4 m in plan, applies a uniform net pressure of 259 kPa at the ground surface. Using the 2:1 stress distribution method for the stress increase at the middle of the clay layer, the Skempton correlation Cc = 0.009(LL - 10), and a unit weight of water of 9.81 kN/m^3, determine the primary consolidation settlement of the clay layer in millimeters.
+--- GOLD SOLUTION ---
+**Given:**
+Moist sand: z1 = 1.7 m, gamma = 17.6 kN/m^3
+Saturated sand: z2 = 3.8 m, gamma_sat = 19.9 kN/m^3
+Clay: Hc = 2.5 m, gamma_sat = 18.42 kN/m^3, e0 = 0.97, LL = 47%
+Raft: 9.5 m x 14.4 m, net pressure q0 = 259 kPa at the surface
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Estimate the compression index from the Skempton correlation.
+Cc = 0.009 * (LL - 10) = 0.009 * (47 - 10) = 0.333
+
+**Step 2:** Compute the submerged unit weights below the water table.
+Sand: gamma'_sand = 19.9 - 9.81 = 10.09 kN/m^3
+Clay: gamma'_clay = 18.42 - 9.81 = 8.61 kN/m^3
+
+**Step 3:** Compute the initial effective stress at the middle of the clay layer.
+sigma'0 = 17.6 * 1.7 + 10.09 * 3.8 + 8.61 * 1.25 = 79.0 kPa
+
+**Step 4:** Compute the depth from the raft to the middle of the clay layer.
+z = z1 + z2 + Hc/2 = 1.7 + 3.8 + 1.25 = 6.75 m
+
+**Step 5:** Compute the stress increase at that depth by the 2:1 method.
+The load spreads over an area (B + z) by (L + z):
+delta_sigma = q0 * B * L / ((B + z) * (L + z)) = 259 * 9.5 * 14.4 / ((9.5 + 6.75) * (14.4 + 6.75)) = 103.1 kPa
+
+**Step 6:** Compute the final effective stress at the clay mid-depth.
+sigma'f = sigma'0 + delta_sigma = 79.0 + 103.1 = 182.1 kPa
+
+**Step 7:** Compute the logarithmic stress-ratio term.
+log10(sigma'f / sigma'0) = log10(182.1 / 79.0) = 0.3627
+
+**Step 8:** Compute the primary consolidation settlement.
+Sc = Cc * Hc / (1 + e0) * log10(sigma'f/sigma'0) = 0.333 * 2.5 / (1 + 0.97) * 0.3627 = 0.1533 m
+
+**Step 9:** Convert to millimeters.
+Sc = 0.1533 * 1000 = 153 mm
+
+**Answer:** The primary consolidation settlement is 153 mm
+
+===== SEED 103 =====
+--- QUESTION ---
+A soil profile consists of, from the ground surface down: 3.0 m of moist sand (unit weight 17.6 kN/m^3) above the water table; 3.4 m of saturated sand (saturated unit weight 19.3 kN/m^3); and a 4.2 m thick layer of normally consolidated clay (saturated unit weight 18.91 kN/m^3, initial void ratio 0.93, liquid limit 37%). The water table is at the bottom of the moist sand layer. A rectangular raft foundation, 9.9 m by 13.7 m in plan, applies a uniform net pressure of 201 kPa at the ground surface. Using the 2:1 stress distribution method for the stress increase at the middle of the clay layer, the Skempton correlation Cc = 0.009(LL - 10), and a unit weight of water of 9.81 kN/m^3, determine the primary consolidation settlement of the clay layer in millimeters.
+--- GOLD SOLUTION ---
+**Given:**
+Moist sand: z1 = 3.0 m, gamma = 17.6 kN/m^3
+Saturated sand: z2 = 3.4 m, gamma_sat = 19.3 kN/m^3
+Clay: Hc = 4.2 m, gamma_sat = 18.91 kN/m^3, e0 = 0.93, LL = 37%
+Raft: 9.9 m x 13.7 m, net pressure q0 = 201 kPa at the surface
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Estimate the compression index from the Skempton correlation.
+Cc = 0.009 * (LL - 10) = 0.009 * (37 - 10) = 0.243
+
+**Step 2:** Compute the submerged unit weights below the water table.
+Sand: gamma'_sand = 19.3 - 9.81 = 9.49 kN/m^3
+Clay: gamma'_clay = 18.91 - 9.81 = 9.10 kN/m^3
+
+**Step 3:** Compute the initial effective stress at the middle of the clay layer.
+sigma'0 = 17.6 * 3.0 + 9.49 * 3.4 + 9.10 * 2.10 = 104.2 kPa
+
+**Step 4:** Compute the depth from the raft to the middle of the clay layer.
+z = z1 + z2 + Hc/2 = 3.0 + 3.4 + 2.10 = 8.50 m
+
+**Step 5:** Compute the stress increase at that depth by the 2:1 method.
+The load spreads over an area (B + z) by (L + z):
+delta_sigma = q0 * B * L / ((B + z) * (L + z)) = 201 * 9.9 * 13.7 / ((9.9 + 8.50) * (13.7 + 8.50)) = 66.7 kPa
+
+**Step 6:** Compute the final effective stress at the clay mid-depth.
+sigma'f = sigma'0 + delta_sigma = 104.2 + 66.7 = 170.9 kPa
+
+**Step 7:** Compute the logarithmic stress-ratio term.
+log10(sigma'f / sigma'0) = log10(170.9 / 104.2) = 0.2149
+
+**Step 8:** Compute the primary consolidation settlement.
+Sc = Cc * Hc / (1 + e0) * log10(sigma'f/sigma'0) = 0.243 * 4.2 / (1 + 0.93) * 0.2149 = 0.1136 m
+
+**Step 9:** Convert to millimeters.
+Sc = 0.1136 * 1000 = 114 mm
+
+**Answer:** The primary consolidation settlement is 114 mm
+
+===== SEED 104 =====
+--- QUESTION ---
+A soil profile consists of, from the ground surface down: 2.9 m of moist sand (unit weight 16.8 kN/m^3) above the water table; 4.6 m of saturated sand (saturated unit weight 19.5 kN/m^3); and a 4.2 m thick layer of normally consolidated clay (saturated unit weight 17.65 kN/m^3, initial void ratio 1.14, liquid limit 57%). The water table is at the bottom of the moist sand layer. A rectangular raft foundation, 11.5 m by 13.9 m in plan, applies a uniform net pressure of 146 kPa at the ground surface. Using the 2:1 stress distribution method for the stress increase at the middle of the clay layer, the Skempton correlation Cc = 0.009(LL - 10), and a unit weight of water of 9.81 kN/m^3, determine the primary consolidation settlement of the clay layer in millimeters.
+--- GOLD SOLUTION ---
+**Given:**
+Moist sand: z1 = 2.9 m, gamma = 16.8 kN/m^3
+Saturated sand: z2 = 4.6 m, gamma_sat = 19.5 kN/m^3
+Clay: Hc = 4.2 m, gamma_sat = 17.65 kN/m^3, e0 = 1.14, LL = 57%
+Raft: 11.5 m x 13.9 m, net pressure q0 = 146 kPa at the surface
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Estimate the compression index from the Skempton correlation.
+Cc = 0.009 * (LL - 10) = 0.009 * (57 - 10) = 0.423
+
+**Step 2:** Compute the submerged unit weights below the water table.
+Sand: gamma'_sand = 19.5 - 9.81 = 9.69 kN/m^3
+Clay: gamma'_clay = 17.65 - 9.81 = 7.84 kN/m^3
+
+**Step 3:** Compute the initial effective stress at the middle of the clay layer.
+sigma'0 = 16.8 * 2.9 + 9.69 * 4.6 + 7.84 * 2.10 = 109.8 kPa
+
+**Step 4:** Compute the depth from the raft to the middle of the clay layer.
+z = z1 + z2 + Hc/2 = 2.9 + 4.6 + 2.10 = 9.60 m
+
+**Step 5:** Compute the stress increase at that depth by the 2:1 method.
+The load spreads over an area (B + z) by (L + z):
+delta_sigma = q0 * B * L / ((B + z) * (L + z)) = 146 * 11.5 * 13.9 / ((11.5 + 9.60) * (13.9 + 9.60)) = 47.1 kPa
+
+**Step 6:** Compute the final effective stress at the clay mid-depth.
+sigma'f = sigma'0 + delta_sigma = 109.8 + 47.1 = 156.9 kPa
+
+**Step 7:** Compute the logarithmic stress-ratio term.
+log10(sigma'f / sigma'0) = log10(156.9 / 109.8) = 0.1550
+
+**Step 8:** Compute the primary consolidation settlement.
+Sc = Cc * Hc / (1 + e0) * log10(sigma'f/sigma'0) = 0.423 * 4.2 / (1 + 1.14) * 0.1550 = 0.1287 m
+
+**Step 9:** Convert to millimeters.
+Sc = 0.1287 * 1000 = 129 mm
+
+**Answer:** The primary consolidation settlement is 129 mm
+
+===== SEED 105 =====
+--- QUESTION ---
+A soil profile consists of, from the ground surface down: 2.8 m of moist sand (unit weight 17.9 kN/m^3) above the water table; 3.0 m of saturated sand (saturated unit weight 19.5 kN/m^3); and a 4.4 m thick layer of normally consolidated clay (saturated unit weight 18.53 kN/m^3, initial void ratio 0.98, liquid limit 59%). The water table is at the bottom of the moist sand layer. A rectangular raft foundation, 11.1 m by 13.8 m in plan, applies a uniform net pressure of 368 kPa at the ground surface. Using the 2:1 stress distribution method for the stress increase at the middle of the clay layer, the Skempton correlation Cc = 0.009(LL - 10), and a unit weight of water of 9.81 kN/m^3, determine the primary consolidation settlement of the clay layer in millimeters.
+--- GOLD SOLUTION ---
+**Given:**
+Moist sand: z1 = 2.8 m, gamma = 17.9 kN/m^3
+Saturated sand: z2 = 3.0 m, gamma_sat = 19.5 kN/m^3
+Clay: Hc = 4.4 m, gamma_sat = 18.53 kN/m^3, e0 = 0.98, LL = 59%
+Raft: 11.1 m x 13.8 m, net pressure q0 = 368 kPa at the surface
+Unit weight of water (gamma_w): 9.81 kN/m^3
+
+**Step 1:** Estimate the compression index from the Skempton correlation.
+Cc = 0.009 * (LL - 10) = 0.009 * (59 - 10) = 0.441
+
+**Step 2:** Compute the submerged unit weights below the water table.
+Sand: gamma'_sand = 19.5 - 9.81 = 9.69 kN/m^3
+Clay: gamma'_clay = 18.53 - 9.81 = 8.72 kN/m^3
+
+**Step 3:** Compute the initial effective stress at the middle of the clay layer.
+sigma'0 = 17.9 * 2.8 + 9.69 * 3.0 + 8.72 * 2.20 = 98.4 kPa
+
+**Step 4:** Compute the depth from the raft to the middle of the clay layer.
+z = z1 + z2 + Hc/2 = 2.8 + 3.0 + 2.20 = 8.00 m
+
+**Step 5:** Compute the stress increase at that depth by the 2:1 method.
+The load spreads over an area (B + z) by (L + z):
+delta_sigma = q0 * B * L / ((B + z) * (L + z)) = 368 * 11.1 * 13.8 / ((11.1 + 8.00) * (13.8 + 8.00)) = 135.4 kPa
+
+**Step 6:** Compute the final effective stress at the clay mid-depth.
+sigma'f = sigma'0 + delta_sigma = 98.4 + 135.4 = 233.8 kPa
+
+**Step 7:** Compute the logarithmic stress-ratio term.
+log10(sigma'f / sigma'0) = log10(233.8 / 98.4) = 0.3758
+
+**Step 8:** Compute the primary consolidation settlement.
+Sc = Cc * Hc / (1 + e0) * log10(sigma'f/sigma'0) = 0.441 * 4.4 / (1 + 0.98) * 0.3758 = 0.3683 m
+
+**Step 9:** Convert to millimeters.
+Sc = 0.3683 * 1000 = 368 mm
+
+**Answer:** The primary consolidation settlement is 368 mm

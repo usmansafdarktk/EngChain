@@ -1,0 +1,123 @@
+{
+  "file": "pilot\\templates\\branches\\civil_engineering\\structural_analysis\\deflections.py",
+  "seeds": 300,
+  "results": [
+    {
+      "function": "template_beam_deflection_formula",
+      "seeds_run": 300,
+      "passed": true,
+      "checks": {
+        "H1_execution": {
+          "passed": true,
+          "detail": []
+        },
+        "H2_determinism": {
+          "passed": true,
+          "detail": []
+        },
+        "H3_format": {
+          "passed": true,
+          "detail": []
+        },
+        "H4_parser_roundtrip": {
+          "passed": true,
+          "detail": []
+        },
+        "H5_numeric_hygiene": {
+          "passed": true,
+          "detail": []
+        },
+        "H6_diversity": {
+          "passed": true,
+          "detail": []
+        },
+        "H7_bounds": {
+          "passed": true,
+          "detail": []
+        }
+      }
+    },
+    {
+      "function": "template_cantilever_double_integration",
+      "seeds_run": 276,
+      "passed": false,
+      "checks": {
+        "H1_execution": {
+          "passed": false,
+          "detail": [
+            "seed 19: bounds assertion fired: tip deflection out of bounds: 45.8",
+            "seed 37: bounds assertion fired: tip deflection out of bounds: 58.5",
+            "seed 56: bounds assertion fired: tip deflection out of bounds: 46.0",
+            "seed 68: bounds assertion fired: tip deflection out of bounds: 53.7",
+            "seed 74: bounds assertion fired: tip deflection out of bounds: 47.1",
+            "seed 86: bounds assertion fired: tip deflection out of bounds: 63.0",
+            "seed 93: bounds assertion fired: tip deflection out of bounds: 62.2",
+            "seed 101: bounds assertion fired: tip deflection out of bounds: 45.7",
+            "seed 103: bounds assertion fired: tip deflection out of bounds: 51.8",
+            "seed 111: bounds assertion fired: tip deflection out of bounds: 54.5"
+          ]
+        },
+        "H2_determinism": {
+          "passed": true,
+          "detail": []
+        },
+        "H3_format": {
+          "passed": true,
+          "detail": []
+        },
+        "H4_parser_roundtrip": {
+          "passed": true,
+          "detail": []
+        },
+        "H5_numeric_hygiene": {
+          "passed": true,
+          "detail": []
+        },
+        "H6_diversity": {
+          "passed": true,
+          "detail": []
+        },
+        "H7_bounds": {
+          "passed": true,
+          "detail": []
+        }
+      }
+    },
+    {
+      "function": "template_virtual_work_truss_deflection",
+      "seeds_run": 300,
+      "passed": true,
+      "checks": {
+        "H1_execution": {
+          "passed": true,
+          "detail": []
+        },
+        "H2_determinism": {
+          "passed": true,
+          "detail": []
+        },
+        "H3_format": {
+          "passed": true,
+          "detail": []
+        },
+        "H4_parser_roundtrip": {
+          "passed": true,
+          "detail": []
+        },
+        "H5_numeric_hygiene": {
+          "passed": true,
+          "detail": []
+        },
+        "H6_diversity": {
+          "passed": true,
+          "detail": []
+        },
+        "H7_bounds": {
+          "passed": true,
+          "detail": []
+        }
+      }
+    }
+  ],
+  "all_passed": false
+}

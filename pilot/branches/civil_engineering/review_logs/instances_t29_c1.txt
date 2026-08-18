@@ -1,0 +1,94 @@
+===== SEED 101 =====
+--- QUESTION ---
+A catchment consists of streets: gravel on hydrologic soil group B, for which TR-55 gives a curve number CN = 85. A design storm delivers P = 5.8 inches of rainfall. Using the SCS curve-number method with S = 1000/CN - 10 and Q = (P - 0.2S)^2 / (P + 0.8S), all quantities in inches, determine the direct runoff depth Q in inches.
+--- GOLD SOLUTION ---
+**Given:**
+Land use: streets: gravel; HSG B; CN = 85
+Storm depth (P): 5.8 in
+
+**Step 1:** Compute the potential maximum retention.
+S = 1000/CN - 10 = 1000/85 - 10 = 1.76 in
+
+**Step 2:** Check the initial abstraction.
+Ia = 0.2*S = 0.2 * 1.76 = 0.35 in; since P = 5.8 in > Ia, runoff occurs and the runoff equation applies.
+
+**Step 3:** Compute the direct runoff depth.
+Q = (P - 0.2S)^2 / (P + 0.8S) = (5.8 - 0.35)^2 / (5.8 + 0.8 * 1.76) = 4.12 in
+
+**Answer:** The direct runoff depth is 4.12 in
+
+===== SEED 102 =====
+--- QUESTION ---
+A catchment consists of residential: 1/4 acre lots (38% impervious) on hydrologic soil group A, for which TR-55 gives a curve number CN = 61. A design storm delivers P = 5.3 inches of rainfall. Using the SCS curve-number method with S = 1000/CN - 10 and Q = (P - 0.2S)^2 / (P + 0.8S), all quantities in inches, determine the direct runoff depth Q in inches.
+--- GOLD SOLUTION ---
+**Given:**
+Land use: residential: 1/4 acre lots (38% impervious); HSG A; CN = 61
+Storm depth (P): 5.3 in
+
+**Step 1:** Compute the potential maximum retention.
+S = 1000/CN - 10 = 1000/61 - 10 = 6.39 in
+
+**Step 2:** Check the initial abstraction.
+Ia = 0.2*S = 0.2 * 6.39 = 1.28 in; since P = 5.3 in > Ia, runoff occurs and the runoff equation applies.
+
+**Step 3:** Compute the direct runoff depth.
+Q = (P - 0.2S)^2 / (P + 0.8S) = (5.3 - 1.28)^2 / (5.3 + 0.8 * 6.39) = 1.55 in
+
+**Answer:** The direct runoff depth is 1.55 in
+
+===== SEED 103 =====
+--- QUESTION ---
+A catchment consists of open space, good condition (>75% grass) on hydrologic soil group C, for which TR-55 gives a curve number CN = 74. A design storm delivers P = 6.2 inches of rainfall. Using the SCS curve-number method with S = 1000/CN - 10 and Q = (P - 0.2S)^2 / (P + 0.8S), all quantities in inches, determine the direct runoff depth Q in inches.
+--- GOLD SOLUTION ---
+**Given:**
+Land use: open space, good condition (>75% grass); HSG C; CN = 74
+Storm depth (P): 6.2 in
+
+**Step 1:** Compute the potential maximum retention.
+S = 1000/CN - 10 = 1000/74 - 10 = 3.51 in
+
+**Step 2:** Check the initial abstraction.
+Ia = 0.2*S = 0.2 * 3.51 = 0.70 in; since P = 6.2 in > Ia, runoff occurs and the runoff equation applies.
+
+**Step 3:** Compute the direct runoff depth.
+Q = (P - 0.2S)^2 / (P + 0.8S) = (6.2 - 0.70)^2 / (6.2 + 0.8 * 3.51) = 3.36 in
+
+**Answer:** The direct runoff depth is 3.36 in
+
+===== SEED 104 =====
+--- QUESTION ---
+A catchment consists of commercial and business (85% impervious) on hydrologic soil group B, for which TR-55 gives a curve number CN = 92. A design storm delivers P = 5.7 inches of rainfall. Using the SCS curve-number method with S = 1000/CN - 10 and Q = (P - 0.2S)^2 / (P + 0.8S), all quantities in inches, determine the direct runoff depth Q in inches.
+--- GOLD SOLUTION ---
+**Given:**
+Land use: commercial and business (85% impervious); HSG B; CN = 92
+Storm depth (P): 5.7 in
+
+**Step 1:** Compute the potential maximum retention.
+S = 1000/CN - 10 = 1000/92 - 10 = 0.87 in
+
+**Step 2:** Check the initial abstraction.
+Ia = 0.2*S = 0.2 * 0.87 = 0.17 in; since P = 5.7 in > Ia, runoff occurs and the runoff equation applies.
+
+**Step 3:** Compute the direct runoff depth.
+Q = (P - 0.2S)^2 / (P + 0.8S) = (5.7 - 0.17)^2 / (5.7 + 0.8 * 0.87) = 4.77 in
+
+**Answer:** The direct runoff depth is 4.77 in
+
+===== SEED 105 =====
+--- QUESTION ---
+A catchment consists of streets: gravel on hydrologic soil group B, for which TR-55 gives a curve number CN = 85. A design storm delivers P = 3.6 inches of rainfall. Using the SCS curve-number method with S = 1000/CN - 10 and Q = (P - 0.2S)^2 / (P + 0.8S), all quantities in inches, determine the direct runoff depth Q in inches.
+--- GOLD SOLUTION ---
+**Given:**
+Land use: streets: gravel; HSG B; CN = 85
+Storm depth (P): 3.6 in
+
+**Step 1:** Compute the potential maximum retention.
+S = 1000/CN - 10 = 1000/85 - 10 = 1.76 in
+
+**Step 2:** Check the initial abstraction.
+Ia = 0.2*S = 0.2 * 1.76 = 0.35 in; since P = 3.6 in > Ia, runoff occurs and the runoff equation applies.
+
+**Step 3:** Compute the direct runoff depth.
+Q = (P - 0.2S)^2 / (P + 0.8S) = (3.6 - 0.35)^2 / (3.6 + 0.8 * 1.76) = 2.11 in
+
+**Answer:** The direct runoff depth is 2.11 in

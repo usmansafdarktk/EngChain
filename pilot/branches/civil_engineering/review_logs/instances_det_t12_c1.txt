@@ -1,0 +1,109 @@
+===== SEED 101 =====
+--- QUESTION ---
+A symmetric triangular truss has supports A (pin) and C (roller) at the same level, a horizontal distance 2b = 6.4 m apart, and an apex joint B at height h = 2.3 m above the midpoint of AC. The three members are the diagonals AB and BC and the bottom chord AC. A single vertical downward load of P = 54 kN acts at the apex B. Using the method of joints, determine the magnitude of the force in diagonal member AB in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Half-span (b): 3.2 m, apex height (h): 2.3 m
+Apex load (P): 54 kN
+
+**Step 1:** Find the support reactions.
+By symmetry of the truss and load, each support carries half the load:
+Ay = P / 2 = 54 / 2 = 27.0 kN
+
+**Step 2:** Establish the geometry of diagonal AB.
+Member length: L_AB = sqrt(h^2 + b^2) = sqrt(2.3^2 + 3.2^2) = 3.941 m
+sin(theta) = h / L_AB = 2.3 / 3.941 = 0.5836
+
+**Step 3:** Apply vertical equilibrium at joint A.
+Only AB has a vertical component at A (AC is horizontal), so it must balance the upward reaction; AB pushes on the joint, i.e. it is in compression:
+F_AB = Ay / sin(theta) = 27.0 / 0.5836 = 46.26 kN (compression)
+
+**Answer:** The force in member AB is 46.26 kN
+
+===== SEED 102 =====
+--- QUESTION ---
+A symmetric triangular truss has supports A (pin) and C (roller) at the same level, a horizontal distance 2b = 4.6 m apart, and an apex joint B at height h = 2.8 m above the midpoint of AC. The three members are the diagonals AB and BC and the bottom chord AC. A single vertical downward load of P = 30 kN acts at the apex B. Using the method of joints, determine the magnitude of the force in diagonal member AB in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Half-span (b): 2.3 m, apex height (h): 2.8 m
+Apex load (P): 30 kN
+
+**Step 1:** Find the support reactions.
+By symmetry of the truss and load, each support carries half the load:
+Ay = P / 2 = 30 / 2 = 15.0 kN
+
+**Step 2:** Establish the geometry of diagonal AB.
+Member length: L_AB = sqrt(h^2 + b^2) = sqrt(2.8^2 + 2.3^2) = 3.624 m
+sin(theta) = h / L_AB = 2.8 / 3.624 = 0.7726
+
+**Step 3:** Apply vertical equilibrium at joint A.
+Only AB has a vertical component at A (AC is horizontal), so it must balance the upward reaction; AB pushes on the joint, i.e. it is in compression:
+F_AB = Ay / sin(theta) = 15.0 / 0.7726 = 19.41 kN (compression)
+
+**Answer:** The force in member AB is 19.41 kN
+
+===== SEED 103 =====
+--- QUESTION ---
+A symmetric triangular truss has supports A (pin) and C (roller) at the same level, a horizontal distance 2b = 8.0 m apart, and an apex joint B at height h = 4.1 m above the midpoint of AC. The three members are the diagonals AB and BC and the bottom chord AC. A single vertical downward load of P = 66 kN acts at the apex B. Using the method of joints, determine the magnitude of the force in diagonal member AB in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Half-span (b): 4.0 m, apex height (h): 4.1 m
+Apex load (P): 66 kN
+
+**Step 1:** Find the support reactions.
+By symmetry of the truss and load, each support carries half the load:
+Ay = P / 2 = 66 / 2 = 33.0 kN
+
+**Step 2:** Establish the geometry of diagonal AB.
+Member length: L_AB = sqrt(h^2 + b^2) = sqrt(4.1^2 + 4.0^2) = 5.728 m
+sin(theta) = h / L_AB = 4.1 / 5.728 = 0.7158
+
+**Step 3:** Apply vertical equilibrium at joint A.
+Only AB has a vertical component at A (AC is horizontal), so it must balance the upward reaction; AB pushes on the joint, i.e. it is in compression:
+F_AB = Ay / sin(theta) = 33.0 / 0.7158 = 46.10 kN (compression)
+
+**Answer:** The force in member AB is 46.10 kN
+
+===== SEED 104 =====
+--- QUESTION ---
+A symmetric triangular truss has supports A (pin) and C (roller) at the same level, a horizontal distance 2b = 7.8 m apart, and an apex joint B at height h = 6.0 m above the midpoint of AC. The three members are the diagonals AB and BC and the bottom chord AC. A single vertical downward load of P = 66 kN acts at the apex B. Using the method of joints, determine the magnitude of the force in diagonal member AB in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Half-span (b): 3.9 m, apex height (h): 6.0 m
+Apex load (P): 66 kN
+
+**Step 1:** Find the support reactions.
+By symmetry of the truss and load, each support carries half the load:
+Ay = P / 2 = 66 / 2 = 33.0 kN
+
+**Step 2:** Establish the geometry of diagonal AB.
+Member length: L_AB = sqrt(h^2 + b^2) = sqrt(6.0^2 + 3.9^2) = 7.156 m
+sin(theta) = h / L_AB = 6.0 / 7.156 = 0.8385
+
+**Step 3:** Apply vertical equilibrium at joint A.
+Only AB has a vertical component at A (AC is horizontal), so it must balance the upward reaction; AB pushes on the joint, i.e. it is in compression:
+F_AB = Ay / sin(theta) = 33.0 / 0.8385 = 39.36 kN (compression)
+
+**Answer:** The force in member AB is 39.36 kN
+
+===== SEED 105 =====
+--- QUESTION ---
+A symmetric triangular truss has supports A (pin) and C (roller) at the same level, a horizontal distance 2b = 7.6 m apart, and an apex joint B at height h = 3.4 m above the midpoint of AC. The three members are the diagonals AB and BC and the bottom chord AC. A single vertical downward load of P = 70 kN acts at the apex B. Using the method of joints, determine the magnitude of the force in diagonal member AB in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Half-span (b): 3.8 m, apex height (h): 3.4 m
+Apex load (P): 70 kN
+
+**Step 1:** Find the support reactions.
+By symmetry of the truss and load, each support carries half the load:
+Ay = P / 2 = 70 / 2 = 35.0 kN
+
+**Step 2:** Establish the geometry of diagonal AB.
+Member length: L_AB = sqrt(h^2 + b^2) = sqrt(3.4^2 + 3.8^2) = 5.099 m
+sin(theta) = h / L_AB = 3.4 / 5.099 = 0.6668
+
+**Step 3:** Apply vertical equilibrium at joint A.
+Only AB has a vertical component at A (AC is horizontal), so it must balance the upward reaction; AB pushes on the joint, i.e. it is in compression:
+F_AB = Ay / sin(theta) = 35.0 / 0.6668 = 52.49 kN (compression)
+
+**Answer:** The force in member AB is 52.49 kN

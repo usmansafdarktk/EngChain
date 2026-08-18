@@ -1,0 +1,112 @@
+{
+  "file": "pilot\\templates\\branches\\civil_engineering\\geotechnical_engineering\\permeability_seepage_effective_stress.py",
+  "seeds": 300,
+  "results": [
+    {
+      "function": "template_constant_head_permeability",
+      "seeds_run": 300,
+      "passed": true,
+      "checks": {
+        "H1_execution": {
+          "passed": true,
+          "detail": []
+        },
+        "H2_determinism": {
+          "passed": true,
+          "detail": []
+        },
+        "H3_format": {
+          "passed": true,
+          "detail": []
+        },
+        "H4_parser_roundtrip": {
+          "passed": true,
+          "detail": []
+        },
+        "H5_numeric_hygiene": {
+          "passed": true,
+          "detail": []
+        },
+        "H6_diversity": {
+          "passed": true,
+          "detail": []
+        },
+        "H7_bounds": {
+          "passed": true,
+          "detail": []
+        }
+      }
+    },
+    {
+      "function": "template_effective_stress_profile",
+      "seeds_run": 300,
+      "passed": true,
+      "checks": {
+        "H1_execution": {
+          "passed": true,
+          "detail": []
+        },
+        "H2_determinism": {
+          "passed": true,
+          "detail": []
+        },
+        "H3_format": {
+          "passed": true,
+          "detail": []
+        },
+        "H4_parser_roundtrip": {
+          "passed": true,
+          "detail": []
+        },
+        "H5_numeric_hygiene": {
+          "passed": true,
+          "detail": []
+        },
+        "H6_diversity": {
+          "passed": true,
+          "detail": []
+        },
+        "H7_bounds": {
+          "passed": true,
+          "detail": []
+        }
+      }
+    },
+    {
+      "function": "template_upward_seepage_quick_condition",
+      "seeds_run": 300,
+      "passed": true,
+      "checks": {
+        "H1_execution": {
+          "passed": true,
+          "detail": []
+        },
+        "H2_determinism": {
+          "passed": true,
+          "detail": []
+        },
+        "H3_format": {
+          "passed": true,
+          "detail": []
+        },
+        "H4_parser_roundtrip": {
+          "passed": true,
+          "detail": []
+        },
+        "H5_numeric_hygiene": {
+          "passed": true,
+          "detail": []
+        },
+        "H6_diversity": {
+          "passed": true,
+          "detail": []
+        },
+        "H7_bounds": {
+          "passed": true,
+          "detail": []
+        }
+      }
+    }
+  ],
+  "all_passed": true
+}

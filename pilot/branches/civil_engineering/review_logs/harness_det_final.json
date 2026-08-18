@@ -1,0 +1,147 @@
+{
+  "file": "pilot\\templates\\branches\\civil_engineering\\structural_analysis\\determinate_structures.py",
+  "seeds": 300,
+  "results": [
+    {
+      "function": "template_beam_internal_moment",
+      "seeds_run": 300,
+      "passed": true,
+      "checks": {
+        "H1_execution": {
+          "passed": true,
+          "detail": []
+        },
+        "H2_determinism": {
+          "passed": true,
+          "detail": []
+        },
+        "H3_format": {
+          "passed": true,
+          "detail": []
+        },
+        "H4_parser_roundtrip": {
+          "passed": true,
+          "detail": []
+        },
+        "H5_numeric_hygiene": {
+          "passed": true,
+          "detail": []
+        },
+        "H6_diversity": {
+          "passed": true,
+          "detail": []
+        },
+        "H7_bounds": {
+          "passed": true,
+          "detail": []
+        }
+      }
+    },
+    {
+      "function": "template_beam_support_reactions",
+      "seeds_run": 300,
+      "passed": true,
+      "checks": {
+        "H1_execution": {
+          "passed": true,
+          "detail": []
+        },
+        "H2_determinism": {
+          "passed": true,
+          "detail": []
+        },
+        "H3_format": {
+          "passed": true,
+          "detail": []
+        },
+        "H4_parser_roundtrip": {
+          "passed": true,
+          "detail": []
+        },
+        "H5_numeric_hygiene": {
+          "passed": true,
+          "detail": []
+        },
+        "H6_diversity": {
+          "passed": true,
+          "detail": []
+        },
+        "H7_bounds": {
+          "passed": true,
+          "detail": []
+        }
+      }
+    },
+    {
+      "function": "template_truss_method_of_joints",
+      "seeds_run": 300,
+      "passed": true,
+      "checks": {
+        "H1_execution": {
+          "passed": true,
+          "detail": []
+        },
+        "H2_determinism": {
+          "passed": true,
+          "detail": []
+        },
+        "H3_format": {
+          "passed": true,
+          "detail": []
+        },
+        "H4_parser_roundtrip": {
+          "passed": true,
+          "detail": []
+        },
+        "H5_numeric_hygiene": {
+          "passed": true,
+          "detail": []
+        },
+        "H6_diversity": {
+          "passed": true,
+          "detail": []
+        },
+        "H7_bounds": {
+          "passed": true,
+          "detail": []
+        }
+      }
+    },
+    {
+      "function": "template_truss_method_of_sections",
+      "seeds_run": 300,
+      "passed": true,
+      "checks": {
+        "H1_execution": {
+          "passed": true,
+          "detail": []
+        },
+        "H2_determinism": {
+          "passed": true,
+          "detail": []
+        },
+        "H3_format": {
+          "passed": true,
+          "detail": []
+        },
+        "H4_parser_roundtrip": {
+          "passed": true,
+          "detail": []
+        },
+        "H5_numeric_hygiene": {
+          "passed": true,
+          "detail": []
+        },
+        "H6_diversity": {
+          "passed": true,
+          "detail": []
+        },
+        "H7_bounds": {
+          "passed": true,
+          "detail": []
+        }
+      }
+    }
+  ],
+  "all_passed": true
+}

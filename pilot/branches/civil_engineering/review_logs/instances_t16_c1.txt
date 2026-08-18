@@ -1,0 +1,123 @@
+===== SEED 101 =====
+--- QUESTION ---
+A simply supported steel beam consists of a W24X76 (SI designation W610X113) section (moment of inertia I = 874.0 x 10^6 mm^4, modulus of elasticity E = 200 GPa) spanning L = 11.7 m. The beam carries a concentrated load of 156.1 kN at midspan. Determine the maximum deflection of the beam in mm.
+--- GOLD SOLUTION ---
+**Given:**
+Section: W24X76 (SI designation W610X113), I = 874.0 x 10^6 mm^4
+E = 200 GPa; span L = 11.7 m
+Load: a concentrated load of 156.1 kN at midspan
+
+**Step 1:** Select the deflection formula.
+For a simply supported beam with a concentrated load at midspan, the maximum (midspan) deflection is:
+delta = P*L^3 / (48*E*I)
+
+**Step 2:** Assemble consistent SI units.
+E = 200 GPa = 200000000 kN/m^2
+I = 874.0 x 10^6 mm^4 = 0.000874 m^4
+Span L = 11.7 m
+
+**Step 3:** Substitute and evaluate.
+delta = 156.1 * (11.7)^3 / (48 * 200000000 * 0.000874) = 0.02980 m
+
+**Step 4:** Express in millimeters.
+delta = 0.02980 * 1000 = 29.8 mm
+
+**Answer:** The maximum deflection is 29.8 mm
+
+===== SEED 102 =====
+--- QUESTION ---
+A simply supported steel beam consists of a W12X26 section (moment of inertia I = 204 in^4, modulus of elasticity E = 29000 ksi) spanning L = 20 ft = 240 in. The beam carries a uniformly distributed load of 1.22 kip/ft over the full span. Determine the maximum deflection of the beam in in.
+--- GOLD SOLUTION ---
+**Given:**
+Section: W12X26, I = 204 in^4
+E = 29000 ksi; span L = 20 ft = 240 in
+Load: a uniformly distributed load of 1.22 kip/ft over the full span
+
+**Step 1:** Select the deflection formula.
+For a simply supported beam under a full-span uniform load, the maximum (midspan) deflection is:
+delta = 5*w*L^4 / (384*E*I)
+
+**Step 2:** Assemble consistent US customary units (kips and inches).
+E = 29000 ksi
+I = 204 in^4
+Span L = 20 ft = 240 in
+w = 1.22 kip/ft = 0.1017 kip/in
+
+**Step 3:** Substitute and evaluate.
+delta = 5 * 0.1017 * (240)^4 / (384 * 29000 * 204) = 0.742 in
+
+**Answer:** The maximum deflection is 0.742 in
+
+===== SEED 103 =====
+--- QUESTION ---
+A simply supported steel beam consists of a W30X108 section (moment of inertia I = 4470 in^4, modulus of elasticity E = 29000 ksi) spanning L = 53 ft = 636 in. The beam carries a uniformly distributed load of 1.73 kip/ft over the full span. Determine the maximum deflection of the beam in in.
+--- GOLD SOLUTION ---
+**Given:**
+Section: W30X108, I = 4470 in^4
+E = 29000 ksi; span L = 53 ft = 636 in
+Load: a uniformly distributed load of 1.73 kip/ft over the full span
+
+**Step 1:** Select the deflection formula.
+For a simply supported beam under a full-span uniform load, the maximum (midspan) deflection is:
+delta = 5*w*L^4 / (384*E*I)
+
+**Step 2:** Assemble consistent US customary units (kips and inches).
+E = 29000 ksi
+I = 4470 in^4
+Span L = 53 ft = 636 in
+w = 1.73 kip/ft = 0.1442 kip/in
+
+**Step 3:** Substitute and evaluate.
+delta = 5 * 0.1442 * (636)^4 / (384 * 29000 * 4470) = 2.369 in
+
+**Answer:** The maximum deflection is 2.369 in
+
+===== SEED 104 =====
+--- QUESTION ---
+A simply supported steel beam consists of a W8X24 (SI designation W200X35.9) section (moment of inertia I = 34.4 x 10^6 mm^4, modulus of elasticity E = 200 GPa) spanning L = 3.7 m. The beam carries a uniformly distributed load of 21.0 kN/m over the full span. Determine the maximum deflection of the beam in mm.
+--- GOLD SOLUTION ---
+**Given:**
+Section: W8X24 (SI designation W200X35.9), I = 34.4 x 10^6 mm^4
+E = 200 GPa; span L = 3.7 m
+Load: a uniformly distributed load of 21.0 kN/m over the full span
+
+**Step 1:** Select the deflection formula.
+For a simply supported beam under a full-span uniform load, the maximum (midspan) deflection is:
+delta = 5*w*L^4 / (384*E*I)
+
+**Step 2:** Assemble consistent SI units.
+E = 200 GPa = 200000000 kN/m^2
+I = 34.4 x 10^6 mm^4 = 0.000034 m^4
+Span L = 3.7 m
+
+**Step 3:** Substitute and evaluate.
+delta = 5 * 21.0 * (3.7)^4 / (384 * 200000000 * 0.000034) = 0.00745 m
+
+**Step 4:** Express in millimeters.
+delta = 0.00745 * 1000 = 7.4 mm
+
+**Answer:** The maximum deflection is 7.4 mm
+
+===== SEED 105 =====
+--- QUESTION ---
+A simply supported steel beam consists of a W24X76 section (moment of inertia I = 2100 in^4, modulus of elasticity E = 29000 ksi) spanning L = 47 ft = 564 in. The beam carries a uniformly distributed load of 0.85 kip/ft over the full span. Determine the maximum deflection of the beam in in.
+--- GOLD SOLUTION ---
+**Given:**
+Section: W24X76, I = 2100 in^4
+E = 29000 ksi; span L = 47 ft = 564 in
+Load: a uniformly distributed load of 0.85 kip/ft over the full span
+
+**Step 1:** Select the deflection formula.
+For a simply supported beam under a full-span uniform load, the maximum (midspan) deflection is:
+delta = 5*w*L^4 / (384*E*I)
+
+**Step 2:** Assemble consistent US customary units (kips and inches).
+E = 29000 ksi
+I = 2100 in^4
+Span L = 47 ft = 564 in
+w = 0.85 kip/ft = 0.0708 kip/in
+
+**Step 3:** Substitute and evaluate.
+delta = 5 * 0.0708 * (564)^4 / (384 * 29000 * 2100) = 1.532 in
+
+**Answer:** The maximum deflection is 1.532 in

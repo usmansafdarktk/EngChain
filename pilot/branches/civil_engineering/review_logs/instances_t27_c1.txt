@@ -1,0 +1,94 @@
+===== SEED 101 =====
+--- QUESTION ---
+Water flows at a unit discharge of q = 3.241 m^2/s in a wide rectangular channel at an approach depth of y1 = 1.47 m (subcritical). The bed rises gradually over a smooth hump. Taking g = 9.81 m/s^2 and neglecting energy losses, determine the maximum hump height, in m, for which the flow passes without choking (i.e., without forcing critical conditions on the hump).
+--- GOLD SOLUTION ---
+**Given:**
+Unit discharge (q): 3.241 m^2/s; approach depth (y1): 1.47 m; g = 9.81 m/s^2
+
+**Step 1:** Compute the approach specific energy.
+E1 = y1 + q^2/(2*g*y1^2) = 1.47 + (3.241)^2 / (2 * 9.81 * (1.47)^2) = 1.718 m
+
+**Step 2:** Compute the critical depth and minimum specific energy.
+yc = (q^2/g)^(1/3) = ((3.241)^2 / 9.81)^(1/3) = 1.023 m
+Ec = 1.5 * yc = 1.5 * 1.023 = 1.534 m
+
+**Step 3:** The flow chokes when the energy over the hump drops to Ec, so the maximum bed rise equals the energy margin.
+dz_max = E1 - Ec = 1.718 - 1.534 = 0.184 m
+
+**Answer:** The maximum hump height without choking is 0.184 m
+
+===== SEED 102 =====
+--- QUESTION ---
+Water flows at a unit discharge of q = 1.577 m^2/s in a wide rectangular channel at an approach depth of y1 = 1.10 m (subcritical). The bed rises gradually over a smooth hump. Taking g = 9.81 m/s^2 and neglecting energy losses, determine the maximum hump height, in m, for which the flow passes without choking (i.e., without forcing critical conditions on the hump).
+--- GOLD SOLUTION ---
+**Given:**
+Unit discharge (q): 1.577 m^2/s; approach depth (y1): 1.10 m; g = 9.81 m/s^2
+
+**Step 1:** Compute the approach specific energy.
+E1 = y1 + q^2/(2*g*y1^2) = 1.10 + (1.577)^2 / (2 * 9.81 * (1.10)^2) = 1.205 m
+
+**Step 2:** Compute the critical depth and minimum specific energy.
+yc = (q^2/g)^(1/3) = ((1.577)^2 / 9.81)^(1/3) = 0.633 m
+Ec = 1.5 * yc = 1.5 * 0.633 = 0.950 m
+
+**Step 3:** The flow chokes when the energy over the hump drops to Ec, so the maximum bed rise equals the energy margin.
+dz_max = E1 - Ec = 1.205 - 0.950 = 0.255 m
+
+**Answer:** The maximum hump height without choking is 0.255 m
+
+===== SEED 103 =====
+--- QUESTION ---
+Water flows at a unit discharge of q = 5.083 m^2/s in a wide rectangular channel at an approach depth of y1 = 2.24 m (subcritical). The bed rises gradually over a smooth hump. Taking g = 9.81 m/s^2 and neglecting energy losses, determine the maximum hump height, in m, for which the flow passes without choking (i.e., without forcing critical conditions on the hump).
+--- GOLD SOLUTION ---
+**Given:**
+Unit discharge (q): 5.083 m^2/s; approach depth (y1): 2.24 m; g = 9.81 m/s^2
+
+**Step 1:** Compute the approach specific energy.
+E1 = y1 + q^2/(2*g*y1^2) = 2.24 + (5.083)^2 / (2 * 9.81 * (2.24)^2) = 2.502 m
+
+**Step 2:** Compute the critical depth and minimum specific energy.
+yc = (q^2/g)^(1/3) = ((5.083)^2 / 9.81)^(1/3) = 1.381 m
+Ec = 1.5 * yc = 1.5 * 1.381 = 2.071 m
+
+**Step 3:** The flow chokes when the energy over the hump drops to Ec, so the maximum bed rise equals the energy margin.
+dz_max = E1 - Ec = 2.502 - 2.071 = 0.431 m
+
+**Answer:** The maximum hump height without choking is 0.431 m
+
+===== SEED 104 =====
+--- QUESTION ---
+Water flows at a unit discharge of q = 4.989 m^2/s in a wide rectangular channel at an approach depth of y1 = 2.61 m (subcritical). The bed rises gradually over a smooth hump. Taking g = 9.81 m/s^2 and neglecting energy losses, determine the maximum hump height, in m, for which the flow passes without choking (i.e., without forcing critical conditions on the hump).
+--- GOLD SOLUTION ---
+**Given:**
+Unit discharge (q): 4.989 m^2/s; approach depth (y1): 2.61 m; g = 9.81 m/s^2
+
+**Step 1:** Compute the approach specific energy.
+E1 = y1 + q^2/(2*g*y1^2) = 2.61 + (4.989)^2 / (2 * 9.81 * (2.61)^2) = 2.796 m
+
+**Step 2:** Compute the critical depth and minimum specific energy.
+yc = (q^2/g)^(1/3) = ((4.989)^2 / 9.81)^(1/3) = 1.364 m
+Ec = 1.5 * yc = 1.5 * 1.364 = 2.046 m
+
+**Step 3:** The flow chokes when the energy over the hump drops to Ec, so the maximum bed rise equals the energy margin.
+dz_max = E1 - Ec = 2.796 - 2.046 = 0.750 m
+
+**Answer:** The maximum hump height without choking is 0.750 m
+
+===== SEED 105 =====
+--- QUESTION ---
+Water flows at a unit discharge of q = 4.589 m^2/s in a wide rectangular channel at an approach depth of y1 = 1.99 m (subcritical). The bed rises gradually over a smooth hump. Taking g = 9.81 m/s^2 and neglecting energy losses, determine the maximum hump height, in m, for which the flow passes without choking (i.e., without forcing critical conditions on the hump).
+--- GOLD SOLUTION ---
+**Given:**
+Unit discharge (q): 4.589 m^2/s; approach depth (y1): 1.99 m; g = 9.81 m/s^2
+
+**Step 1:** Compute the approach specific energy.
+E1 = y1 + q^2/(2*g*y1^2) = 1.99 + (4.589)^2 / (2 * 9.81 * (1.99)^2) = 2.261 m
+
+**Step 2:** Compute the critical depth and minimum specific energy.
+yc = (q^2/g)^(1/3) = ((4.589)^2 / 9.81)^(1/3) = 1.290 m
+Ec = 1.5 * yc = 1.5 * 1.290 = 1.935 m
+
+**Step 3:** The flow chokes when the energy over the hump drops to Ec, so the maximum bed rise equals the energy margin.
+dz_max = E1 - Ec = 2.261 - 1.935 = 0.326 m
+
+**Answer:** The maximum hump height without choking is 0.326 m

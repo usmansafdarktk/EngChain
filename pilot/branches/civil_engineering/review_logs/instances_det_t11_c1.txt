@@ -1,0 +1,109 @@
+===== SEED 101 =====
+--- QUESTION ---
+A simply supported beam AB has a span of L = 7.5 m, with a pin support at A and a roller support at B. It carries a concentrated load of 22 kN at a distance of 5.6 m from A, together with a triangularly distributed load that varies from zero at A to 10 kN/m at B. Determine the vertical reaction at support A in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 7.5 m
+Point load (P): 22 kN at a = 5.6 m from A
+Distributed load: a triangularly distributed load that varies from zero at A to 10 kN/m at B
+
+**Step 1:** Replace the distributed load by its resultant.
+For a triangular load (zero at A, peak at B):
+W = w_max * L / 2 = 10 * 7.5 / 2 = 37.5 kN, acting at two-thirds of the span from A, x_bar = 2L/3 = 5.00 m.
+
+**Step 2:** Take moments about A to find the reaction at B.
+Sum(M_A) = 0: By * L = P * a + W * x_bar
+By = (22 * 5.6 + 37.5 * 5.00) / 7.5 = 41.43 kN
+
+**Step 3:** Apply vertical force equilibrium to find the reaction at A.
+Sum(F_y) = 0: Ay = P + W - By = 22 + 37.5 - 41.43 = 18.07 kN
+
+**Answer:** The vertical reaction at support A is 18.07 kN
+
+===== SEED 102 =====
+--- QUESTION ---
+A simply supported beam AB has a span of L = 4.9 m, with a pin support at A and a roller support at B. It carries a concentrated load of 49 kN at a distance of 2.0 m from A, together with a uniformly distributed load of 8 kN/m over the entire span. Determine the vertical reaction at support A in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 4.9 m
+Point load (P): 49 kN at a = 2.0 m from A
+Distributed load: a uniformly distributed load of 8 kN/m over the entire span
+
+**Step 1:** Replace the distributed load by its resultant.
+For a uniform load over the full span:
+W = w * L = 8 * 4.9 = 39.2 kN, acting at the midspan, x_bar = L/2 = 2.45 m from A.
+
+**Step 2:** Take moments about A to find the reaction at B.
+Sum(M_A) = 0: By * L = P * a + W * x_bar
+By = (49 * 2.0 + 39.2 * 2.45) / 4.9 = 39.60 kN
+
+**Step 3:** Apply vertical force equilibrium to find the reaction at A.
+Sum(F_y) = 0: Ay = P + W - By = 49 + 39.2 - 39.60 = 48.60 kN
+
+**Answer:** The vertical reaction at support A is 48.60 kN
+
+===== SEED 103 =====
+--- QUESTION ---
+A simply supported beam AB has a span of L = 9.9 m, with a pin support at A and a roller support at B. It carries a concentrated load of 39 kN at a distance of 7.5 m from A, together with a uniformly distributed load of 3 kN/m over the entire span. Determine the vertical reaction at support A in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 9.9 m
+Point load (P): 39 kN at a = 7.5 m from A
+Distributed load: a uniformly distributed load of 3 kN/m over the entire span
+
+**Step 1:** Replace the distributed load by its resultant.
+For a uniform load over the full span:
+W = w * L = 3 * 9.9 = 29.7 kN, acting at the midspan, x_bar = L/2 = 4.95 m from A.
+
+**Step 2:** Take moments about A to find the reaction at B.
+Sum(M_A) = 0: By * L = P * a + W * x_bar
+By = (39 * 7.5 + 29.7 * 4.95) / 9.9 = 44.40 kN
+
+**Step 3:** Apply vertical force equilibrium to find the reaction at A.
+Sum(F_y) = 0: Ay = P + W - By = 39 + 29.7 - 44.40 = 24.30 kN
+
+**Answer:** The vertical reaction at support A is 24.30 kN
+
+===== SEED 104 =====
+--- QUESTION ---
+A simply supported beam AB has a span of L = 9.8 m, with a pin support at A and a roller support at B. It carries a concentrated load of 22 kN at a distance of 6.3 m from A, together with a uniformly distributed load of 8 kN/m over the entire span. Determine the vertical reaction at support A in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 9.8 m
+Point load (P): 22 kN at a = 6.3 m from A
+Distributed load: a uniformly distributed load of 8 kN/m over the entire span
+
+**Step 1:** Replace the distributed load by its resultant.
+For a uniform load over the full span:
+W = w * L = 8 * 9.8 = 78.4 kN, acting at the midspan, x_bar = L/2 = 4.90 m from A.
+
+**Step 2:** Take moments about A to find the reaction at B.
+Sum(M_A) = 0: By * L = P * a + W * x_bar
+By = (22 * 6.3 + 78.4 * 4.90) / 9.8 = 53.34 kN
+
+**Step 3:** Apply vertical force equilibrium to find the reaction at A.
+Sum(F_y) = 0: Ay = P + W - By = 22 + 78.4 - 53.34 = 47.06 kN
+
+**Answer:** The vertical reaction at support A is 47.06 kN
+
+===== SEED 105 =====
+--- QUESTION ---
+A simply supported beam AB has a span of L = 9.3 m, with a pin support at A and a roller support at B. It carries a concentrated load of 32 kN at a distance of 5.1 m from A, together with a uniformly distributed load of 2 kN/m over the entire span. Determine the vertical reaction at support A in kN.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 9.3 m
+Point load (P): 32 kN at a = 5.1 m from A
+Distributed load: a uniformly distributed load of 2 kN/m over the entire span
+
+**Step 1:** Replace the distributed load by its resultant.
+For a uniform load over the full span:
+W = w * L = 2 * 9.3 = 18.6 kN, acting at the midspan, x_bar = L/2 = 4.65 m from A.
+
+**Step 2:** Take moments about A to find the reaction at B.
+Sum(M_A) = 0: By * L = P * a + W * x_bar
+By = (32 * 5.1 + 18.6 * 4.65) / 9.3 = 26.85 kN
+
+**Step 3:** Apply vertical force equilibrium to find the reaction at A.
+Sum(F_y) = 0: Ay = P + W - By = 32 + 18.6 - 26.85 = 23.75 kN
+
+**Answer:** The vertical reaction at support A is 23.75 kN

@@ -1,0 +1,144 @@
+===== SEED 101 =====
+--- QUESTION ---
+A cantilever steel beam is built from a W24X76 section (SI designation W610X113; moment of inertia I = 874.0 x 10^6 mm^4) and extends L = 8.2 m from its fixed support at A. It carries a concentrated load of P = 32.9 kN at the free end. Taking E = 200 GPa, use the double-integration method to determine the deflection at the free end in mm.
+--- GOLD SOLUTION ---
+**Given:**
+Section: W24X76, I = 874.0 x 10^6 mm^4 = 8.7400e-04 m^4
+E = 200 GPa = 200000000 kN/m^2; length L = 8.2 m
+Load: a concentrated load of P = 32.9 kN at the free end
+
+**Step 1:** Write the internal moment function (x measured from the fixed end A).
+M(x) = -P * (L - x) = -32.9 * (8.2 - x)
+
+**Step 2:** Integrate E*I*v'' = M(x) once for the slope.
+E*I*v' = -P*(L*x - x^2/2) + C1; the fixed end gives v'(0) = 0, so C1 = 0.
+
+**Step 3:** Integrate again for the deflection.
+E*I*v = -P*(L*x^2/2 - x^3/6) + C2; v(0) = 0 gives C2 = 0.
+
+**Step 4:** Evaluate at the tip, x = L.
+E*I*v(L) = -P*(L^3/2 - L^3/6) = -P*L^3/3, so the downward tip deflection is delta = P*L^3 / (3*E*I)
+
+**Step 5:** Substitute numerical values.
+delta = 32.9 * (8.2)^3 / (3 * 200000000 * 8.7400e-04) = 0.03459 m
+
+**Step 6:** Express in millimeters.
+delta = 0.03459 * 1000 = 34.6 mm
+
+**Answer:** The deflection at the free end is 34.6 mm
+
+===== SEED 102 =====
+--- QUESTION ---
+A cantilever steel beam is built from a W12X26 section (SI designation W310X38.7; moment of inertia I = 84.9 x 10^6 mm^4) and extends L = 2.8 m from its fixed support at A. It carries a uniformly distributed load of w = 22.6 kN/m over its entire length. Taking E = 200 GPa, use the double-integration method to determine the deflection at the free end in mm.
+--- GOLD SOLUTION ---
+**Given:**
+Section: W12X26, I = 84.9 x 10^6 mm^4 = 8.4900e-05 m^4
+E = 200 GPa = 200000000 kN/m^2; length L = 2.8 m
+Load: a uniformly distributed load of w = 22.6 kN/m over its entire length
+
+**Step 1:** Write the internal moment function (x measured from the fixed end A).
+M(x) = -w * (L - x)^2 / 2 = -22.6 * (2.8 - x)^2 / 2
+
+**Step 2:** Integrate E*I*v'' = M(x) once for the slope.
+E*I*v' = w*(L - x)^3/6 + C1; v'(0) = 0 gives C1 = -w*L^3/6.
+
+**Step 3:** Integrate again for the deflection.
+E*I*v = -w*(L - x)^4/24 - w*L^3*x/6 + C2; v(0) = 0 gives C2 = w*L^4/24.
+
+**Step 4:** Evaluate at the tip, x = L.
+E*I*v(L) = -w*L^4/6 + w*L^4/24 = -w*L^4/8, so the downward tip deflection is delta = w*L^4 / (8*E*I)
+
+**Step 5:** Substitute numerical values.
+delta = 22.6 * (2.8)^4 / (8 * 200000000 * 8.4900e-05) = 0.01023 m
+
+**Step 6:** Express in millimeters.
+delta = 0.01023 * 1000 = 10.2 mm
+
+**Answer:** The deflection at the free end is 10.2 mm
+
+===== SEED 103 =====
+--- QUESTION ---
+A cantilever steel beam is built from a W30X108 section (SI designation W760X161; moment of inertia I = 1860.0 x 10^6 mm^4) and extends L = 10.3 m from its fixed support at A. It carries a uniformly distributed load of w = 10.5 kN/m over its entire length. Taking E = 200 GPa, use the double-integration method to determine the deflection at the free end in mm.
+--- GOLD SOLUTION ---
+**Given:**
+Section: W30X108, I = 1860.0 x 10^6 mm^4 = 1.8600e-03 m^4
+E = 200 GPa = 200000000 kN/m^2; length L = 10.3 m
+Load: a uniformly distributed load of w = 10.5 kN/m over its entire length
+
+**Step 1:** Write the internal moment function (x measured from the fixed end A).
+M(x) = -w * (L - x)^2 / 2 = -10.5 * (10.3 - x)^2 / 2
+
+**Step 2:** Integrate E*I*v'' = M(x) once for the slope.
+E*I*v' = w*(L - x)^3/6 + C1; v'(0) = 0 gives C1 = -w*L^3/6.
+
+**Step 3:** Integrate again for the deflection.
+E*I*v = -w*(L - x)^4/24 - w*L^3*x/6 + C2; v(0) = 0 gives C2 = w*L^4/24.
+
+**Step 4:** Evaluate at the tip, x = L.
+E*I*v(L) = -w*L^4/6 + w*L^4/24 = -w*L^4/8, so the downward tip deflection is delta = w*L^4 / (8*E*I)
+
+**Step 5:** Substitute numerical values.
+delta = 10.5 * (10.3)^4 / (8 * 200000000 * 1.8600e-03) = 0.03971 m
+
+**Step 6:** Express in millimeters.
+delta = 0.03971 * 1000 = 39.7 mm
+
+**Answer:** The deflection at the free end is 39.7 mm
+
+===== SEED 104 =====
+--- QUESTION ---
+A cantilever steel beam is built from a W8X24 section (SI designation W200X35.9; moment of inertia I = 34.4 x 10^6 mm^4) and extends L = 2.5 m from its fixed support at A. It carries a concentrated load of P = 12.8 kN at the free end. Taking E = 200 GPa, use the double-integration method to determine the deflection at the free end in mm.
+--- GOLD SOLUTION ---
+**Given:**
+Section: W8X24, I = 34.4 x 10^6 mm^4 = 3.4400e-05 m^4
+E = 200 GPa = 200000000 kN/m^2; length L = 2.5 m
+Load: a concentrated load of P = 12.8 kN at the free end
+
+**Step 1:** Write the internal moment function (x measured from the fixed end A).
+M(x) = -P * (L - x) = -12.8 * (2.5 - x)
+
+**Step 2:** Integrate E*I*v'' = M(x) once for the slope.
+E*I*v' = -P*(L*x - x^2/2) + C1; the fixed end gives v'(0) = 0, so C1 = 0.
+
+**Step 3:** Integrate again for the deflection.
+E*I*v = -P*(L*x^2/2 - x^3/6) + C2; v(0) = 0 gives C2 = 0.
+
+**Step 4:** Evaluate at the tip, x = L.
+E*I*v(L) = -P*(L^3/2 - L^3/6) = -P*L^3/3, so the downward tip deflection is delta = P*L^3 / (3*E*I)
+
+**Step 5:** Substitute numerical values.
+delta = 12.8 * (2.5)^3 / (3 * 200000000 * 3.4400e-05) = 0.00969 m
+
+**Step 6:** Express in millimeters.
+delta = 0.00969 * 1000 = 9.7 mm
+
+**Answer:** The deflection at the free end is 9.7 mm
+
+===== SEED 105 =====
+--- QUESTION ---
+A cantilever steel beam is built from a W24X76 section (SI designation W610X113; moment of inertia I = 874.0 x 10^6 mm^4) and extends L = 7.0 m from its fixed support at A. It carries a uniformly distributed load of w = 12.6 kN/m over its entire length. Taking E = 200 GPa, use the double-integration method to determine the deflection at the free end in mm.
+--- GOLD SOLUTION ---
+**Given:**
+Section: W24X76, I = 874.0 x 10^6 mm^4 = 8.7400e-04 m^4
+E = 200 GPa = 200000000 kN/m^2; length L = 7.0 m
+Load: a uniformly distributed load of w = 12.6 kN/m over its entire length
+
+**Step 1:** Write the internal moment function (x measured from the fixed end A).
+M(x) = -w * (L - x)^2 / 2 = -12.6 * (7.0 - x)^2 / 2
+
+**Step 2:** Integrate E*I*v'' = M(x) once for the slope.
+E*I*v' = w*(L - x)^3/6 + C1; v'(0) = 0 gives C1 = -w*L^3/6.
+
+**Step 3:** Integrate again for the deflection.
+E*I*v = -w*(L - x)^4/24 - w*L^3*x/6 + C2; v(0) = 0 gives C2 = w*L^4/24.
+
+**Step 4:** Evaluate at the tip, x = L.
+E*I*v(L) = -w*L^4/6 + w*L^4/24 = -w*L^4/8, so the downward tip deflection is delta = w*L^4 / (8*E*I)
+
+**Step 5:** Substitute numerical values.
+delta = 12.6 * (7.0)^4 / (8 * 200000000 * 8.7400e-04) = 0.02163 m
+
+**Step 6:** Express in millimeters.
+delta = 0.02163 * 1000 = 21.6 mm
+
+**Answer:** The deflection at the free end is 21.6 mm

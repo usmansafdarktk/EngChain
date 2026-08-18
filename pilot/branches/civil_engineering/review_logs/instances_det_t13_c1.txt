@@ -1,0 +1,109 @@
+===== SEED 101 =====
+--- QUESTION ---
+A simply supported beam AB (pin at A, roller at B) has a span of L = 9.5 m. It carries a uniformly distributed load of 6 kN/m over the entire span and a concentrated load of 27 kN at a = 6.3 m from A. Determine the internal bending moment, in kN*m, at the section located x = 7.4 m from support A.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 9.5 m; UDL (w): 6 kN/m over the full span
+Point load (P): 27 kN at a = 6.3 m from A
+Section location: x = 7.4 m from A
+
+**Step 1:** Find the support reactions.
+Sum(M_A) = 0: By = (P * a + w * L * L/2) / L = (27 * 6.3 + 6 * 9.5 * 4.75) / 9.5 = 46.41 kN
+Sum(F_y) = 0: Ay = P + w * L - By = 27 + 6 * 9.5 - 46.41 = 37.59 kN
+
+**Step 2:** Cut the beam at x = 7.4 m and take the left free body.
+The forces crossing the cut are the reaction Ay, the distributed load over the length x, and the point load P (since x = 7.4 m > a = 6.3 m).
+
+**Step 3:** Sum moments about the cut to find the internal moment (sagging positive).
+M = Ay * x - w * x^2 / 2 - P * (x - a)
+M = 37.59 * 7.4 - 6 * (7.4)^2 / 2 - 27 * (7.4 - 6.3) = 84.19 kN*m
+
+**Answer:** The internal bending moment at the section is 84.19 kN*m
+
+===== SEED 102 =====
+--- QUESTION ---
+A simply supported beam AB (pin at A, roller at B) has a span of L = 6.9 m. It carries a uniformly distributed load of 6 kN/m over the entire span and a concentrated load of 54 kN at a = 3.1 m from A. Determine the internal bending moment, in kN*m, at the section located x = 1.6 m from support A.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 6.9 m; UDL (w): 6 kN/m over the full span
+Point load (P): 54 kN at a = 3.1 m from A
+Section location: x = 1.6 m from A
+
+**Step 1:** Find the support reactions.
+Sum(M_A) = 0: By = (P * a + w * L * L/2) / L = (54 * 3.1 + 6 * 6.9 * 3.45) / 6.9 = 44.96 kN
+Sum(F_y) = 0: Ay = P + w * L - By = 54 + 6 * 6.9 - 44.96 = 50.44 kN
+
+**Step 2:** Cut the beam at x = 1.6 m and take the left free body.
+The forces crossing the cut are the reaction Ay and the distributed load over the length x only (the point load lies beyond the section, since x = 1.6 m < a = 3.1 m).
+
+**Step 3:** Sum moments about the cut to find the internal moment (sagging positive).
+M = Ay * x - w * x^2 / 2
+M = 50.44 * 1.6 - 6 * (1.6)^2 / 2 = 73.02 kN*m
+
+**Answer:** The internal bending moment at the section is 73.02 kN*m
+
+===== SEED 103 =====
+--- QUESTION ---
+A simply supported beam AB (pin at A, roller at B) has a span of L = 11.9 m. It carries a uniformly distributed load of 7 kN/m over the entire span and a concentrated load of 44 kN at a = 8.0 m from A. Determine the internal bending moment, in kN*m, at the section located x = 5.7 m from support A.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 11.9 m; UDL (w): 7 kN/m over the full span
+Point load (P): 44 kN at a = 8.0 m from A
+Section location: x = 5.7 m from A
+
+**Step 1:** Find the support reactions.
+Sum(M_A) = 0: By = (P * a + w * L * L/2) / L = (44 * 8.0 + 7 * 11.9 * 5.95) / 11.9 = 71.23 kN
+Sum(F_y) = 0: Ay = P + w * L - By = 44 + 7 * 11.9 - 71.23 = 56.07 kN
+
+**Step 2:** Cut the beam at x = 5.7 m and take the left free body.
+The forces crossing the cut are the reaction Ay and the distributed load over the length x only (the point load lies beyond the section, since x = 5.7 m < a = 8.0 m).
+
+**Step 3:** Sum moments about the cut to find the internal moment (sagging positive).
+M = Ay * x - w * x^2 / 2
+M = 56.07 * 5.7 - 7 * (5.7)^2 / 2 = 205.88 kN*m
+
+**Answer:** The internal bending moment at the section is 205.88 kN*m
+
+===== SEED 104 =====
+--- QUESTION ---
+A simply supported beam AB (pin at A, roller at B) has a span of L = 11.8 m. It carries a uniformly distributed load of 3 kN/m over the entire span and a concentrated load of 27 kN at a = 7.0 m from A. Determine the internal bending moment, in kN*m, at the section located x = 8.3 m from support A.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 11.8 m; UDL (w): 3 kN/m over the full span
+Point load (P): 27 kN at a = 7.0 m from A
+Section location: x = 8.3 m from A
+
+**Step 1:** Find the support reactions.
+Sum(M_A) = 0: By = (P * a + w * L * L/2) / L = (27 * 7.0 + 3 * 11.8 * 5.90) / 11.8 = 33.72 kN
+Sum(F_y) = 0: Ay = P + w * L - By = 27 + 3 * 11.8 - 33.72 = 28.68 kN
+
+**Step 2:** Cut the beam at x = 8.3 m and take the left free body.
+The forces crossing the cut are the reaction Ay, the distributed load over the length x, and the point load P (since x = 8.3 m > a = 7.0 m).
+
+**Step 3:** Sum moments about the cut to find the internal moment (sagging positive).
+M = Ay * x - w * x^2 / 2 - P * (x - a)
+M = 28.68 * 8.3 - 3 * (8.3)^2 / 2 - 27 * (8.3 - 7.0) = 99.61 kN*m
+
+**Answer:** The internal bending moment at the section is 99.61 kN*m
+
+===== SEED 105 =====
+--- QUESTION ---
+A simply supported beam AB (pin at A, roller at B) has a span of L = 11.3 m. It carries a uniformly distributed load of 2 kN/m over the entire span and a concentrated load of 37 kN at a = 6.0 m from A. Determine the internal bending moment, in kN*m, at the section located x = 2.9 m from support A.
+--- GOLD SOLUTION ---
+**Given:**
+Span (L): 11.3 m; UDL (w): 2 kN/m over the full span
+Point load (P): 37 kN at a = 6.0 m from A
+Section location: x = 2.9 m from A
+
+**Step 1:** Find the support reactions.
+Sum(M_A) = 0: By = (P * a + w * L * L/2) / L = (37 * 6.0 + 2 * 11.3 * 5.65) / 11.3 = 30.95 kN
+Sum(F_y) = 0: Ay = P + w * L - By = 37 + 2 * 11.3 - 30.95 = 28.65 kN
+
+**Step 2:** Cut the beam at x = 2.9 m and take the left free body.
+The forces crossing the cut are the reaction Ay and the distributed load over the length x only (the point load lies beyond the section, since x = 2.9 m < a = 6.0 m).
+
+**Step 3:** Sum moments about the cut to find the internal moment (sagging positive).
+M = Ay * x - w * x^2 / 2
+M = 28.65 * 2.9 - 2 * (2.9)^2 / 2 = 74.67 kN*m
+
+**Answer:** The internal bending moment at the section is 74.67 kN*m
