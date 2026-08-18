@@ -828,3 +828,25 @@ IE-specific lessons append below per review cycle.
     costs something — but presenting them as active protection is a
     false claim of the same family as the rest. Keep them, name them,
     and say which ones cannot currently fire.
+
+### Stage E remediation (2026-08-15) — audit the pack, not just the sweep
+
+112. **Measure the SHIPPED pack, not only the distribution it was drawn
+    from.** Two domain audits and every review cycle measured answer
+    diversity over 20k-40k seed sweeps and passed
+    `template_server_configuration_selection`. What none of them did was
+    look at the five records actually going into the testset: seeds
+    201-205 drew only three distinct QUESTIONS, so the deliverable
+    shipped two duplicate question pairs — 148 distinct problems in 150
+    records. Sweep statistics answer "is the space big enough"; they do
+    not answer "is the artifact I am handing over free of duplicates".
+    Check the artifact.
+113. **A parameterisation chosen for exactness can silently cap the
+    entire state space.** The template enumerated over whole-minute
+    service times because integral hourly rates need the time to divide
+    60 — and only eight values do. Combined with two utilizations both
+    pinned to [0.55, 0.85], the reachable set was 21 triples. Switching
+    to integer RATES kept every exactness property (the M/M/1 denominator
+    is still an integer) and took it to 1,844. When a space feels
+    stubbornly small, suspect the convenience constraint before the
+    physics one — and check what it costs.

@@ -289,22 +289,44 @@ def template_mmc_waiting_time():
     return question, solution
 
 
-# Configuration-selection template (BRANCHING): one experienced (fast) teller
-# vs two standard tellers. Anchored to the bank-teller-line [REALISM] windows;
-# both options' service rates and the arrival rate stay inside them.
-# Mean service times are divisors of 60 (exact integer rates per hour).
-# Decisiveness rule (lesson 23): only (tsA, tsB, lam) triples whose EXACT
-# mean times in system differ by >= 10% are reachable, so display rounding
-# can never flip the winner; both winners occur in the reachable set
-# (asserted in the builder tally below).
+# Configuration-selection template (BRANCHING): one experienced (fast)
+# server vs two standard servers. Anchored to the counter-service
+# [REALISM] windows; both options' service rates and the arrival rate
+# stay inside them.
+#
+# REMEDIATION (Stage E escalation #1, 2026-08-15): the grid was
+# previously parameterised by mean service TIMES in whole minutes, which
+# had to divide 60 to keep the hourly rates integral. Only eight values
+# do, and with rho1 and rho2 both confined to [0.55, 0.85] that left just
+# 21 reachable triples and 17 distinct answers — so the Stage E pack
+# (seeds 201-205) drew only 3 distinct questions and shipped two
+# duplicate question PAIRS into the 150-record testset. Parameterising by
+# integer hourly RATES removes the divisibility constraint while keeping
+# every exactness property (muA - lam is still a positive integer, so
+# W1 = 60/(muA - lam) is still exact), and the scenario now carries four
+# service contexts. Reachable triples: 21 -> 1845.
+#
+# Decisiveness rule (lesson 23): only (muA, muB, lam) triples whose EXACT
+# mean times in system differ by >= 10% are reachable, so display
+# rounding can never flip the winner; both winners occur in the reachable
+# set (asserted in the builder tally below).
+_SEL_SETTINGS = [
+    {"place": "A bank branch", "server": "teller", "arrival": "customers",
+     "arrive_at": "a single counter area"},
+    {"place": "A pharmacy", "server": "pharmacist", "arrival": "customers",
+     "arrive_at": "the prescription counter"},
+    {"place": "A hospital admissions desk", "server": "admissions clerk",
+     "arrival": "patients", "arrive_at": "the desk"},
+    {"place": "A passport office", "server": "processing officer",
+     "arrival": "applicants", "arrive_at": "the service window"},
+]
 _SEL_COMBOS = []
 _SEL_WINNER_TALLY = {"single": 0, "pair": 0}
-for _tsA in (2, 3):                      # fast teller: 30 or 20 /hr
-    for _tsB in (3, 4, 5):               # standard teller: 20, 15, 12 /hr
-        if 60 // _tsB >= 60 // _tsA:     # "fast" must actually be faster
+for _muA in range(10, 46):               # fast server, per hour
+    for _muB in range(6, 31):            # standard server, per hour
+        if _muB >= _muA:                 # "fast" must actually be faster
             continue
-        _muA, _muB = 60 // _tsA, 60 // _tsB
-        for _lam in range(8, 41):        # bank lam_hr window
+        for _lam in range(4, 51):
             _rhoA, _rhoB = _lam / _muA, _lam / (2 * _muB)
             if not (0.55 <= _rhoA <= 0.85 and 0.55 <= _rhoB <= 0.85):
                 continue
@@ -313,10 +335,11 @@ for _tsA in (2, 3):                      # fast teller: 30 or 20 /hr
             _WB = _LB / _lam * 60                            # minutes, exact
             if abs(_WA - _WB) / min(_WA, _WB) < 0.10:
                 continue
-            _SEL_COMBOS.append((_tsA, _tsB, _lam))
+            if not (1.9 <= _WA <= 41.0 and 1.9 <= _WB <= 41.0):
+                continue
+            _SEL_COMBOS.append((_muA, _muB, _lam))
             _SEL_WINNER_TALLY["single" if _WA < _WB else "pair"] += 1
 assert _SEL_WINNER_TALLY["single"] > 0 and _SEL_WINNER_TALLY["pair"] > 0
-
 
 # Template 3 (Intermediate) — Area S1: Queueing Systems  [BRANCHING]
 def template_server_configuration_selection():
@@ -324,42 +347,54 @@ def template_server_configuration_selection():
     Service-Configuration Selection: One Fast Server vs. Two Slow Servers
 
     Scenario:
-        A bank branch must staff a counter either with one experienced
-        teller (mean service time tsA minutes) or with two standard
-        tellers (mean service time tsB minutes each, tsB > tsA). Arrivals
-        are Poisson at lambda per hour; service times are exponential.
-        The two options are evaluated by the average time in the system:
+        A service counter can be staffed either with one experienced
+        server (mean rate muA per hour) or with two standard servers in
+        parallel (mean rate muB per hour each, muB < muA). Arrivals are
+        Poisson at lambda per hour; service times are exponential. The
+        two options are compared on the average time in the system:
 
-            Option 1 (M/M/1, rate muA = 60/tsA):
+            Option 1 (M/M/1):
                 W1 = 1 / (muA - lambda)
-            Option 2 (M/M/2, rate muB = 60/tsB each):
+            Option 2 (M/M/2):
                 rho2 = lambda / (2*muB);  L2 = 2*rho2 / (1 - rho2^2);
                 W2 = L2 / lambda   (Little's formula)
 
         Which option wins is parameter-dependent (BRANCHING): the
-        reachable set contains both winners, and every reachable triple
-        keeps the exact W1, W2 at least 10% apart so the decision is
-        never a rounding artifact.
+        reachable set contains both winners in near-equal proportion, and
+        every reachable triple keeps the exact W1, W2 at least 10% apart
+        so the decision is never a rounding artifact.
 
     Difficulty: Intermediate
     Grounding: Hillier & Lieberman, Introduction to Operations Research,
         7th ed., Ch. 17, Sec. 17.6 (M/M/s results; the one-fast-vs-
         several-slow comparison is a classic Ch. 17/18 decision typology).
         Cross-ref Taha 10e Sec. 18.9 (queueing decision models).
-    Physical bounds: tsA in {2, 3} min, tsB in {3, 4, 5} min with
-        muB < muA; lambda integer in the bank window [8, 40] /hr;
-        utilizations rho1 = lambda/muA and rho2 = lambda/(2*muB) both in
-        [0.55, 0.85]; exact |W1 - W2| / min(W1, W2) >= 0.10; asserts use
-        W1, W2 in [1.9, 41.0] minutes (enumerated corners recorded in the
-        review log).
+    Physical bounds: service rates are drawn as INTEGERS per hour —
+        muA in [10, 45], muB in [6, 30] with muB < muA — and lambda as an
+        integer in [4, 50]; the reachable set spans muA giving 1.3-6.0
+        min per service and muB giving 2.0-10.0 min, with lambda 7-38/hr.
+        Utilizations rho1 = lambda/muA and rho2 = lambda/(2*muB) are both
+        held in [0.55, 0.85]; the EXACT |W1 - W2| / min(W1, W2) >= 0.10;
+        both W in [1.9, 41.0] minutes, asserted after the draw.
+        EXACTNESS: muA - lambda is a positive integer, so
+        W1 = 60/(muA - lambda) minutes is exact before its single 2-dp
+        display rounding; the Option-2 chain is round-then-recompute from
+        the displayed rho2 and L2 (lessons 2/5/24).
+        DIVERSITY (Stage E remediation, 2026-08-15): parameterising by
+        integer RATES rather than by whole-minute service times — which
+        had to divide 60 — took the reachable set from 21 triples and 17
+        distinct answers to 1845 triples and 201, and four service
+        contexts multiply the distinct question surface. The old ceiling
+        put only 3 distinct questions in the 5-seed Stage E pack and
+        shipped two duplicate question pairs; see the review log.
 
     Returns:
         tuple(str, str): (question, solution)
     """
-    tsA, tsB, lam = random.choice(_SEL_COMBOS)
-    muA, muB = 60 // tsA, 60 // tsB
+    muA, muB, lam = random.choice(_SEL_COMBOS)
+    cfg = random.choice(_SEL_SETTINGS)
 
-    # Round-then-recompute from the presented (tsA, tsB, lam).
+    # Round-then-recompute from the presented (muA, muB, lam).
     rho1 = round(lam / muA, 4)
     rho2 = round(lam / (2 * muB), 4)
     W1_min = round(60.0 / (muA - lam), 2)          # exact integer denominator
@@ -370,61 +405,63 @@ def template_server_configuration_selection():
     winner_is_single = W1_min < W2_min
     W_best = W1_min if winner_is_single else W2_min
 
+    assert muB < muA, f"fast server must be faster: {muA} vs {muB}"
     assert 0.55 <= lam / muA <= 0.85, f"rho1 out of bounds: {lam}/{muA}"
     assert 0.55 <= lam / (2 * muB) <= 0.85, f"rho2 out of bounds: {lam}/(2*{muB})"
     assert 1.9 <= W1_min <= 41.0, f"W1 out of bounds: {W1_min}"
     assert 1.9 <= W2_min <= 41.0, f"W2 out of bounds: {W2_min}"
+    assert W1_min != W2_min, "winner must be decisive at display precision"
 
     if winner_is_single:
         conclusion = (
             f"Since W1 = {W1_min:.2f} min < W2 = {W2_min:.2f} min, the "
-            f"single experienced teller gives the smaller average time in "
-            f"the system."
+            f"single experienced {cfg['server']} gives the smaller average "
+            f"time in the system."
         )
     else:
         conclusion = (
             f"Since W2 = {W2_min:.2f} min < W1 = {W1_min:.2f} min, the two "
-            f"standard tellers give the smaller average time in the system."
+            f"standard {cfg['server']}s give the smaller average time in "
+            f"the system."
         )
 
     question = (
-        f"A bank branch expects customers to arrive at a single counter "
-        f"area according to a Poisson process at {lam} customers per hour. "
-        f"Management can staff the counter either with one experienced "
-        f"teller whose services take an exponentially distributed time "
-        f"averaging {tsA} minutes, or with two standard tellers working in "
-        f"parallel, each with exponentially distributed service times "
-        f"averaging {tsB} minutes. Model the first option as an M/M/1 "
-        f"queue and the second as an M/M/2 queue, verify that a steady "
-        f"state exists for both, and compare the average time a customer "
-        f"spends in the system (waiting plus service) under each option. "
-        f"Report, in minutes, the average time in the system achieved by "
-        f"the better option."
+        f"{cfg['place']} expects {cfg['arrival']} to arrive at "
+        f"{cfg['arrive_at']} according to a Poisson process at {lam} "
+        f"{cfg['arrival']} per hour. Management can staff it either with "
+        f"one experienced {cfg['server']}, who serves an average of "
+        f"{muA} {cfg['arrival']} per hour, or with two standard "
+        f"{cfg['server']}s working in parallel, each serving an average "
+        f"of {muB} {cfg['arrival']} per hour. Service times are "
+        f"exponentially distributed in both cases. Model the first option "
+        f"as an M/M/1 queue and the second as an M/M/2 queue, verify that "
+        f"a steady state exists for both, and compare the average time a "
+        f"{cfg['arrival'][:-1]} spends in the system (waiting plus "
+        f"service) under each option. Report, in minutes, the average "
+        f"time in the system achieved by the better option."
     )
 
     solution = (
         f"**Given:**\n"
-        f"Arrival rate (lambda): {lam} customers/hour; Option 1: one "
-        f"server, mean service time {tsA} min; Option 2: two servers, mean "
-        f"service time {tsB} min each.\n\n"
-        f"**Step 1:** Convert both mean service times to per-hour rates.\n"
-        f"muA = 60 / {tsA} = {muA} customers/hour;  "
-        f"muB = 60 / {tsB} = {muB} customers/hour per server\n\n"
-        f"**Step 2:** Verify that a steady state exists for both options.\n"
+        f"Arrival rate (lambda): {lam} {cfg['arrival']}/hour; Option 1: "
+        f"one server at muA = {muA}/hour; Option 2: two servers at "
+        f"muB = {muB}/hour each.\n\n"
+        f"**Step 1:** Verify that a steady state exists for both options.\n"
         f"rho1 = lambda / muA = {lam} / {muA} = {rho1:.4f} < 1;  "
         f"rho2 = lambda / (2*muB) = {lam} / {2 * muB} = {rho2:.4f} < 1\n"
         f"Both utilizations are below 1, so both options are stable.\n\n"
-        f"**Step 3:** Average time in system for Option 1 (M/M/1).\n"
+        f"**Step 2:** Average time in system for Option 1 (M/M/1).\n"
         f"W1 = 1 / (muA - lambda) = 1 / ({muA} - {lam}) hours "
         f"= 60 / {muA - lam} = {W1_min:.2f} minutes\n\n"
-        f"**Step 4:** Average number in system for Option 2 (M/M/2), using "
+        f"**Step 3:** Average number in system for Option 2 (M/M/2), using "
         f"the standard result L = 2*rho / (1 - rho^2).\n"
-        f"L2 = 2 * {rho2:.4f} / (1 - ({rho2:.4f})^2) = {L2:.4f} customers\n\n"
-        f"**Step 5:** Average time in system for Option 2 via Little's "
+        f"L2 = 2 * {rho2:.4f} / (1 - ({rho2:.4f})^2) = {L2:.4f} "
+        f"{cfg['arrival']}\n\n"
+        f"**Step 4:** Average time in system for Option 2 via Little's "
         f"formula.\n"
         f"W2 = L2 / lambda = {L2:.4f} / {lam} = {W2_hr:.5f} hours "
         f"= {W2_min:.2f} minutes\n\n"
-        f"**Step 6:** Select the better configuration.\n"
+        f"**Step 5:** Select the better configuration.\n"
         f"{conclusion}\n\n"
         f"**Answer:** The better option achieves an average time in the "
         f"system of {W_best:.2f} minutes"

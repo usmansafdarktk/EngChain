@@ -1,7 +1,7 @@
 # Industrial Engineering / Operations Research Pilot — Branch Final Report (Stage E)
 
 **Spec:** docs/pilot_template_authoring_spec.md · **Dates:** 2026-08-05 → 2026-08-10
-**Verdict up front: GO, with a short remediation list.** Thirty templates were authored, hardened and audited; the mini-testset is generated and parser-verified. The branch also produced the pilot's most useful negative result, in §3.
+**Verdict up front: GO.** The one Stage E defect is fixed; the remaining escalations are disclosures, not blockers. Thirty templates were authored, hardened and audited; the mini-testset is generated and parser-verified. The branch also produced the pilot's most useful negative result, in §3.
 
 ## 1. What was produced
 
@@ -59,7 +59,7 @@ Across cycles 5–8, independent reviewers verified the **arithmetic** of those 
 
 ## 5. Escalation list (carried to the human checkpoint)
 
-1. **Testset defect, new at Stage E:** `template_server_configuration_selection` yields only 17 distinct answers over 20,000 draws and just **3 distinct questions across seeds 201–205**, putting **two duplicate question pairs** in the shipped set — 148 distinct problems in 150 records. Both domain audits missed it because both measured answer diversity over large sweeps rather than checking the shipped pack for identical questions. **Fix before Phase 2.**
+1. **Testset defect found at Stage E — RESOLVED 2026-08-15.** `template_server_configuration_selection` enumerated its reachable set over whole-minute service times, which must divide 60 for integral hourly rates; with both utilizations confined to [0.55, 0.85] only **21 triples and 17 distinct answers** survived, and the template had no context variation, so the 5-seed pack drew just 3 distinct questions and shipped **two duplicate question pairs** (148 distinct problems in 150 records). Neither domain audit caught it: both measured answer diversity over large sweeps rather than checking the shipped pack for identical *question strings*. Fixed at the root by parameterising on integer hourly rates and adding four service contexts — 21 → 1,844 triples, 17 → 201 answers, and **the testset now carries 150 distinct questions with 150/150 parser round-trips**. Verified by re-solving 20,000 instances from question text alone (0 mismatches); branch property preserved (winner mix 51/49). Residual, disclosed: P(two of a random 5-pack share an *answer*) ≈ 20%; the shipped pack is clean 5/5. **Process lesson for Phase 2: audit the shipped pack for duplicate questions, not just the sweep for answer diversity.**
 2. **Answer-space ceilings** (disclosed in-docstring): t24 19 values; t28 152 (modal 3.2%, P(duplicate in a 5-pack) ≈ 9.5%); t25 121; t22 240. Comfortable at 5 instances, re-examine before any larger instantiation.
 3. **t26R:** σ_max below the metrology floor in 35.3% of anodize draws; unverified standards data; **5 dispatched / 4 certifying** cycle accounting.
 4. **Two cycle-cap overruns and two unpanelled cycles**, all documented with cause.
